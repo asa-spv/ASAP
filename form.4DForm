@@ -1,0 +1,142 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Bouton": {
+					"type": "button",
+					"top": 0,
+					"left": 0,
+					"width": 342,
+					"height": 356,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Image1": {
+					"type": "picture",
+					"top": 22,
+					"left": 24,
+					"width": 303,
+					"height": 101,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Association QualiSoft.png"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 152,
+					"left": 44,
+					"width": 248,
+					"height": 28,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 24,
+					"text": "Standard QualiSoft"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 207,
+					"left": 72,
+					"width": 209,
+					"height": 49,
+					"textAlign": "center",
+					"text": "Claude GRANDMONTAGNE, Patrick EMANUEL\r(C) 2018"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 298,
+					"left": 94,
+					"width": 172,
+					"height": 11,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "http://www.association-qualisoft.eu"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 270,
+					"left": 110,
+					"width": 145,
+					"height": 11,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "info@association-qualisoft.eu"
+				},
+				"Bouton invisible2": {
+					"type": "button",
+					"top": 266,
+					"left": 107,
+					"width": 143,
+					"height": 19,
+					"dataSource": "Bouton invisible",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Bouton invisible1": {
+					"type": "button",
+					"top": 295,
+					"left": 86,
+					"width": 175,
+					"height": 18,
+					"dataSource": "Bouton invisible",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}
