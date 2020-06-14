@@ -1,0 +1,627 @@
+﻿{
+	"destination": "detailScreen",
+	"inheritedForm": "SaisieStandard",
+	"width": 1600,
+	"height": 850,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt",
+		"scale": 2885
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PersoTexte2": {
+					"type": "text",
+					"top": 135,
+					"left": 78,
+					"width": 166,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Nom de la lettre type"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 135,
+					"left": 728,
+					"width": 160,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Description de la lettre type"
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 135,
+					"left": 899,
+					"width": 578,
+					"height": 43,
+					"dataSource": "[CourrielsTypes:28]Descriptif:3",
+					"class": "Champ_normal",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 163,
+					"left": 84,
+					"width": 160,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Contexte de la lettre type"
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 135,
+					"left": 254,
+					"width": 397,
+					"height": 15,
+					"dataSource": "[CourrielsTypes:28]NomLettre:2",
+					"class": "Champ_normal",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 181,
+					"left": 105,
+					"width": 156,
+					"height": 15,
+					"dataSource": "[CourrielsTypes:28]ContexteLettre:4",
+					"dataSourceTypeHint": "integer",
+					"class": "Champ_normal",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 470,
+					"left": 1710,
+					"width": 200,
+					"height": 60,
+					"visibility": "hidden",
+					"text": "Please, read comments!"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 380,
+					"left": 1710,
+					"width": 200,
+					"height": 80,
+					"visibility": "hidden",
+					"text": "Please, do not delete!"
+				},
+				"RTA_FontNames": {
+					"type": "dropdown",
+					"top": 217,
+					"left": 99,
+					"width": 220,
+					"height": 20,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"method": "ObjectMethods/RTA_FontNames.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"RTA_FontSizes": {
+					"type": "dropdown",
+					"top": 217,
+					"left": 329,
+					"width": 65,
+					"height": 20,
+					"dataSourceTypeHint": "arrayNumber",
+					"numberFormat": "###0;--;",
+					"class": "default",
+					"method": "ObjectMethods/RTA_FontSizes.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"RTA_Text": {
+					"type": "input",
+					"top": 259,
+					"left": 99,
+					"width": 670,
+					"height": 497,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"showSelection": true,
+					"styledText": true,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RTA_Text.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onSelectionChange"
+					]
+				},
+				"RTA_FrontColorMenuRef": {
+					"type": "input",
+					"top": 404,
+					"left": 1725,
+					"width": 170,
+					"height": 16,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RTA_FrontColorMenuRef.4dm"
+				},
+				"RTA_BackColorMenuRef": {
+					"type": "input",
+					"top": 430,
+					"left": 1725,
+					"width": 170,
+					"height": 16,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RTA_BackColorMenuRef.4dm"
+				},
+				"Button": {
+					"type": "button",
+					"top": 496,
+					"left": 1750,
+					"width": 130,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Init",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"RTA_Bold": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 430,
+					"width": 24,
+					"height": 22,
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/Bold.png",
+					"method": "ObjectMethods/RTA_Bold.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_Italic": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 454,
+					"width": 24,
+					"height": 22,
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/Italic.png",
+					"method": "ObjectMethods/RTA_Italic.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_Underline": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 478,
+					"width": 24,
+					"height": 22,
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/Underline.png",
+					"method": "ObjectMethods/RTA_Underline.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_Strike": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 502,
+					"width": 24,
+					"height": 22,
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/Stroke.png",
+					"method": "ObjectMethods/RTA_Strike.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 245,
+					"left": 89,
+					"width": 700,
+					"sizingX": "grow",
+					"stroke": "#777777"
+				},
+				"RTA_Standard": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 406,
+					"width": 24,
+					"height": 22,
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/Standard.png",
+					"method": "ObjectMethods/RTA_Standard.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_BgndColor": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 570,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:SetBgndColor",
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/ColorBgnd.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/RTA_BgndColor.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onUnload"
+					]
+				},
+				"RTA_FontColor": {
+					"type": "pictureButton",
+					"top": 216,
+					"left": 546,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:SetFontColor",
+					"rowCount": 3,
+					"picture": "/RESOURCES/RTA4D/Styles/color.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/RTA_FontColor.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onUnload"
+					]
+				},
+				"RTA_FontSample": {
+					"type": "rectangle",
+					"top": 234,
+					"left": 547,
+					"width": 22,
+					"height": 3,
+					"fill": "#000000",
+					"stroke": "transparent"
+				},
+				"RTA_BgndSample": {
+					"type": "rectangle",
+					"top": 234,
+					"left": 571,
+					"width": 22,
+					"height": 3,
+					"stroke": "transparent"
+				},
+				"RTA_URL": {
+					"type": "button",
+					"top": 216,
+					"left": 614,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:InsertURL",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Functions/url.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/RTA_URL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_DisplayRef": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 682,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:DisplayExpression",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Functions/mask_Off.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/RTA_DisplayRef.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_Compute1": {
+					"type": "button",
+					"top": 216,
+					"left": 726,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:ComputeExpression",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Functions/compute.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/RTA_Compute1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_Freeze2": {
+					"type": "button",
+					"top": 216,
+					"left": 750,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:FreezeExpression",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Functions/freeze.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/RTA_Freeze2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 908,
+					"left": 697,
+					"width": 355,
+					"height": 129,
+					"visibility": "hidden",
+					"stroke": "#405EFF",
+					"text": "This rich text area is a DYNAMIC VARIABLE.\r\rIt can be associated to a FIELD or a VARIABLE but the NAME of the object must NOT be modified!\r\r(Keep it's name \"RTA_Text\" in order to keep the buttons work fine)"
+				},
+				"RTA_Function1": {
+					"type": "button",
+					"top": 215,
+					"left": 647,
+					"width": 24,
+					"height": 22,
+					"tooltip": ":xliff:InsertExpression",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Functions/fx.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/RTA_Function1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxExpressions": {
+					"type": "listbox",
+					"top": 291,
+					"left": 879,
+					"width": 381,
+					"height": 455,
+					"resizingMode": "legacy",
+					"dragging": "custom",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbValeursCourrielChamp",
+							"dataSource": "TbValeursCourrielChamp",
+							"width": 196,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Valeur à insérer"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbExpressionsCourriel",
+							"dataSource": "TbExpressionsCourriel",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Expression"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"RadAdh": {
+					"type": "radio",
+					"top": 162,
+					"left": 266,
+					"width": 109,
+					"height": 16,
+					"dataSource": "RadAdh",
+					"text": "Adhérents",
+					"class": "Champ_grand",
+					"focusable": false,
+					"radioGroup": "Groupe3",
+					"method": "ObjectMethods/RadAdh.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadRaema": {
+					"type": "radio",
+					"top": 162,
+					"left": 395,
+					"width": 86,
+					"height": 16,
+					"dataSource": "RadRaema",
+					"text": "Raema",
+					"class": "Champ_grand",
+					"focusable": false,
+					"radioGroup": "Groupe3",
+					"method": "ObjectMethods/RadRaema.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadDeux": {
+					"type": "radio",
+					"top": 162,
+					"left": 491,
+					"width": 130,
+					"height": 16,
+					"dataSource": "RadDeux",
+					"text": "Les deux",
+					"class": "Champ_grand",
+					"focusable": false,
+					"radioGroup": "Groupe3",
+					"method": "ObjectMethods/RadDeux.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadFac": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 631,
+					"width": 138,
+					"height": 33,
+					"dataSource": "RadFac",
+					"text": "Facturation",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/RadFac.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 198,
+					"left": 879,
+					"width": 369,
+					"height": 97,
+					"text": "Pour placer dans le texte du courriel une valeur qui sera actualisée lors de l'envoi du courriel, glisser cette valeur dans le texte, à l'endroit voulu.\rUne valeur arbitraire sera mise afin de vous rendre compte de l'aspect qu'elle prendra dans le courriel."
+				}
+			},
+			"entryOrder": [
+				"Champ2",
+				"Champ1",
+				"Champ3",
+				"RTA_FontNames",
+				"RTA_FontSizes",
+				"RTA_Text",
+				"RTA_FrontColorMenuRef",
+				"RTA_BackColorMenuRef",
+				"Button",
+				"ListBoxExpressions",
+				"Groupe3",
+				"RadAdh",
+				"RadRaema",
+				"RadDeux",
+				"RadFac"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe3": [
+				"RadAdh",
+				"RadRaema",
+				"RadDeux"
+			]
+		}
+	}
+}

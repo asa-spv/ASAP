@@ -1,0 +1,155 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 850,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ListBoxTraduction": {
+					"type": "listbox",
+					"top": 54,
+					"left": 26,
+					"width": 1463,
+					"height": 674,
+					"resizingMode": "legacy",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbRef",
+							"dataSource": "TbRef",
+							"width": 500,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Ref"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbFr",
+							"dataSource": "TbFr",
+							"width": 500,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Français"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbEn",
+							"dataSource": "TbEn",
+							"width": 448,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Anglais"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 7,
+					"left": 1344,
+					"width": 145,
+					"height": 41,
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 7,
+					"left": 81,
+					"width": 606,
+					"height": 41,
+					"text": "Enregistrer les changements",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouPlusTraduction": {
+					"type": "button",
+					"top": 60,
+					"left": 1509,
+					"width": 37,
+					"height": 30,
+					"text": "+",
+					"class": "Titre_grand",
+					"method": "ObjectMethods/BouPlusTraduction.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

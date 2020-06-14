@@ -1,0 +1,115 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 788,
+	"markerBreak": 788,
+	"markerFooter": 788,
+	"events": [
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image1980436252": {
+					"type": "picture",
+					"top": 2,
+					"left": 209,
+					"width": 124,
+					"height": 69,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1980436252.png"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 103,
+					"left": 219,
+					"width": 307,
+					"height": 40,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 26,
+					"left": 284,
+					"width": 34,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 36,
+					"left": 465,
+					"width": 8,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9,
+					"textDecoration": "underline"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 118,
+					"left": 14,
+					"width": 286,
+					"height": 67,
+					"textAlign": "left",
+					"fontSize": 9,
+					"text": "Siret : 30300421200021     \rAPE : 9499Z                                                     \rNII FR 3004212                                           \t\rTVA Intracommunautaire :\t\t\t \rFR4030300421200021  \r"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 81,
+					"left": 4,
+					"width": 522,
+					"height": 12,
+					"textAlign": "center",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "INFORMATION CONCERNANT LE CODE DU LABORATOIRE ET SON MOT DE PASSE"
+				},
+				"VarAdresse": {
+					"type": "input",
+					"top": 118,
+					"left": 325,
+					"width": 219,
+					"height": 97,
+					"dataSource": "VarAdresse",
+					"class": "Champ_petit",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 712,
+					"left": 0,
+					"width": 544,
+					"height": 78,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1.png"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 252,
+					"left": 43,
+					"width": 494,
+					"height": 401,
+					"text": "Nous vous remercions de noter que \r     - votre n° de laboratoire est le <NumLaboA> \r     - votre mot de passse est : <CodeRAEMA>\r\r\rVeuillez agréer ..."
+				}
+			}
+		}
+	]
+}

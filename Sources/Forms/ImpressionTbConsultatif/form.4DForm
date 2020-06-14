@@ -1,0 +1,362 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 1,
+	"markerBody": 153,
+	"markerBreak": 153,
+	"markerFooter": 153,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"VarTitre": {
+					"type": "input",
+					"top": 40,
+					"left": 5,
+					"width": 549,
+					"height": 15,
+					"dataSource": "VarTitre",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 78,
+					"left": 87,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Réclamations"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 92,
+					"left": 53,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 92,
+					"left": 103,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 92,
+					"left": 153,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 78,
+					"left": 237,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Retours"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 92,
+					"left": 203,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 92,
+					"left": 253,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 92,
+					"left": 303,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 78,
+					"left": 387,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Demandes"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 92,
+					"left": 353,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 92,
+					"left": 403,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 92,
+					"left": 453,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 92,
+					"left": 11,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "RAEMA"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 108,
+					"left": 11,
+					"width": 38,
+					"height": 15,
+					"dataSource": "VarImp1",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 110,
+					"left": 56,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp2",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 110,
+					"left": 106,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp3",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 108,
+					"left": 153,
+					"width": 43,
+					"height": 15,
+					"dataSource": "VarImp4",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 110,
+					"left": 207,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp5",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 110,
+					"left": 257,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp6",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 108,
+					"left": 303,
+					"width": 43,
+					"height": 15,
+					"dataSource": "VarImp7",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 110,
+					"left": 357,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp8",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 110,
+					"left": 407,
+					"width": 29,
+					"height": 15,
+					"dataSource": "VarImp9",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 108,
+					"left": 456,
+					"width": 40,
+					"height": 15,
+					"dataSource": "VarImp10",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 108,
+					"left": 508,
+					"width": 40,
+					"height": 15,
+					"dataSource": "VarImp11",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1484 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="8512F072D7974235989D3FEC5BA332AC" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="XData" uuid="394E299C76A34B36B5DCC16C9E85236A" id="1" prevent_journaling="true">
+		<field name="UUID" uuid="F2375D74F37F404F82D17283CBB1BB02" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="XNom" uuid="9954DD94871643F0AC79198009CAE4CD" type="10" limiting_length="255" never_null="true" id="2" hide_in_REST="true"/>
+		<field name="XType" uuid="DA510690C4CD4EC7BA1AC6C120F43A55" type="10" limiting_length="32" never_null="true" id="3" hide_in_REST="true"/>
+		<field name="XDate" uuid="7873AD20C677419B9B24062578281EB5" type="8" never_null="true" id="4" hide_in_REST="true"/>
+		<field name="XHeure" uuid="D5517D285B69444BBAD8842DCA9E2C54" type="9" never_null="true" id="5" hide_in_REST="true"/>
+		<field name="XEntier" uuid="07B78CCA368A4DF385D3DE130AABF090" type="4" never_null="true" id="6" hide_in_REST="true"/>
+		<field name="XValeur" uuid="7D2983F2159D4A2D8F8E7E3719F6B271" type="6" never_null="true" id="7" hide_in_REST="true"/>
+		<field name="XAlpha" uuid="6FFE37E4D6954AF7A825A9D0B8EC1702" type="10" limiting_length="255" never_null="true" id="8" hide_in_REST="true"/>
+		<field name="XTexte" uuid="1C4BDEC88A32460DB6C3DBD8B0CF47EB" type="10" never_null="true" id="9" hide_in_REST="true"/>
+		<field name="XTexteSup" uuid="C0833013649A4D13B2118197EDEAA229" type="10" never_null="true" id="10"/>
+		<field name="XImage" uuid="9ABBDC80FF134D41909139C5D072ACEE" type="12" never_null="true" id="11"/>
+		<field name="XImageSup" uuid="7FD9E69057E54355900745D15D8488E9" type="12" never_null="true" id="12"/>
+		<field name="XBlob" uuid="7EA9BBBDC6804A6587A3E6BD818DB807" type="18" never_null="true" id="13"/>
+		<field name="XBool" uuid="F49FE44ED0EA4740BE595890608644FA" type="1" never_null="true" id="14"/>
+		<field name="XBoolSup" uuid="1F111C4D4DB2475F868077DCDD075530" type="1" never_null="true" id="15"/>
+		<field name="XDateSup" uuid="0AAEC8C16C414F31B6125BDADC80536D" type="8" never_null="true" id="16"/>
+		<field name="TailleBlob" uuid="ABB2A7DC22EB4A7EBFAEA8AE99D8FB2A" type="4" never_null="true" id="17"/>
+		<field name="XObjet" uuid="F4B91EB2E6D14175881146367DB9B32D" type="21" never_null="true" id="18"/>
+		<primary_key field_name="UUID" field_uuid="F2375D74F37F404F82D17283CBB1BB02"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="17">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="6250.6875" top="0" width="183.71484375" height="417.84765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XUtilisateurs" uuid="17C2C99111444C0AA2053C37A9F55A34" id="2" hide_in_REST="true">
+		<field name="UUID" uuid="469EDC364CFF481EA65F342DDF6533A7" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="5D809868590842ABAD86FDADD95DDB13" type="10" limiting_length="50" never_null="true" id="2"/>
+		<field name="Prenom" uuid="0C503CC7C61D40848AE4A1F2D6CB39AF" type="10" limiting_length="25" never_null="true" id="3"/>
+		<field name="Initiales" uuid="91FA6F18FD1646FD809599214BE39ACE" type="10" limiting_length="5" unique="true" never_null="true" id="4" hide_in_REST="true">
+			<field_extra mandatory="true" modifiable="false"/>
+		</field>
+		<field name="Passoire" uuid="EE5F2070542E48AD99788610CE585D23" type="10" limiting_length="20" never_null="true" id="5" hide_in_REST="true">
+			<field_extra visible="false"/>
+		</field>
+		<field name="Anniversaire" uuid="AC8DACDB9BA740FB9F3EDE74819DE131" type="10" limiting_length="5" never_null="true" id="6"/>
+		<field name="Mec" uuid="8D53412DED0149F89BD30804BACCDA1E" type="1" never_null="true" id="7"/>
+		<field name="NomJeuneFille" uuid="E19E97E6B7EC48A7B08D7CE34CE36F0A" type="10" limiting_length="50" never_null="true" id="8"/>
+		<field name="Email" uuid="58C359F4D1B04A0685A309BDCDD53EDD" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="MotsClefs" uuid="42EADC9F3193412AAA90B50CAA2750A4" type="10" never_null="true" id="10"/>
+		<field name="ID4DUtilisateur" uuid="B87B0020DCE09142AE9F7F400C8B20EA" type="4" never_null="true" id="11">
+			<field_extra modifiable="false" enterable="false"/>
+		</field>
+		<field name="AccesStructure" uuid="492D301FBBD2EA40A98431B4713F74F8" type="1" never_null="true" id="12"/>
+		<field name="ObjetUtilisateur" uuid="E2EA0AD22EC845888C4FDCC9BFD8A049" type="21" never_null="true" id="13"/>
+		<primary_key field_name="UUID" field_uuid="469EDC364CFF481EA65F342DDF6533A7"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="13">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="5517.328125" top="8.703125" width="163.71484375" height="328.1953125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XFonctions" uuid="82D4333BC39C4EB3B27F80066068D0B3" id="3" hide_in_REST="true">
+		<field name="UUID" uuid="902F83E378684370960CC179438F7895" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NomFonction" uuid="20E4F52927054DBBA8BDDDA979C95719" type="10" limiting_length="30" unique="true" never_null="true" id="2"/>
+		<field name="Description" uuid="15CBE7A7251C4C17897C1E1F5CCFFD8A" type="10" never_null="true" id="3"/>
+		<primary_key field_name="UUID" field_uuid="902F83E378684370960CC179438F7895"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="6017.5625" top="311.88671875" width="147.74609375" height="201.21484375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XProfils" uuid="61536C9EC7BE4D47BC4E3F1434C7452A" id="4" hide_in_REST="true">
+		<field name="UUID" uuid="95C4D0A1E496437EAC84ED4302923BFB" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDFonction" uuid="3E62A2BAAD1A4822ACF037647C17C31C" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="NumTableSensible" uuid="4F75A7E80786464185B00B9D17630A32" type="4" never_null="true" id="3"/>
+		<field name="Voir" uuid="B11D4E3583034E0DA3D1F360697C2CBE" type="1" never_null="true" id="4"/>
+		<field name="Ajouter" uuid="95EB650E53174B4BBEEAA60FC7DFAC01" type="1" never_null="true" id="5"/>
+		<field name="Modifier" uuid="CD010F771AB543A3B09542F628DAC75E" type="1" never_null="true" id="6"/>
+		<field name="Supprimer" uuid="A485D300B7D64763BAF1F889CCCB0D9D" type="1" never_null="true" id="7"/>
+		<field name="Imprimer" uuid="C25AB7981D3E47868D6298AB088A7205" type="1" never_null="true" id="8"/>
+		<field name="Special1" uuid="63A629A1DFD0400DABC9D33506F1085A" type="1" never_null="true" id="9"/>
+		<field name="Special2" uuid="32EF1FFB9C3C4EAC97D1A4043324F2C2" type="1" never_null="true" id="10"/>
+		<primary_key field_name="UUID" field_uuid="95C4D0A1E496437EAC84ED4302923BFB"/>
+		<table_extra input_form="Sortie" output_form="Sortie">
+			<editor_table_info displayable_fields_count="11">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="6265.41796875" top="451.62890625" width="160.203125" height="273.57421875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XAttributions" uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" id="5" hide_in_REST="true">
+		<field name="UUID" uuid="6B937CB325D1493CA0E8FB8EABC6217D" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1" hide_in_REST="true"/>
+		<field name="UUIDUtilisateur" uuid="9B455B0222EE4476A43544DFAC5BA059" type="10" store_as_UUID="true" never_null="true" id="2" hide_in_REST="true"/>
+		<field name="UUIDFonction" uuid="84138B6E6778476EB0989DF50292FA81" type="10" store_as_UUID="true" never_null="true" id="3" hide_in_REST="true"/>
+		<field name="Descriptif" uuid="B6DC5CD72B5D40FF9914A2E5E757622F" type="10" limiting_length="55" never_null="true" id="4"/>
+		<primary_key field_name="UUID" field_uuid="6B937CB325D1493CA0E8FB8EABC6217D"/>
+		<table_extra input_form="Sortie" output_form="Liste">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="5776.265625" top="363.26171875" width="162.390625" height="177.765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XHistoriques" uuid="7B2DC16190E8443B88B6FD44B3D7FD8C" id="6">
+		<field name="UUID" uuid="CBD5CF6D99A0407994C0BA52E7290691" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="InitialesUtilisateur" uuid="13B005D2B7BF4853921E7244238732A9" type="10" limiting_length="5" never_null="true" id="2"/>
+		<field name="Histoire" uuid="361D6F4E512C4F978EFBA05ABC7A680C" type="10" never_null="true" id="3"/>
+		<field name="DateDebut" uuid="5CD0F67392EE425EB68236B43082FD8D" type="8" never_null="true" id="4"/>
+		<field name="DateFin" uuid="F94A9BD813EC4C5F817639EC7EB6CCD2" type="8" never_null="true" id="5"/>
+		<field name="Plein" uuid="A6A61653E9684ABF9A0570DBF1ADAB1B" type="1" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="CBD5CF6D99A0407994C0BA52E7290691"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="6042.21875" top="8.328125" width="152.36328125" height="192.06640625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XDroits" uuid="92DF8C7034774FD1B63798E3028F4221" id="7" hide_in_REST="true">
+		<field name="UUID" uuid="6D1D6A5E56C145A9828EC96AFE017479" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDUtilisateur" uuid="73AAECA2D4F9453CB9A073C79769EF02" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="NumTableSensible" uuid="84B328BBC648469092824F9E5476FF32" type="4" never_null="true" id="3"/>
+		<field name="Voir" uuid="C1FFCE392198434AB24101E0C57FA82C" type="1" never_null="true" id="4"/>
+		<field name="Ajouter" uuid="2CB2E7576B694AC5B10089318E65F5EF" type="1" never_null="true" id="5"/>
+		<field name="Modifier" uuid="3B8C2DC6DC454140A75F23E94CFC8081" type="1" never_null="true" id="6"/>
+		<field name="Supprimer" uuid="1DACFB41E88C4851A41AF1C70319D38E" type="1" never_null="true" id="7"/>
+		<field name="Imprimer" uuid="31CFACCE91874EBCB8F898A99D4608FD" type="1" never_null="true" id="8"/>
+		<field name="Special1" uuid="812AA68AD019497C973C402838A1266D" type="1" never_null="true" id="9"/>
+		<field name="Special2" uuid="FE086435D279461DB1942F60668F8D16" type="1" never_null="true" id="10"/>
+		<primary_key field_name="UUID" field_uuid="6D1D6A5E56C145A9828EC96AFE017479"/>
+		<table_extra input_form="Sortie" output_form="Sortie">
+			<editor_table_info displayable_fields_count="10">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="5798.171875" top="7.01953125" width="164.2109375" height="266.98828125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XLocalisations" uuid="CD431E287992499AA0083EF395344DEB" id="8" prevent_journaling="true">
+		<field name="UUID" uuid="98757B4A1F574776B82B85D9EFAB2D63" type="10" unique="true" autogenerate="true" store_as_UUID="true" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="UUIDUtilisateur" uuid="15F18F1692C645E79E7C8EE7D60694FF" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="Adresse1" uuid="3E70C55837DD4255B9B0E6C81C57D37A" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Adresse2" uuid="462C6FE0ED134B9A9F5D869B1C7C5821" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Adresse3" uuid="02551C61942A47E0B40EEB28DC1917AE" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="CodePostal" uuid="B3B27EE5D24144CCB7C845703A48C4A5" type="10" limiting_length="10" never_null="true" id="6">
+			<field_extra compressed="true"/>
+		</field>
+		<field name="Ville" uuid="4446A86AF64E428B98662E1F04ECCF36" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Longitude" uuid="7C702777D7BE4FCE8991E1058D093250" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Latitude" uuid="A4ECE5272C284F1B82B54702A5B2ED29" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="EMail1" uuid="7B2FCDB41E68409C9D2F87F4263B37FE" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="EMail2" uuid="75F99B6ACDFB4539B4B5A722D36BE256" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="Phone1" uuid="381A608F23894B83931FFF54D181BC84" type="10" id="12"/>
+		<field name="Phone2" uuid="F6B7EF6A3B094292A48E73D1E4734391" type="10" limiting_length="255" never_null="true" id="13"/>
+		<field name="Remarques" uuid="4A9D8AC36ED54896A8A058F43BF6B0E0" type="10" never_null="true" id="14"/>
+		<field name="TypeLocalisation" uuid="DC7A6AD99AF74264BFA7C7F4C4C62AF0" type="10" limiting_length="55" never_null="true" id="15">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="Pays" uuid="BF3B8999DFB74D3BAA492209E6539EF7" type="10" limiting_length="25" never_null="true" id="16"/>
+		<primary_key field_name="UUID" field_uuid="98757B4A1F574776B82B85D9EFAB2D63"/>
+		<table_extra input_form="Saisie" output_form="Liste">
+			<editor_table_info displayable_fields_count="16">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="5208.515625" top="6.51953125" width="160.4921875" height="381.86328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XMails" uuid="E2F408B4388D4EF18B9A8AEF24BF2F4D" id="9" prevent_journaling="true">
+		<field name="UUID" uuid="560C99DD99424282AAE2BACAB9DFEBC7" type="10" unique="true" autogenerate="true" store_as_UUID="true" never_null="true" id="1"/>
+		<field name="MailIDMessage" uuid="BE21FD017760453680836E2A08513FC2" type="10" limiting_length="255" unique="true" never_null="true" id="2"/>
+		<field name="MaillDe" uuid="7F6D3CD03B9D4635B0A18B6B235857B8" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="MailA" uuid="FAF99EC29B5B410E921F71BB3B28B0AB" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="MailDateEnvoi" uuid="0FEF4FFD489A47AA8CEAA44CF9278FBF" type="8" never_null="true" id="5"/>
+		<field name="MailDateHeureEnvoi" uuid="F5118ABCA27B40C896E5154EC8DBF617" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="MailDateHeureReception" uuid="53765E66B1D8430BA0C5C465FB9F5BBA" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="MailObjet" uuid="F5740608190D4D52B179F18B1C2066F0" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="MailCopieA" uuid="4BF0D1FCE16741A0AEBE628BBFD56F4F" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="MailNomFichier" uuid="9EE4E92CBA85452E8B875538BE28BE01" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="MailEdition" uuid="BB6AE3BB14004E3F8265720380FA81D0" type="1" never_null="true" id="11"/>
+		<field name="MailEnvoi" uuid="0D5CA6E4CAB143F2BDC198D8CEE2D757" type="1" never_null="true" id="12"/>
+		<field name="MailCorpsMessage" uuid="36CE596D5EFB4DF3807630BFBBF37C6A" type="10" never_null="true" id="13"/>
+		<field name="MailEntrantNonLu" uuid="51325A0EFED149FFAF547779BA90DA16" type="1" never_null="true" id="14"/>
+		<field name="MailClassement" uuid="BB0719E3B83345AFA50D9EF3C082FE6A" type="4" never_null="true" id="15"/>
+		<primary_key field_name="UUID" field_uuid="560C99DD99424282AAE2BACAB9DFEBC7"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="15">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="5506.1772460938" top="371.26556396484" width="190.97265625" height="362.19140625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XTachesDeFond" uuid="B3947A2B8697494B9542078AAA65F387" id="10" prevent_journaling="true">
+		<field name="UUID" uuid="F91D0467680047D59E59D20F0A21BD47" type="10" unique="true" autogenerate="true" store_as_UUID="true" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="ObjetTdF" uuid="135AD27FFD53CA4984216F344C957CF2" type="21" never_null="true" id="2"/>
+		<field name="BlobTdF" uuid="999C64B5396A9D4D8619CE5C13A1D9DA" type="18" never_null="true" id="3"/>
+		<field name="OrdrePassage" uuid="0CC06A5313EA57488E97E641D28A9E32" type="4" autosequence="true" never_null="true" id="4">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="UUID" field_uuid="F91D0467680047D59E59D20F0A21BD47"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="5257.765625" top="408.390625" width="136.6171875" height="171.7734375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PersonnesAdresses" uuid="6F0AB674AD7546CCB4042E3CF86E5E80" id="11">
+		<field name="UUID" uuid="4376AA93D49D45CB817B8EBDA4589675" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDPersonne" uuid="F5E12CB0313446E9BC3209E7AB38E001" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="LigneAdresse1" uuid="C5F9C90758B24DB9823DDA148F88702C" type="10" limiting_length="35" never_null="true" id="3"/>
+		<field name="LigneAdresse2" uuid="4B34BC2DC1134CE3A0BCDBEDB5B364B4" type="10" limiting_length="35" never_null="true" id="4"/>
+		<field name="LigneAdresse3" uuid="7BB2F33422A14AB5A5BF8AD9A521C444" type="10" limiting_length="35" never_null="true" id="5"/>
+		<field name="CodePostal" uuid="283BBB00F5CE41D8B7A18BFB7EEF298D" type="10" limiting_length="10" never_null="true" id="6"/>
+		<field name="Ville" uuid="62B5AACD1C3E48C08D5D6237971280DD" type="10" limiting_length="80" never_null="true" id="7"/>
+		<field name="Pays" uuid="B919A9FD46734C3793C4BC1434ED8C85" type="10" limiting_length="50" never_null="true" id="8">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="TypeAdresse" uuid="389D060CDA4546078EC7EF81F5FB4EAE" type="10" limiting_length="255" never_null="true" id="9">
+			<field_extra multi_line="false"/>
+		</field>
+		<primary_key field_name="UUID" field_uuid="4376AA93D49D45CB817B8EBDA4589675"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="9">
+				<color red="211" green="229" blue="240" alpha="255"/>
+				<coordinates left="719.43359375" top="18.5" width="141.4140625" height="239.29296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Personnes" uuid="225B7293FE4A48BABECB0163171609E0" id="12">
+		<field name="UUID" uuid="2CCD51F120F64C95ADBF530126233AFC" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NomLong" uuid="39F7D84272F842689C221A6C63967F31" type="10" limiting_length="255" never_null="true" id="2">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="NomCourt" uuid="5147DA3109A54FB2B6666406CBDE385C" type="10" limiting_length="35" never_null="true" id="3"/>
+		<field name="Identificateur" uuid="4D827353D38F4ACF80C214E3F977B89E" type="10" limiting_length="10" unique="true" never_null="true" id="4"/>
+		<field name="TypePersonne" uuid="CA41A607E67242F4BA5DA47B7C033288" type="10" limiting_length="12" never_null="true" id="5"/>
+		<field name="ChampRecherche" uuid="39C36E2610D7452C9C692078FC7555DE" type="10" never_null="true" id="6"/>
+		<field name="Arguments" uuid="98610150274C421390C3CFF0ECE20E3B" type="21" never_null="true" id="7"/>
+		<field name="Caduc" uuid="8D5DF8707CA64EB3A542C8009E517E90" type="1" never_null="true" id="8"/>
+		<primary_key field_name="UUID" field_uuid="2CCD51F120F64C95ADBF530126233AFC"/>
+		<table_extra input_form="Global" output_form="ListeTout">
+			<editor_table_info displayable_fields_count="9">
+				<color red="168" green="206" blue="226" alpha="255"/>
+				<coordinates left="428.2956237793" top="97.796875" width="163.375" height="236.6171875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="WebConnexions" uuid="D199B061F4BE4A98AF27DE9D32E9F272" id="13">
+		<field name="UUID" uuid="DDFCBAFE60EE49BB82E718843A713CD8" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="DateConnexion" uuid="1442408F4D674821811FD5258E194E02" type="8" never_null="true" id="2"/>
+		<field name="HeureConnexion" uuid="5CD98C5AE38E4D02849B23A53DACC5AD" type="9" never_null="true" id="3"/>
+		<field name="CodeConnexion" uuid="095B088DE5C54E98A04963D619D33E0E" type="10" limiting_length="10" never_null="true" id="4"/>
+		<field name="Campagne" uuid="733D563DF3734EB391D8D6A5BAAFD2EF" type="10" limiting_length="4" never_null="true" id="5"/>
+		<field name="TexteMail" uuid="71858C31C34144DEAD5DB143568D8E4F" type="10" never_null="true" id="6"/>
+		<field name="TextePJ" uuid="F547167904DE43C7AF1289530E50D193" type="10" never_null="true" id="7"/>
+		<field name="BoolEnvoi" uuid="212242B65D504024863470B113976E03" type="1" never_null="true" id="8"/>
+		<field name="NumEnvoi" uuid="C57DFF01D14B45A8A380E8A1202CE31E" type="4" never_null="true" id="9"/>
+		<field name="LangueConnexion" uuid="2B19E473F6484DB6ABD7B6451C5BE055" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="BlobConnexion" uuid="7E2DA8155A6B45BFBB63B70DE9D5E854" type="18" never_null="true" id="11"/>
+		<field name="UUIDParticipation" uuid="C4A581058C2D4DA2A8FB45FF364FDD49" type="10" store_as_UUID="true" never_null="true" id="12"/>
+		<field name="NavigateurConnexion" uuid="111EA2DC46F343309960EB170BD9AC4D" type="10" never_null="true" id="13"/>
+		<field name="Commentaire" uuid="9321B82D6CD14E25B0E8350346142547" type="10" never_null="true" id="14"/>
+		<field name="Arguments" uuid="3448E00A1B8B4C6FB9A80A1D67EF7601" type="21" never_null="true" id="15"/>
+		<primary_key field_name="UUID" field_uuid="DDFCBAFE60EE49BB82E718843A713CD8"/>
+		<table_extra input_form="Entrée" output_form="Liste">
+			<editor_table_info displayable_fields_count="15">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="1011.5768432617" top="8.171875" width="198.859375" height="362.61328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="AsaDiaUtilisateurs" uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" id="14">
+		<field name="UUID" uuid="9D852D45AB064831BEF4724F68BD6866" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NomUtilisateur" uuid="206084D8B460466FA7E38B490764C133" type="10" limiting_length="25" never_null="true" id="2"/>
+		<field name="AdresseUtilisateur" uuid="D96443BEA6AE45ED9D9132CBD15892C0" type="10" never_null="true" id="3"/>
+		<field name="NbreUtilisation" uuid="61F569649AD141DDBCB9445ECB4B829A" type="4" never_null="true" id="4"/>
+		<field name="NbreLicence" uuid="CAD12DA4568D4A288A78729602BEB289" type="4" never_null="true" id="5"/>
+		<field name="EMailUtilisateur" uuid="37C390CF01FD42FFA64FF2779A052CDF" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="DateEnregistrement" uuid="6FE4EBCFBEAD43089838BEFB30102939" type="8" never_null="true" id="7"/>
+		<field name="TexteEnregistrement" uuid="E3A28677349843D080C378C97B67FD1C" type="10" never_null="true" id="8"/>
+		<field name="MailEnvoiOK" uuid="E819650E911F4CC3854DDA066F90F6F7" type="1" never_null="true" id="9"/>
+		<field name="TypeVersion" uuid="91AB38A6E4AA4835ACB08FB2C37BE661" type="10" limiting_length="25" never_null="true" id="10"/>
+		<field name="CodeUtilisateur" uuid="FB215C6738F14ED5BAD1480B69C136CE" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="EmailASA" uuid="63A2D2DA59C04F44BFEB94DA611E665C" type="10" limiting_length="255" unique="true" never_null="true" id="12"/>
+		<field name="Caduc" uuid="E38C0CA483F14CFD956315F32DF687A5" type="1" never_null="true" id="13"/>
+		<field name="DateDerniereConnexion" uuid="FEA03A4EC5404C319BB6050525F623D1" type="8" never_null="true" id="14"/>
+		<primary_key field_name="UUID" field_uuid="9D852D45AB064831BEF4724F68BD6866"/>
+		<table_extra input_form="Saisie" output_form="Liste">
+			<editor_table_info displayable_fields_count="13">
+				<color red="224" green="234" blue="104" alpha="255"/>
+				<coordinates left="1366.7280273438" top="55.485687255859" width="180.5234375" height="332.41796875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Factures" uuid="3EABB0C52F2548AA9F702749B6A7AA44" id="15">
+		<field name="UUID" uuid="F5AA6008E4464119A9CF6C9C5CA3CEC1" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDPersonne" uuid="71D3087BC553478E8354F2CF22198E83" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="NumFacture" uuid="A96ED773EEF24F8B87B01A6822486E10" type="10" limiting_length="10" unique="true" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="DateFacture" uuid="FDDE8F57391144309D47A99E36444326" type="8" never_null="true" id="4"/>
+		<field name="AdresseFacturation" uuid="8AC5AE50A5594A158B4CE1B02DBC43FE" type="10" never_null="true" id="5"/>
+		<field name="CP" uuid="B4C4672053054D1C8763C841DA0EE8EA" type="10" limiting_length="10" never_null="true" id="6"/>
+		<field name="PaysFacturation" uuid="4C64BA2FB5484DB089A28AD1661538C5" type="10" limiting_length="80" never_null="true" id="7"/>
+		<field name="TotalHT" uuid="9F0E854E97C144CBAC0333978E7E93AA" type="6" never_null="true" id="8">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="TotalTVA" uuid="BC706FE872EA40CA9EAB36C39D45C40A" type="6" never_null="true" id="9"/>
+		<field name="TotalTTC" uuid="0904B8F1498E4E14815B62F4EF1A440D" type="6" never_null="true" id="10"/>
+		<field name="ChampRecherche" uuid="0FD8542ECB9D4EA9BB8518D8038D879C" type="10" never_null="true" id="11"/>
+		<field name="Regle" uuid="EA48C54F40AA4F2DB2B0B2DA76B9D24A" type="1" never_null="true" id="12"/>
+		<field name="SommeReglee" uuid="9D64FC2B59FB4217AE4BE1AEE95C398F" type="6" never_null="true" id="13"/>
+		<field name="NumBonCommande" uuid="3A980FBEBDAC4D24B0DC49E5ACD46D34" type="10" never_null="true" id="14"/>
+		<primary_key field_name="UUID" field_uuid="F5AA6008E4464119A9CF6C9C5CA3CEC1"/>
+		<table_extra input_form="Facture" output_form="Sortie">
+			<editor_table_info displayable_fields_count="16">
+				<color red="246" green="254" blue="244" alpha="255"/>
+				<coordinates left="1.62109375" top="545.0703125" width="165.484375" height="386.8046875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Ventes" uuid="421459DB492643DEBE178D5BE17B7EBA" id="16">
+		<field name="UUID" uuid="179576353D644BE0BB7F84D437D35D46" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NumFacture" uuid="29DF5E29F3ED436EADC2D8E9485BBFB7" type="10" limiting_length="10" never_null="true" id="2"/>
+		<field name="Intitule" uuid="83B445305BAE432AB078967F6E2D51C3" type="10" never_null="true" id="3"/>
+		<field name="DateVente" uuid="89163815E2FE400198CFB850437B5CC0" type="8" never_null="true" id="4"/>
+		<field name="PrixUHT" uuid="710380F796A844E98D0D1CE80D7E347A" type="6" never_null="true" id="5"/>
+		<field name="Quantité" uuid="8DA030DB89F64F05814FE8D242D13FFA" type="6" never_null="true" id="6"/>
+		<field name="PrixTotalHT" uuid="5C18D0FD94B84E2489AF8558BA19B06A" type="6" never_null="true" id="7"/>
+		<field name="TauxTVA" uuid="FF04A58042D94893951A97293C8E9E6A" type="6" never_null="true" id="8"/>
+		<field name="CodePrestation" uuid="0FDFE93D09C044D3A67FA0D7D22C28A6" type="10" limiting_length="5" never_null="true" id="9">
+			<field_extra>
+				<editor_field_info>
+					<color red="0" green="0" blue="0" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Banque" uuid="DC9277C918654056A0B903AEDDA33400" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="NumCheque" uuid="0CDCFDCC29BA428EA71C2469AA5CFFF9" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="DateReglement" uuid="53B4FEA671894BD5B7BD9E0F48A24074" type="8" never_null="true" id="12"/>
+		<primary_key field_name="UUID" field_uuid="179576353D644BE0BB7F84D437D35D46"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="12">
+				<color red="250" green="254" blue="249" alpha="255"/>
+				<coordinates left="218.76953125" top="633.90234375" width="143.765625" height="303.0234375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="CampagneParticipations" uuid="4D8934CF5DB64820AA1578CC5E4FCC97" id="17">
+		<field name="UUID" uuid="16B73C7EB6CA4DC3B4ED8D52170C0CAD" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDPersonne" uuid="3F17DEEC5C2A40009E678E6E12C5FB20" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="NumCampagne" uuid="41C0815B4173497C8DCBAB32386EF8FA" type="10" limiting_length="4" never_null="true" id="3"/>
+		<field name="TexteParticipation" uuid="031EFEEBBE984F2EB1243DC12E8AD306" type="10" never_null="true" id="4"/>
+		<field name="Arguments" uuid="86470490A3F14CBBA8294F5EB6C36727" type="21" never_null="true" id="5"/>
+		<primary_key field_name="UUID" field_uuid="16B73C7EB6CA4DC3B4ED8D52170C0CAD"/>
+		<table_extra input_form="Visu" output_form="Liste">
+			<editor_table_info displayable_fields_count="6">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="712.88932291667" top="320.08203125" width="178.18359375" height="181.8203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PostesBudgetaires" uuid="AAB082E92B4A4264B911AB7CB1B3CD65" id="18">
+		<field name="UUID" uuid="C72D723ABCB64763AB05F11F407DE57E" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NumPoste" uuid="A65D2509B50F4AE8A60F974A6D091F64" type="10" limiting_length="15" unique="true" never_null="true" id="2"/>
+		<field name="IntitulePoste" uuid="A74A8E42908C4CD1A0D89F921B80F1EF" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="ChapitrePoste" uuid="6DDFB6430AB94AFBBCB5BCEB13644F65" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="SousChapitrePoste" uuid="310E44B18E0543D5A035676799EC1E1B" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="ChapitreBilan" uuid="D3ED917CF53C44B0BB1EAAAF7CDDBF07" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="SousChapitreBilan" uuid="2575E2E0CC0F4EDABD5EC45F6151D0BD" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="PosteUlil" uuid="71F8DECBEB8B49A29C2A60454E8C153B" type="1" never_null="true" id="8"/>
+		<primary_key field_name="UUID" field_uuid="C72D723ABCB64763AB05F11F407DE57E"/>
+		<table_extra input_form="Entrée" output_form="Liste">
+			<editor_table_info displayable_fields_count="7">
+				<color red="250" green="254" blue="249" alpha="255"/>
+				<coordinates left="270.54296875" top="960.28515625" width="156.73046875" height="207.58984375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Depenses" uuid="20A79AF083CE40168F82EC85FB1CC090" id="19">
+		<field name="UUID" uuid="FCB8098B10834D2B8860A869A435DE53" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="DateDepense" uuid="BDDFC50158C141B49A64DC74B298C1ED" type="8" never_null="true" id="2"/>
+		<field name="MoisDepense" uuid="3315F8F641714EE9A5A2FF55D491957E" type="10" limiting_length="4" never_null="true" id="3"/>
+		<field name="MontantDepense" uuid="3D5E50751127494DAFBDE85C331CB4EC" type="6" never_null="true" id="4"/>
+		<field name="PosteBudetDepense" uuid="170235438A924019AD69C4F1BD2761B1" type="10" limiting_length="15" never_null="true" id="5"/>
+		<field name="Intitule" uuid="0188D5968328400398F33E18B148FE1C" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Affectation" uuid="8E57768F63904481B73632F716BF3D54" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="IDCumul" uuid="B6D8EECD6200430993AED29DB905A9DE" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="EcritureLettre" uuid="50DB90882D2E45959C2008C812FB94D1" type="10" limiting_length="255" never_null="true" id="9"/>
+		<primary_key field_name="UUID" field_uuid="FCB8098B10834D2B8860A869A435DE53"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="9">
+				<color red="250" green="254" blue="249" alpha="255"/>
+				<coordinates left="0" top="956.4296875" width="170.40625" height="233.99609375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RAEMACampagnes" uuid="D10D68A82D45456AB75B44F57D9B6714" id="20">
+		<field name="UUID" uuid="23A494307F0542399854B7E550A1AF91" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NumCampagne" uuid="B08D44B8E74C4EEE85B3BC1FEE611CA2" type="10" limiting_length="4" unique="true" never_null="true" id="2"/>
+		<field name="DateEnvoiColis" uuid="2C34E438F9114CDB9C5F5CAE242AEDFE" type="8" never_null="true" id="3"/>
+		<field name="DateLimiteReponse" uuid="724BF896B1534D96842E9144A390F046" type="8" never_null="true" id="4"/>
+		<field name="DateMiseEnLigne" uuid="138609E84DE04DF0815018355EA0A587" type="8" never_null="true" id="5"/>
+		<field name="NbParticipants" uuid="AF44DFEEBD8F4ADAB6A91C3810D62E4B" type="4" never_null="true" id="6"/>
+		<field name="Arguments" uuid="12CCDE8B0F82496EA93C121D0B6F15C8" type="21" never_null="true" id="7"/>
+		<primary_key field_name="UUID" field_uuid="23A494307F0542399854B7E550A1AF91"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="8">
+				<color red="236" green="235" blue="255" alpha="255"/>
+				<coordinates left="988.109375" top="608.78645833333" width="160.19140625" height="214.3203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RAEMAGermes" uuid="F492B33DB87141C5BDF2AE29443E8377" id="21">
+		<field name="UUID" uuid="8FE96FB1A2D8430DAAE2FEB01897D126" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDCampagne" uuid="43F0E306B52B43FAAA3ED211DED6E1F0" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="Identifiant" uuid="2BCE128CF611495AB2E6E173DB5CBF26" type="10" limiting_length="6" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="NomFr" uuid="DC312D6FDAD54B709167A4C9817C8490" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="NomEn" uuid="7B4C6084F7424E8DAA458984EB53EA8A" type="10" limiting_length="100" never_null="true" id="5"/>
+		<field name="Arguments" uuid="107C22A839584BA49E269785A3EEF5EF" type="21" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="8FE96FB1A2D8430DAAE2FEB01897D126"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="236" green="235" blue="255" alpha="255"/>
+				<coordinates left="1207.7057291667" top="614.72395833333" width="151.96875" height="198.4296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RAEMALignes" uuid="3FEE77F34135416CA767C31F399B780B" id="22">
+		<field name="UUID" uuid="79A38386C7D747049494C44804F7BE41" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDGerme" uuid="45B146F9A92E48A5B732A5DB887799DC" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="Identifiant" uuid="F9083274CAE24C2FA3F35B960B1FDE7F" type="10" limiting_length="8" never_null="true" id="3"/>
+		<field name="NomFr" uuid="1D2590BE3A22432C8F0EDD7150BBDAD6" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="NomEn" uuid="89D0543F62DF4A33B870543CFFF2C6F1" type="10" limiting_length="100" never_null="true" id="5"/>
+		<field name="Arguments" uuid="15F5190B845B4E5D838C8E85B4020648" type="21" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="79A38386C7D747049494C44804F7BE41"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="236" green="235" blue="255" alpha="255"/>
+				<coordinates left="1416.6497395833" top="616.0234375" width="151.96875" height="198.4296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RAEMAValeurs" uuid="FFB0805046404072B6F96311913ABE51" id="23">
+		<field name="UUID" uuid="A202C2EE365E4924A9B09D63A41BFC99" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDLigne" uuid="16ED995B24374408B8542206CBEBC788" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="Identifiant" uuid="1D70E00ED4EC474AAA0BD711FEFFBDC8" type="10" limiting_length="10" never_null="true" id="3"/>
+		<field name="NomFr" uuid="A7E2DDA9F0AF4A1C96D1B633748FE7BB" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="NomEn" uuid="6E513E0C0962416B91FBDD3426B8BF8B" type="10" limiting_length="100" never_null="true" id="5"/>
+		<field name="Arguments" uuid="D81F868E14114307A534F230C825D53D" type="21" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="A202C2EE365E4924A9B09D63A41BFC99"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="236" green="235" blue="255" alpha="255"/>
+				<coordinates left="1623.65234375" top="612.19661458333" width="151.96875" height="198.4296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RetoursFiches" uuid="F7BBF08E0C004A239D240D7FC7316FCC" id="24">
+		<field name="UUID" uuid="8D5551A7326F4D3DB5F96945825BC2FB" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NumFiche" uuid="F60D3D94E5304354AC9BEF6B50FE548B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="DateRetour" uuid="FC4EEA5D30F04D269C7C5DEBC3947571" type="8" never_null="true" id="3"/>
+		<field name="Appel" uuid="3877706D6F494B969BB7B23F96DB2EDD" type="1" never_null="true" id="4"/>
+		<field name="TypeRetour" uuid="D98CD632206D46EEA4A7FC195BE6D6ED" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Domaine" uuid="03F9D09F2B274D7A8A16BB6EA41DA97C" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Campagne" uuid="0084957EC3814B1D88362E1D8B9ABFEE" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Classification" uuid="D8007F91BD854DAAAEE55A3EFAAC6161" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Motif" uuid="517771816BB54984BDB5024C981AB32E" type="10" never_null="true" id="9"/>
+		<field name="NumFTNC" uuid="2F3E1767B0744FEABD0055351D9BEDD1" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="Recherche" uuid="47DBBC0CAE5044BFA2E221F8F5A118AE" type="10" never_null="true" id="11"/>
+		<primary_key field_name="UUID" field_uuid="8D5551A7326F4D3DB5F96945825BC2FB"/>
+		<table_extra input_form="Saisie" output_form="Liste">
+			<editor_table_info displayable_fields_count="11">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="0" top="119.89971923828" width="130.12109375" height="284.5625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="CampagneGelGermes" uuid="407674CCFE1946F28D6A9EE2FCF2DB56" id="25">
+		<field name="UUID" uuid="6B1A26FD59404ADD9E12A44B382F3C7D" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDParticipation" uuid="BC038A9AA44341389CE32564CD179EC2" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="NomDuGerme" uuid="69CB27FE736E44EDBFAF8C15B2B2DD3D" type="10" limiting_length="30" never_null="true" id="3"/>
+		<field name="NbreColisSupSansRapport" uuid="FD72F83D31DE4103B008636A2A1600B8" type="4" never_null="true" id="4"/>
+		<field name="NbreColisSupAvecRapport" uuid="E4D349AE3114413D9B04B1ECA24284DA" type="4" never_null="true" id="5"/>
+		<field name="NumCampagne" uuid="2124CC64CD764CFE88F0369116B3E140" type="10" limiting_length="4" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="6B1A26FD59404ADD9E12A44B382F3C7D"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="1006.30859375" top="392.2109375" width="203.5390625" height="175.26171875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Prestations" uuid="C50B37FF9B4741DB96D5016FA4595231" id="26" hide_in_REST="true">
+		<field name="UUID" uuid="4FE8454CDF23475BAA85A47A18E42289" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="CodePrestation" uuid="5672034172A44061BF08EB39524BCD10" type="10" limiting_length="5" never_null="true" id="2"/>
+		<field name="NomPrestation" uuid="125B4C58639A4EC1AC7574D48147EE98" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="PrixPrestation" uuid="AD535993F88C4D56A0AC2CDDD0789D03" type="6" never_null="true" id="4"/>
+		<field name="TauxTVAPrestation" uuid="AD4ABB4F7731412EAAEA54E03CAA1D37" type="6" never_null="true" id="5"/>
+		<field name="AnneePrestation" uuid="DC099D59A3CB41E5BAFE60FF1471F5DC" type="4" never_null="true" id="6"/>
+		<field name="RAEMAPrestation" uuid="978D1FA468EF41F7826400D86603A1DB" type="1" never_null="true" id="7"/>
+		<primary_key field_name="UUID" field_uuid="4FE8454CDF23475BAA85A47A18E42289"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="8">
+				<color red="246" green="254" blue="244" alpha="255"/>
+				<coordinates left="476.1171875" top="716.2265625" width="162.09375" height="218.16796875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RetoursAdherents" uuid="F53886FCF93B4C3C94F0CF0E3AA57516" id="27">
+		<field name="UUID" uuid="BF57E5A5873745B5AF43767C1D980A28" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="IDFiche" uuid="03E0B74C3EF24AC6AD3C075AC5079E33" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="IDAdherent" uuid="DA75C339737243DA80CF33EB42D7EBD0" type="10" store_as_UUID="true" never_null="true" id="3"/>
+		<primary_key field_name="UUID" field_uuid="BF57E5A5873745B5AF43767C1D980A28"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="3">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="187.921875" top="0" width="123.8671875" height="117.61328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="CourrielsTypes" uuid="F03D1E26E5444687BF23F57280A4BC5E" id="28">
+		<field name="UUID" uuid="81F9CF03A6E34C69A6589FA92210739E" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NomLettre" uuid="29163ABDF6474D1F9D2E6B0109025EF1" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Descriptif" uuid="C34C4A21313F4CEAB51068FD6F2B5196" type="10" never_null="true" id="3"/>
+		<field name="ContexteLettre" uuid="786CAF1E43A942159529AE0B183D0AAB" type="4" never_null="true" id="4"/>
+		<field name="TexteType" uuid="546C5517DCD44736B931BD8796B25678" type="10" never_null="true" id="5"/>
+		<field name="TexteP2_" uuid="D96F117BD43445308D491B1E6595E66D" type="18" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="81F9CF03A6E34C69A6589FA92210739E"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="207" green="209" blue="165" alpha="255"/>
+				<coordinates left="1013.9140625" top="860.83203125" width="161.62890625" height="186.48828125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PersonnesModifications" uuid="AD472D6819FD4D16A4969662199E19F2" id="29">
+		<field name="UUID" uuid="1BB0626903FC4B388F55625311EDC5FC" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDPersonne" uuid="1BFAD029405848378050F726CB18D3F1" type="10" store_as_UUID="true" never_null="true" id="2" hide_in_REST="true"/>
+		<field name="DateModification" uuid="E3999AB49D7C4D13AED194842049C99F" type="8" never_null="true" id="3"/>
+		<field name="HeureModification" uuid="196B642958CA437BA8E9C4163211A257" type="9" never_null="true" id="4"/>
+		<field name="VersionModification" uuid="908A4ECE663B451C9006A5628DF951E7" type="4" never_null="true" id="5"/>
+		<field name="TexteModification" uuid="B29F37F0D4644AD4818E31C84765B13A" type="10" never_null="true" id="6"/>
+		<field name="ObjetModification" uuid="0CB84B767E614473BC1DBBDEB2135E15" type="21" never_null="true" id="7"/>
+		<primary_key field_name="UUID" field_uuid="1BB0626903FC4B388F55625311EDC5FC"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="713.20703125" top="539.07421875" width="157.37890625" height="196.6640625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PersonnesDevis" uuid="693FC8001D54441BB997E2099ED3FE4D" id="30">
+		<field name="UUID" uuid="81DBEBBBF7F74FCA8A2B85FB029C3064" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="NomLabo" uuid="9A3C286940D74F4C980702616A521F0C" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="DateDevis" uuid="62036DA19C294A488A07041E0102FDFB" type="8" never_null="true" id="3"/>
+		<field name="HeureDevis" uuid="FCB149135A5C48ADB34D528BDB3FC0F2" type="9" never_null="true" id="4"/>
+		<field name="AnneeDevis" uuid="367A555DCF4B4F31ADF5A2D37256BD7E" type="3" never_null="true" id="5"/>
+		<field name="UUIDPersonne" uuid="1B8144A2740E4C65BD8B0DBF5C006A7E" type="10" store_as_UUID="true" never_null="true" id="6"/>
+		<field name="Caduc" uuid="7FC7C2847899454BB4F5D8E9593A0F73" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Valide" uuid="910B5BB89F6541C4A5AB9576F42613A5" type="1" never_null="true" id="8"/>
+		<field name="Arguments" uuid="1E2D2148B4CC49F7AA76E44DC34FA92A" type="21" never_null="true" id="9"/>
+		<field name="QuiValideQuand" uuid="43B49DAA5DF0491589403166008F4C71" type="10" never_null="true" id="10"/>
+		<primary_key field_name="UUID" field_uuid="81DBEBBBF7F74FCA8A2B85FB029C3064"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="10">
+				<color red="249" green="130" blue="127" alpha="255"/>
+				<coordinates left="433.515625" top="344.7109375" width="158.078125" height="266.76171875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PersonnesCourriels" uuid="9A647146CEE04415B44EB8940B6D19E2" id="31">
+		<field name="UUID" uuid="C78D16D2F6D44B31A3E915A6DCE5DE85" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUIDPersonne" uuid="E0F38701B70148A18A677883451E0161" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="SujetCourriel" uuid="A00E0A1151F8496DA7A4B77B016B2ABA" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="DateCourriel" uuid="18D5E714A7BB4059AE103B168CF79B17" type="8" never_null="true" id="4"/>
+		<field name="HeureCourriel" uuid="66D478A136CA49AE9A5A117BD1DFE540" type="9" never_null="true" id="5"/>
+		<field name="DestinataireCourriel" uuid="0F60DB9319884A388AAC0FA836991C65" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="CorpsCourriel" uuid="66132672644A4F7EB0D59A80C6B7E2D6" type="10" never_null="true" id="7"/>
+		<field name="ObjetCourriel" uuid="99AC93B4AADB4CF8B1A04B486CEEFACA" type="21" blob_switch_size="2147483647" never_null="true" id="8"/>
+		<primary_key field_name="UUID" field_uuid="C78D16D2F6D44B31A3E915A6DCE5DE85"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="723.15625" top="795.75" width="159.1015625" height="229.234375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="E2BF5B2DB94244ECA6613339EC7C0A93" name_Nto1="ProfilsToFonction" name_1toN="FonctionToProfils" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="3E62A2BAAD1A4822ACF037647C17C31C" name="UUIDFonction">
+				<table_ref uuid="61536C9EC7BE4D47BC4E3F1434C7452A" name="XProfils"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="902F83E378684370960CC179438F7895" name="UUID">
+				<table_ref uuid="82D4333BC39C4EB3B27F80066068D0B3" name="XFonctions"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="89AB80F2BD7B466CADB40BBC3C966F1F" name_Nto1="Mandatement" name_1toN="Mandats" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9B455B0222EE4476A43544DFAC5BA059" name="UUIDUtilisateur">
+				<table_ref uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" name="XAttributions"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="469EDC364CFF481EA65F342DDF6533A7" name="UUID">
+				<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="98FA54111468485C884259C9FFC3E684" name_Nto1="AttributionToFonction" name_1toN="FonctionToAttribution" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="84138B6E6778476EB0989DF50292FA81" name="UUIDFonction">
+				<table_ref uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" name="XAttributions"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="902F83E378684370960CC179438F7895" name="UUID">
+				<table_ref uuid="82D4333BC39C4EB3B27F80066068D0B3" name="XFonctions"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="74A82953FA0341E68B822F0DA32F06E1" name_Nto1="Autorisation" name_1toN="Bailleurs" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="73AAECA2D4F9453CB9A073C79769EF02" name="UUIDUtilisateur">
+				<table_ref uuid="92DF8C7034774FD1B63798E3028F4221" name="XDroits"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="469EDC364CFF481EA65F342DDF6533A7" name="UUID">
+				<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="64A8ADA8112D42CCA76B7085B9E0EB4D" name_Nto1="Emplacement" name_1toN="Habitants" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="15F18F1692C645E79E7C8EE7D60694FF" name="UUIDUtilisateur">
+				<table_ref uuid="CD431E287992499AA0083EF395344DEB" name="XLocalisations"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="469EDC364CFF481EA65F342DDF6533A7" name="UUID">
+				<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="B92660B385C847DA81B4ED9D91901C78" name_Nto1="AdrPer" name_1toN="PerAdr" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F5E12CB0313446E9BC3209E7AB38E001" name="UUIDPersonne">
+				<table_ref uuid="6F0AB674AD7546CCB4042E3CF86E5E80" name="PersonnesAdresses"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="C083F3C5FDF1475F8EC28C627D3968A7" name_Nto1="Lien_9" name_1toN="Lien_9_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="71D3087BC553478E8354F2CF22198E83" name="UUIDPersonne">
+				<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="A5FE61C0F7C746DAB64CE54C0CDE95EB" name_Nto1="Lien_11" name_1toN="Lien_11_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="29DF5E29F3ED436EADC2D8E9485BBFB7" name="NumFacture">
+				<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="A96ED773EEF24F8B87B01A6822486E10" name="NumFacture">
+				<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="A1F6890F62B54C589A71A04271B33113" name_Nto1="Lien_12" name_1toN="Lien_12_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="3F17DEEC5C2A40009E678E6E12C5FB20" name="UUIDPersonne">
+				<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="131B340CAAC64EC793A0210BB9068555" name_Nto1="Lien_13" name_1toN="Lien_13_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C4A581058C2D4DA2A8FB45FF364FDD49" name="UUIDParticipation">
+				<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="16B73C7EB6CA4DC3B4ED8D52170C0CAD" name="UUID">
+				<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="B893B07EDA8342879CD42138979F041B" name_Nto1="Lien_23" name_1toN="Lien_23_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="170235438A924019AD69C4F1BD2761B1" name="PosteBudetDepense">
+				<table_ref uuid="20A79AF083CE40168F82EC85FB1CC090" name="Depenses"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="A65D2509B50F4AE8A60F974A6D091F64" name="NumPoste">
+				<table_ref uuid="AAB082E92B4A4264B911AB7CB1B3CD65" name="PostesBudgetaires"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="6042740D92D24E5AAEDACABA233139BB" name_Nto1="Lien_15" name_1toN="Lien_15_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="43F0E306B52B43FAAA3ED211DED6E1F0" name="UUIDCampagne">
+				<table_ref uuid="F492B33DB87141C5BDF2AE29443E8377" name="RAEMAGermes"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="23A494307F0542399854B7E550A1AF91" name="UUID">
+				<table_ref uuid="D10D68A82D45456AB75B44F57D9B6714" name="RAEMACampagnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="9F1CD358872E4F54AD3E018BF75050AB" name_Nto1="Lien_16" name_1toN="Lien_16_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="45B146F9A92E48A5B732A5DB887799DC" name="UUIDGerme">
+				<table_ref uuid="3FEE77F34135416CA767C31F399B780B" name="RAEMALignes"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="8FE96FB1A2D8430DAAE2FEB01897D126" name="UUID">
+				<table_ref uuid="F492B33DB87141C5BDF2AE29443E8377" name="RAEMAGermes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="DDC0E3F5359C4348AA2CD8E6DE7668CD" name_Nto1="Lien_17" name_1toN="Lien_17_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="16ED995B24374408B8542206CBEBC788" name="UUIDLigne">
+				<table_ref uuid="FFB0805046404072B6F96311913ABE51" name="RAEMAValeurs"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="79A38386C7D747049494C44804F7BE41" name="UUID">
+				<table_ref uuid="3FEE77F34135416CA767C31F399B780B" name="RAEMALignes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="DE7135DD4B3A4B3DAA536B5E32338327" name_Nto1="Lien_20" name_1toN="Lien_20_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="BC038A9AA44341389CE32564CD179EC2" name="UUIDParticipation">
+				<table_ref uuid="407674CCFE1946F28D6A9EE2FCF2DB56" name="CampagneGelGermes"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="16B73C7EB6CA4DC3B4ED8D52170C0CAD" name="UUID">
+				<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="1E1C676BF3A14D64B29E4F324C1555E5" name_Nto1="Lien_21" name_1toN="Lien_21_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="41C0815B4173497C8DCBAB32386EF8FA" name="NumCampagne">
+				<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="B08D44B8E74C4EEE85B3BC1FEE611CA2" name="NumCampagne">
+				<table_ref uuid="D10D68A82D45456AB75B44F57D9B6714" name="RAEMACampagnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="05B2863980CE4994B4E4AC13E8600601" name_Nto1="Lien_18" name_1toN="Lien_18_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="DA75C339737243DA80CF33EB42D7EBD0" name="IDAdherent">
+				<table_ref uuid="F53886FCF93B4C3C94F0CF0E3AA57516" name="RetoursAdherents"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="8B76D1789E074559AE181C71D1820CB7" name_Nto1="Lien_19" name_1toN="Lien_19_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="03E0B74C3EF24AC6AD3C075AC5079E33" name="IDFiche">
+				<table_ref uuid="F53886FCF93B4C3C94F0CF0E3AA57516" name="RetoursAdherents"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="8D5551A7326F4D3DB5F96945825BC2FB" name="UUID">
+				<table_ref uuid="F7BBF08E0C004A239D240D7FC7316FCC" name="RetoursFiches"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="1FC9C9874AD34CCFA16A6A9F4155D79E" name_Nto1="Lien_22" name_1toN="Lien_22_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0FDFE93D09C044D3A67FA0D7D22C28A6" name="CodePrestation">
+				<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5672034172A44061BF08EB39524BCD10" name="CodePrestation">
+				<table_ref uuid="C50B37FF9B4741DB96D5016FA4595231" name="Prestations"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="9445BBEB5DB84BFF9F78F94FCE088283" name_Nto1="Lien_24" name_1toN="Lien_24_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1BFAD029405848378050F726CB18D3F1" name="UUIDPersonne">
+				<table_ref uuid="AD472D6819FD4D16A4969662199E19F2" name="PersonnesModifications"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="BB5CFC1DE996489098633EE34A5EB927" name_Nto1="Lien_25" name_1toN="Lien_25_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1B8144A2740E4C65BD8B0DBF5C006A7E" name="UUIDPersonne">
+				<table_ref uuid="693FC8001D54441BB997E2099ED3FE4D" name="PersonnesDevis"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="87B4586DAA60484EB8FAFC9579D78527" name_Nto1="Lien_26" name_1toN="Lien_26_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="E0F38701B70148A18A677883451E0161" name="UUIDPersonne">
+				<table_ref uuid="9A647146CEE04415B44EB8940B6D19E2" name="PersonnesCourriels"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+				<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="06A5E4ACCAF54C38926EE70BC5CE25CF" type="7">
+		<field_ref uuid="1B8144A2740E4C65BD8B0DBF5C006A7E" name="UUIDPersonne">
+			<table_ref uuid="693FC8001D54441BB997E2099ED3FE4D" name="PersonnesDevis"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="06B6406BA4BB4316AC0A54ADE44CAA2B" type="7">
+		<field_ref uuid="2BCE128CF611495AB2E6E173DB5CBF26" name="Identifiant">
+			<table_ref uuid="F492B33DB87141C5BDF2AE29443E8377" name="RAEMAGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="07E7F5E5DB75439686DE7C3BD54FD724" type="7">
+		<field_ref uuid="4376AA93D49D45CB817B8EBDA4589675" name="UUID">
+			<table_ref uuid="6F0AB674AD7546CCB4042E3CF86E5E80" name="PersonnesAdresses"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="080283C4758445F3AA1B6245AA015107" type="7">
+		<field_ref uuid="1BFAD029405848378050F726CB18D3F1" name="UUIDPersonne">
+			<table_ref uuid="AD472D6819FD4D16A4969662199E19F2" name="PersonnesModifications"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="08946F8EEDD144068F233481DFBCDAFA" type="7">
+		<field_ref uuid="FEA03A4EC5404C319BB6050525F623D1" name="DateDerniereConnexion">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="0987E0B728A44AB0AB55BB0BD3B11EDC" type="7">
+		<field_ref uuid="3E62A2BAAD1A4822ACF037647C17C31C" name="UUIDFonction">
+			<table_ref uuid="61536C9EC7BE4D47BC4E3F1434C7452A" name="XProfils"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="0AF8C33F0B3A447D99DA8046D6776DFE" type="7">
+		<field_ref uuid="CBD5CF6D99A0407994C0BA52E7290691" name="UUID">
+			<table_ref uuid="7B2DC16190E8443B88B6FD44B3D7FD8C" name="XHistoriques"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="0C150EB6770E439DB9F9EBE7666DC559" type="7">
+		<field_ref uuid="29DF5E29F3ED436EADC2D8E9485BBFB7" name="NumFacture">
+			<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+		</field_ref>
+	</index>
+	<index kind="keywords" uuid="0FA87C9E494B493CB42B2B20F894F778" type="3">
+		<field_ref uuid="39C36E2610D7452C9C692078FC7555DE" name="ChampRecherche">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="10DB8DEBE2A04A5CBECA29E739C7E311" type="7">
+		<field_ref uuid="9D852D45AB064831BEF4724F68BD6866" name="UUID">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="134E588F62BF4E1CB4BA34ADAB9DC75D" type="7">
+		<field_ref uuid="81F9CF03A6E34C69A6589FA92210739E" name="UUID">
+			<table_ref uuid="F03D1E26E5444687BF23F57280A4BC5E" name="CourrielsTypes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="14D3BF94BE3342B7A36535EBFF37CA18" type="7">
+		<field_ref uuid="43F0E306B52B43FAAA3ED211DED6E1F0" name="UUIDCampagne">
+			<table_ref uuid="F492B33DB87141C5BDF2AE29443E8377" name="RAEMAGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="14E337AC9667453B89DD621443511C37" type="1">
+		<field_ref uuid="BE21FD017760453680836E2A08513FC2" name="MailIDMessage">
+			<table_ref uuid="E2F408B4388D4EF18B9A8AEF24BF2F4D" name="XMails"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="1988B88CE88E49A49BC9EE66B332831A" type="1">
+		<field_ref uuid="20E4F52927054DBBA8BDDDA979C95719" name="NomFonction">
+			<table_ref uuid="82D4333BC39C4EB3B27F80066068D0B3" name="XFonctions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="1F3198DE10AA451DB611D0D18BF82F90" type="3">
+		<field_ref uuid="98610150274C421390C3CFF0ECE20E3B" name="Arguments">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="1F370289EB494A4999F230C3CB39B942" type="7">
+		<field_ref uuid="69CB27FE736E44EDBFAF8C15B2B2DD3D" name="NomDuGerme">
+			<table_ref uuid="407674CCFE1946F28D6A9EE2FCF2DB56" name="CampagneGelGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="20C84C95FAFF4F7889C478800B72ED9D" type="7">
+		<field_ref uuid="4FE8454CDF23475BAA85A47A18E42289" name="UUID">
+			<table_ref uuid="C50B37FF9B4741DB96D5016FA4595231" name="Prestations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="2255FD4EA6264826B16312798EBA9779" type="7">
+		<field_ref uuid="4F75A7E80786464185B00B9D17630A32" name="NumTableSensible">
+			<table_ref uuid="61536C9EC7BE4D47BC4E3F1434C7452A" name="XProfils"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="22607609D35B4F43BEC79264FDCA63B7" type="7">
+		<field_ref uuid="6B937CB325D1493CA0E8FB8EABC6217D" name="UUID">
+			<table_ref uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" name="XAttributions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="23B37C4489C74854BDDAA34D8261D948" type="1">
+		<field_ref uuid="A96ED773EEF24F8B87B01A6822486E10" name="NumFacture">
+			<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="25F35F1B2DF346C29F92F435800280DF" type="7">
+		<field_ref uuid="9B455B0222EE4476A43544DFAC5BA059" name="UUIDUtilisateur">
+			<table_ref uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" name="XAttributions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="27A40B774F354D0AB66A0C6438F3462A" type="3">
+		<field_ref uuid="1D70E00ED4EC474AAA0BD711FEFFBDC8" name="Identifiant">
+			<table_ref uuid="FFB0805046404072B6F96311913ABE51" name="RAEMAValeurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="2C27A92133F7413BA92156A3014EB011" type="7">
+		<field_ref uuid="8D5DF8707CA64EB3A542C8009E517E90" name="Caduc">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3132BC6C380045BFB1C17EE1A1EFC55C" type="7">
+		<field_ref uuid="1BB0626903FC4B388F55625311EDC5FC" name="UUID">
+			<table_ref uuid="AD472D6819FD4D16A4969662199E19F2" name="PersonnesModifications"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="320C601852E2464A8A30F0793B0D1E32" type="3">
+		<field_ref uuid="EA48C54F40AA4F2DB2B0B2DA76B9D24A" name="Regle">
+			<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="32213B47D6A349E2A04194F64CE3A779" type="7">
+		<field_ref uuid="16ED995B24374408B8542206CBEBC788" name="UUIDLigne">
+			<table_ref uuid="FFB0805046404072B6F96311913ABE51" name="RAEMAValeurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="32FA578E92CF4AF18BF2600509D320D8" type="7">
+		<field_ref uuid="BC038A9AA44341389CE32564CD179EC2" name="UUIDParticipation">
+			<table_ref uuid="407674CCFE1946F28D6A9EE2FCF2DB56" name="CampagneGelGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="344F7D8155274516A08F96AA0260BF69" type="7">
+		<field_ref uuid="84138B6E6778476EB0989DF50292FA81" name="UUIDFonction">
+			<table_ref uuid="D78FA2B362CE4AD3ABD1BAD8D154593E" name="XAttributions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="37AEB760524D421DBF8597E9AD862D7E" type="1">
+		<field_ref uuid="79A38386C7D747049494C44804F7BE41" name="UUID">
+			<table_ref uuid="3FEE77F34135416CA767C31F399B780B" name="RAEMALignes"/>
+		</field_ref>
+	</index>
+	<index kind="keywords" uuid="3970B9ED459B460194908404BA71649D" type="3">
+		<field_ref uuid="47DBBC0CAE5044BFA2E221F8F5A118AE" name="Recherche">
+			<table_ref uuid="F7BBF08E0C004A239D240D7FC7316FCC" name="RetoursFiches"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3B08EAD81EB4452D92378EA4DB804BD4" type="1">
+		<field_ref uuid="560C99DD99424282AAE2BACAB9DFEBC7" name="UUID">
+			<table_ref uuid="E2F408B4388D4EF18B9A8AEF24BF2F4D" name="XMails"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3BC33A1044D04B73B66114259CA254CF" type="7">
+		<field_ref uuid="8D5551A7326F4D3DB5F96945825BC2FB" name="UUID">
+			<table_ref uuid="F7BBF08E0C004A239D240D7FC7316FCC" name="RetoursFiches"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4049CF3C626548C2A95E4271B9B204A2" type="7">
+		<field_ref uuid="902F83E378684370960CC179438F7895" name="UUID">
+			<table_ref uuid="82D4333BC39C4EB3B27F80066068D0B3" name="XFonctions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="40A254B4A6054A4D9E5445ED14EFF48A" type="7">
+		<field_ref uuid="73AAECA2D4F9453CB9A073C79769EF02" name="UUIDUtilisateur">
+			<table_ref uuid="92DF8C7034774FD1B63798E3028F4221" name="XDroits"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="Identifiant" uuid="42CFCC3CA9E844EAAC75BC997B5BCB46" type="1">
+		<field_ref uuid="206084D8B460466FA7E38B490764C133" name="NomUtilisateur">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+		<field_ref uuid="CAD12DA4568D4A288A78729602BEB289" name="NbreLicence">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4372BF8422A1437380CEFD7E53C2CFBE" type="7">
+		<field_ref uuid="FCB8098B10834D2B8860A869A435DE53" name="UUID">
+			<table_ref uuid="20A79AF083CE40168F82EC85FB1CC090" name="Depenses"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="467300608A5C4638BC13247F7A8275B7" type="7">
+		<field_ref uuid="98757B4A1F574776B82B85D9EFAB2D63" name="UUID">
+			<table_ref uuid="CD431E287992499AA0083EF395344DEB" name="XLocalisations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="47E353A75BA34684B12B53C96B8B7179" type="3">
+		<field_ref uuid="3448E00A1B8B4C6FB9A80A1D67EF7601" name="Arguments">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4A5C937C8EE749FFBA1D8FCA16936C9C" type="7">
+		<field_ref uuid="A65D2509B50F4AE8A60F974A6D091F64" name="NumPoste">
+			<table_ref uuid="AAB082E92B4A4264B911AB7CB1B3CD65" name="PostesBudgetaires"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4A63F25C3A674F148B33F178A3339E1B" type="7">
+		<field_ref uuid="179576353D644BE0BB7F84D437D35D46" name="UUID">
+			<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4F0AFD828E684DBA9E8D38E7A881E128" type="7">
+		<field_ref uuid="81DBEBBBF7F74FCA8A2B85FB029C3064" name="UUID">
+			<table_ref uuid="693FC8001D54441BB997E2099ED3FE4D" name="PersonnesDevis"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="51625FE793C8435AAB36DF8208B9EFC0" type="7">
+		<field_ref uuid="DA75C339737243DA80CF33EB42D7EBD0" name="IDAdherent">
+			<table_ref uuid="F53886FCF93B4C3C94F0CF0E3AA57516" name="RetoursAdherents"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5263917CE86F4AF993109752E12FE776" type="7">
+		<field_ref uuid="E0F38701B70148A18A677883451E0161" name="UUIDPersonne">
+			<table_ref uuid="9A647146CEE04415B44EB8940B6D19E2" name="PersonnesCourriels"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="564B938C97334E8B83CF7A467C8BAC99" type="3">
+		<field_ref uuid="170235438A924019AD69C4F1BD2761B1" name="PosteBudetDepense">
+			<table_ref uuid="20A79AF083CE40168F82EC85FB1CC090" name="Depenses"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="5C299DA675C042DD9A54577272F15D1D" type="7">
+		<field_ref uuid="2CCD51F120F64C95ADBF530126233AFC" name="UUID">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5E13FFEF827C4D2E830FDE671AFBA657" type="7">
+		<field_ref uuid="15F18F1692C645E79E7C8EE7D60694FF" name="UUIDUtilisateur">
+			<table_ref uuid="CD431E287992499AA0083EF395344DEB" name="XLocalisations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5F455F4D264D4B6CB688ADD17D25D93F" type="3">
+		<field_ref uuid="DC7A6AD99AF74264BFA7C7F4C4C62AF0" name="TypeLocalisation">
+			<table_ref uuid="CD431E287992499AA0083EF395344DEB" name="XLocalisations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="603BF3172ABB435D8FFA550851A714C0" type="7">
+		<field_ref uuid="23A494307F0542399854B7E550A1AF91" name="UUID">
+			<table_ref uuid="D10D68A82D45456AB75B44F57D9B6714" name="RAEMACampagnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="618FED51EBFD4A35A97519D1BE124916" type="7">
+		<field_ref uuid="BF57E5A5873745B5AF43767C1D980A28" name="UUID">
+			<table_ref uuid="F53886FCF93B4C3C94F0CF0E3AA57516" name="RetoursAdherents"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="62D0CA8E7A804D5A94BBE435E32EE1A1" type="7">
+		<field_ref uuid="8FE96FB1A2D8430DAAE2FEB01897D126" name="UUID">
+			<table_ref uuid="F492B33DB87141C5BDF2AE29443E8377" name="RAEMAGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="642D016FABD144248DE9062F7FBDEEE6" type="7">
+		<field_ref uuid="F5AA6008E4464119A9CF6C9C5CA3CEC1" name="UUID">
+			<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6C9EE041B4B849D7842A8E33BD4F7874" type="1">
+		<field_ref uuid="03E0B74C3EF24AC6AD3C075AC5079E33" name="IDFiche">
+			<table_ref uuid="F53886FCF93B4C3C94F0CF0E3AA57516" name="RetoursAdherents"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6F66C70E04524D759B926403933689D9" type="1">
+		<field_ref uuid="C78D16D2F6D44B31A3E915A6DCE5DE85" name="UUID">
+			<table_ref uuid="9A647146CEE04415B44EB8940B6D19E2" name="PersonnesCourriels"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="72143475803D4441B4466DE01457F3BA" type="7">
+		<field_ref uuid="733D563DF3734EB391D8D6A5BAAFD2EF" name="Campagne">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="7342ADCF3CD9472BA5FF57E0EA6A075F" type="3">
+		<field_ref uuid="389D060CDA4546078EC7EF81F5FB4EAE" name="TypeAdresse">
+			<table_ref uuid="6F0AB674AD7546CCB4042E3CF86E5E80" name="PersonnesAdresses"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="740D612D1419411194DF59F73F4B6105" type="1">
+		<field_ref uuid="DC099D59A3CB41E5BAFE60FF1471F5DC" name="AnneePrestation">
+			<table_ref uuid="C50B37FF9B4741DB96D5016FA4595231" name="Prestations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="labo num campagne" uuid="7880A7DA4286487C868B49F49EAF48B4" type="1">
+		<field_ref uuid="3F17DEEC5C2A40009E678E6E12C5FB20" name="UUIDPersonne">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+		<field_ref uuid="41C0815B4173497C8DCBAB32386EF8FA" name="NumCampagne">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="78D2C72A8BB84EEC9D375F6B264FB17B" type="7">
+		<field_ref uuid="16B73C7EB6CA4DC3B4ED8D52170C0CAD" name="UUID">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+	</index>
+	<index kind="keywords" uuid="7B8F741F252D4B6492DBDB55A84B3CC6" type="3">
+		<field_ref uuid="42EADC9F3193412AAA90B50CAA2750A4" name="MotsClefs">
+			<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="7F0D610F55B846DB9C6F6291D4AF2C5E" type="7">
+		<field_ref uuid="3F17DEEC5C2A40009E678E6E12C5FB20" name="UUIDPersonne">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="8717E0FBBB8C41AD9086306FAC158EE9" type="1">
+		<field_ref uuid="39F7D84272F842689C221A6C63967F31" name="NomLong">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="882611D36F1347149EF1514DF513A723" type="3">
+		<field_ref uuid="F9083274CAE24C2FA3F35B960B1FDE7F" name="Identifiant">
+			<table_ref uuid="3FEE77F34135416CA767C31F399B780B" name="RAEMALignes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="8D1834DD5F8540C9A75D0131D0928E1A" type="1">
+		<field_ref uuid="F91D0467680047D59E59D20F0A21BD47" name="UUID">
+			<table_ref uuid="B3947A2B8697494B9542078AAA65F387" name="XTachesDeFond"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="90315B7B079D457682843419DD888184" type="1">
+		<field_ref uuid="9A3C286940D74F4C980702616A521F0C" name="NomLabo">
+			<table_ref uuid="693FC8001D54441BB997E2099ED3FE4D" name="PersonnesDevis"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="937B91A8493642BD89CD63A0C89E7CC3" type="3">
+		<field_ref uuid="0FDFE93D09C044D3A67FA0D7D22C28A6" name="CodePrestation">
+			<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="943FC8E3C310446797384FF78C3E93BB" type="7">
+		<field_ref uuid="212242B65D504024863470B113976E03" name="BoolEnvoi">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="keywords" uuid="9785309D45F642C686EAE940EF56F563" type="3">
+		<field_ref uuid="0FD8542ECB9D4EA9BB8518D8038D879C" name="ChampRecherche">
+			<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="9937C07995404472860FA7CCA04FAED2" type="7">
+		<field_ref uuid="41C0815B4173497C8DCBAB32386EF8FA" name="NumCampagne">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9938C2FE1B3F429288686ED628497893" type="1">
+		<field_ref uuid="A202C2EE365E4924A9B09D63A41BFC99" name="UUID">
+			<table_ref uuid="FFB0805046404072B6F96311913ABE51" name="RAEMAValeurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="9E4121F371544D7CAB5387017EA8E4C8" type="7">
+		<field_ref uuid="84B328BBC648469092824F9E5476FF32" name="NumTableSensible">
+			<table_ref uuid="92DF8C7034774FD1B63798E3028F4221" name="XDroits"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A3531E626D9F4865B97D964383253750" type="7">
+		<field_ref uuid="469EDC364CFF481EA65F342DDF6533A7" name="UUID">
+			<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A726E69FD0204418BC7C78145A1BC554" type="1">
+		<field_ref uuid="5672034172A44061BF08EB39524BCD10" name="CodePrestation">
+			<table_ref uuid="C50B37FF9B4741DB96D5016FA4595231" name="Prestations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A80EF0D88B9647609A584ED589557EE0" type="7">
+		<field_ref uuid="DC9277C918654056A0B903AEDDA33400" name="Banque">
+			<table_ref uuid="421459DB492643DEBE178D5BE17B7EBA" name="Ventes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A953374808534D6AAF958050CCAF4923" type="1">
+		<field_ref uuid="4D827353D38F4ACF80C214E3F977B89E" name="Identificateur">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AD1E1991B26240198A5B413D6F722D5F" type="3">
+		<field_ref uuid="86470490A3F14CBBA8294F5EB6C36727" name="Arguments">
+			<table_ref uuid="4D8934CF5DB64820AA1578CC5E4FCC97" name="CampagneParticipations"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AD2273494008410290FF27D2DE925546" type="7">
+		<field_ref uuid="F60D3D94E5304354AC9BEF6B50FE548B" name="NumFiche">
+			<table_ref uuid="F7BBF08E0C004A239D240D7FC7316FCC" name="RetoursFiches"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AF53F8FB3811421B9789374D28FC3BD6" type="7">
+		<field_ref uuid="13B005D2B7BF4853921E7244238732A9" name="InitialesUtilisateur">
+			<table_ref uuid="7B2DC16190E8443B88B6FD44B3D7FD8C" name="XHistoriques"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BC1A7E5988B048F4A0BBFABBF3002CAA" type="7">
+		<field_ref uuid="DDFCBAFE60EE49BB82E718843A713CD8" name="UUID">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="keywords" uuid="BC70D2CA6C2D401F9FD71261403A9599" type="3">
+		<field_ref uuid="0084957EC3814B1D88362E1D8B9ABFEE" name="Campagne">
+			<table_ref uuid="F7BBF08E0C004A239D240D7FC7316FCC" name="RetoursFiches"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="BF4891A7B0A84FC0AD4BC1C20A8722C1" type="7">
+		<field_ref uuid="C4A581058C2D4DA2A8FB45FF364FDD49" name="UUIDParticipation">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C4E0303A46B64D20AEA5A7C5F5FD8A48" type="7">
+		<field_ref uuid="C72D723ABCB64763AB05F11F407DE57E" name="UUID">
+			<table_ref uuid="AAB082E92B4A4264B911AB7CB1B3CD65" name="PostesBudgetaires"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CCEFEFACD3014FFFA8CB32F436C76A79" type="1">
+		<field_ref uuid="6D1D6A5E56C145A9828EC96AFE017479" name="UUID">
+			<table_ref uuid="92DF8C7034774FD1B63798E3028F4221" name="XDroits"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="CD23A21C7C48429EAD6CC1722E42F086" type="7">
+		<field_ref uuid="6FFE37E4D6954AF7A825A9D0B8EC1702" name="XAlpha">
+			<table_ref uuid="394E299C76A34B36B5DCC16C9E85236A" name="XData"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CE855F25ED484B36A591D553C2647A2A" type="7">
+		<field_ref uuid="95C4D0A1E496437EAC84ED4302923BFB" name="UUID">
+			<table_ref uuid="61536C9EC7BE4D47BC4E3F1434C7452A" name="XProfils"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CE9D14E1757F4DEBBAA721045176107C" type="1">
+		<field_ref uuid="63A2D2DA59C04F44BFEB94DA611E665C" name="EmailASA">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="D29BB872B9C143819E3439C629F98CC2" type="7">
+		<field_ref uuid="C57DFF01D14B45A8A380E8A1202CE31E" name="NumEnvoi">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="Identifiant Connexion" uuid="D35B9F458CEB406AAE7F28212E579E29" type="1">
+		<field_ref uuid="095B088DE5C54E98A04963D619D33E0E" name="CodeConnexion">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+		<field_ref uuid="733D563DF3734EB391D8D6A5BAAFD2EF" name="Campagne">
+			<table_ref uuid="D199B061F4BE4A98AF27DE9D32E9F272" name="WebConnexions"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="D42220727D4D40008BE54A228DF902B0" type="3">
+		<field_ref uuid="DA510690C4CD4EC7BA1AC6C120F43A55" name="XType">
+			<table_ref uuid="394E299C76A34B36B5DCC16C9E85236A" name="XData"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E2D5CB59C351473A8FCB6CDCE0345A53" type="3">
+		<field_ref uuid="2124CC64CD764CFE88F0369116B3E140" name="NumCampagne">
+			<table_ref uuid="407674CCFE1946F28D6A9EE2FCF2DB56" name="CampagneGelGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="E7ED9BD1C9D645A98C39CEB81B655408" type="3">
+		<field_ref uuid="B08D44B8E74C4EEE85B3BC1FEE611CA2" name="NumCampagne">
+			<table_ref uuid="D10D68A82D45456AB75B44F57D9B6714" name="RAEMACampagnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="EBCC1143355E41AFA29A435555FF7097" type="7">
+		<field_ref uuid="E38C0CA483F14CFD956315F32DF687A5" name="Caduc">
+			<table_ref uuid="83ED8C2B34064BFDA42161BAF5ABF5B5" name="AsaDiaUtilisateurs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="EF00F50661644B8F9D94ED855B63583C" type="7">
+		<field_ref uuid="45B146F9A92E48A5B732A5DB887799DC" name="UUIDGerme">
+			<table_ref uuid="3FEE77F34135416CA767C31F399B780B" name="RAEMALignes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="EF9B80737068224A94002A46F544E669" type="1">
+		<field_ref uuid="0CC06A5313EA57488E97E641D28A9E32" name="OrdrePassage">
+			<table_ref uuid="B3947A2B8697494B9542078AAA65F387" name="XTachesDeFond"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="EFED02D0E2DD4CC39C131DC5ED1083BC" type="7">
+		<field_ref uuid="F2375D74F37F404F82D17283CBB1BB02" name="UUID">
+			<table_ref uuid="394E299C76A34B36B5DCC16C9E85236A" name="XData"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F1990C06D65847B085B64D9B2F6F7B4E" type="7">
+		<field_ref uuid="6B1A26FD59404ADD9E12A44B382F3C7D" name="UUID">
+			<table_ref uuid="407674CCFE1946F28D6A9EE2FCF2DB56" name="CampagneGelGermes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F3851E4D52DC48C2B323193EE0C18ED5" type="1">
+		<field_ref uuid="9954DD94871643F0AC79198009CAE4CD" name="XNom">
+			<table_ref uuid="394E299C76A34B36B5DCC16C9E85236A" name="XData"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F4578619A778439FBA65291CE4AA8FC2" type="3">
+		<field_ref uuid="CA41A607E67242F4BA5DA47B7C033288" name="TypePersonne">
+			<table_ref uuid="225B7293FE4A48BABECB0163171609E0" name="Personnes"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F4D406E5F12D4BBABC5ADF05CF0DBDB2" type="7">
+		<field_ref uuid="71D3087BC553478E8354F2CF22198E83" name="UUIDPersonne">
+			<table_ref uuid="3EABB0C52F2548AA9F702749B6A7AA44" name="Factures"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F7C149E6B9F945579A83A5514300BA9F" type="7">
+		<field_ref uuid="F5E12CB0313446E9BC3209E7AB38E001" name="UUIDPersonne">
+			<table_ref uuid="6F0AB674AD7546CCB4042E3CF86E5E80" name="PersonnesAdresses"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FE14A6EC2EEE4587A62EB068EDA87CC4" type="7">
+		<field_ref uuid="91FA6F18FD1646FD809599214BE39ACE" name="Initiales">
+			<table_ref uuid="17C2C99111444C0AA2053C37A9F55A34" name="XUtilisateurs"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="StandardQSv16" structure_file_name="StandardQSv16" data_file_path=":ASAPv18.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

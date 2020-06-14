@@ -1,0 +1,643 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 803,
+	"markerBreak": 803,
+	"markerFooter": 803,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 389,
+					"left": 21,
+					"width": 531,
+					"height": 165,
+					"fill": "transparent"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 389,
+					"left": 318,
+					"height": 140
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 389,
+					"left": 408,
+					"height": 140
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 391,
+					"left": 478,
+					"height": 163
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 105,
+					"left": 219,
+					"width": 307,
+					"height": 40,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 38,
+					"left": 296,
+					"width": 37,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9,
+					"text": " exemple :"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 28,
+					"left": 284,
+					"width": 34,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 38,
+					"left": 465,
+					"width": 8,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9,
+					"textDecoration": "underline"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 224,
+					"left": 110,
+					"width": 1,
+					"height": 1,
+					"fill": "transparent"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 249,
+					"left": 14,
+					"width": 97,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 227,
+					"left": 14,
+					"width": 164,
+					"height": 84,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Sender / Expéditeur : \rASA (Animal, Société, Aliment)\t\rBât Jean GIRARD – ENVA\r7 avenue du Général de Gaulle      \r94700 MAISONS ALFORT\rFRANCE\r "
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 120,
+					"left": 4,
+					"width": 505,
+					"height": 88,
+					"textAlign": "left",
+					"fontSize": 9,
+					"text": "Siret/EORI : 30300421200021                             Destinataire / Consignee  : \rAPE : 9499Z                                                     \rNII FR 3004212                                           \t\rTVA Intracommunautaire :\t\t\t \rFR4030300421200021  \r"
+				},
+				"Image1980436252": {
+					"type": "picture",
+					"top": 4,
+					"left": 209,
+					"width": 124,
+					"height": 69,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1980436252.png"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 83,
+					"left": 4,
+					"width": 522,
+					"height": 12,
+					"textAlign": "center",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "FACTURE PRO FORMA / PRO FORMA INVOICE "
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 226,
+					"left": 60,
+					"width": 6,
+					"height": 16,
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 335,
+					"left": 14,
+					"width": 221,
+					"height": 22,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Tél : +33 (0)1 56 29 36 30"
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 346,
+					"left": 14,
+					"width": 202,
+					"height": 11,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Fax :+33 (0)9 61 24 33 81"
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 217,
+					"left": 157,
+					"width": 235,
+					"height": 12,
+					"textAlign": "center",
+					"fontSize": 9,
+					"text": "Téléphone et contact / Contact name and phone : "
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 375,
+					"left": 14,
+					"width": 254,
+					"height": 12,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Lieu et Date / Place and Date : Maisons-Alfort le"
+				},
+				"Texte30": {
+					"type": "text",
+					"top": 320,
+					"left": 14,
+					"width": 285,
+					"height": 12,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Nom du Contact  / contact name : Mme SERVEAUX            \r"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 561,
+					"left": 72,
+					"width": 411,
+					"height": 143,
+					"textAlign": "center",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Pays d’origine / Country of origine : FRANCE\r\rNON DESTINE A LA VENTE /  NOT DESIGNED FOR SALE\rVALEUR POUR LA DOUANE UNIQUEMENT / VALUE FOR CUSTOM PURPOSES ONLY\r\rvaleur non commerciale / no commercial value\rL'exportateur de produits couverts par le présent document déclare que, sauf indication claire du contraire, ces produits sont d'origine préférentielle EEE / The exporter of the products covered by this document declares that, except otherwise clearly indicated, these products are of EEE preferential origin. \r\rCachet de la Compagnie et signature / stamp and signature of the company"
+				},
+				"Texte33": {
+					"type": "text",
+					"top": 392,
+					"left": 27,
+					"width": 298,
+					"height": 12,
+					"textAlign": "left",
+					"fontSize": 9
+				},
+				"Texte31": {
+					"type": "text",
+					"top": 314,
+					"left": 284,
+					"width": 163,
+					"height": 33,
+					"textAlign": "left",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Nombre de colis / Nb of  pieces : 1\rPoids total / Total Weight :\rDimensions / Size : "
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 421,
+					"left": 21,
+					"width": 531
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 448,
+					"left": 21,
+					"width": 531
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 474,
+					"left": 21,
+					"width": 531
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": 502,
+					"left": 21,
+					"width": 531
+				},
+				"Ligne7": {
+					"type": "line",
+					"top": 529,
+					"left": 21,
+					"width": 531
+				},
+				"Texte": {
+					"type": "text",
+					"top": 424,
+					"left": 27,
+					"width": 378,
+					"height": 10,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "ECHANTILLONS ALIMENTAIRES POUR ANALYSES"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 458,
+					"left": 131,
+					"width": 6,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 430,
+					"left": 41,
+					"width": 70,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"VarAdresse": {
+					"type": "input",
+					"top": 120,
+					"left": 318,
+					"width": 226,
+					"height": 97,
+					"dataSource": "VarAdresse",
+					"class": "Champ_petit",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomTel": {
+					"type": "input",
+					"top": 231,
+					"left": 325,
+					"width": 219,
+					"height": 25,
+					"dataSource": "VarNomTel",
+					"class": "Champ_petit",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDate": {
+					"type": "input",
+					"top": 374,
+					"left": 235,
+					"width": 219,
+					"height": 13,
+					"dataSource": "VarDate",
+					"class": "Champ_petit",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte34": {
+					"type": "text",
+					"top": 429,
+					"left": 344,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Texte35": {
+					"type": "text",
+					"top": 430,
+					"left": 423,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "10,00"
+				},
+				"Texte36": {
+					"type": "text",
+					"top": 429,
+					"left": 497,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "10,00"
+				},
+				"Texte37": {
+					"type": "text",
+					"top": 456,
+					"left": 423,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "10,00"
+				},
+				"Texte38": {
+					"type": "text",
+					"top": 457,
+					"left": 497,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "10,00"
+				},
+				"Texte39": {
+					"type": "text",
+					"top": 536,
+					"left": 497,
+					"width": 38,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "10,00"
+				},
+				"Texte40": {
+					"type": "text",
+					"top": 509,
+					"left": 331,
+					"width": 67,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Texte41": {
+					"type": "text",
+					"top": 534,
+					"left": 136,
+					"width": 291,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Total value of the shipment / Valeur totale de l'envoi"
+				},
+				"Texte42": {
+					"type": "text",
+					"top": 450,
+					"left": 27,
+					"width": 281,
+					"height": 22,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Devis et valeur total de la facture / Currency and Total invoice value"
+				},
+				"Texte43": {
+					"type": "text",
+					"top": 483,
+					"left": 27,
+					"width": 286,
+					"height": 10,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Numéro de  nomenclature douanière / Customs tariff number:  "
+				},
+				"Texte44": {
+					"type": "text",
+					"top": 507,
+					"left": 27,
+					"width": 281,
+					"height": 11,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Incotern « DDP »"
+				},
+				"VarPoids": {
+					"type": "input",
+					"top": 324,
+					"left": 409,
+					"width": 126,
+					"height": 13,
+					"dataSource": "VarPoids",
+					"class": "Champ_petit",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDim": {
+					"type": "input",
+					"top": 336,
+					"left": 377,
+					"width": 170,
+					"height": 13,
+					"dataSource": "VarDim",
+					"class": "Champ_petit",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 369,
+					"left": 17,
+					"width": 218,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"Texte29": {
+					"type": "text",
+					"top": 480,
+					"left": 333,
+					"width": 59,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"Texte32": {
+					"type": "text",
+					"top": 497,
+					"left": 318,
+					"width": 14,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"Texte46": {
+					"type": "text",
+					"top": 483,
+					"left": 318,
+					"width": 87,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "3913.90.00.99"
+				},
+				"Texte48": {
+					"type": "text",
+					"top": 497,
+					"left": 318,
+					"width": 41,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right"
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 403,
+					"left": 27,
+					"width": 286,
+					"height": 9,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Description détaillée de la marchandise/ Detailled descriptions of goods"
+				},
+				"Texte27": {
+					"type": "text",
+					"top": 395,
+					"left": 408,
+					"width": 70,
+					"height": 25,
+					"textAlign": "center",
+					"fontFamily": "Times Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Valeur unitaire / unit value"
+				},
+				"Texte26": {
+					"type": "text",
+					"top": 395,
+					"left": 483,
+					"width": 64,
+					"height": 22,
+					"textAlign": "center",
+					"fontFamily": "Times Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Valeur / Value (€)"
+				},
+				"Texte28": {
+					"type": "text",
+					"top": 396,
+					"left": 322,
+					"width": 83,
+					"height": 22,
+					"textAlign": "center",
+					"fontFamily": "Times Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Nombre d’articles / nb of items"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 437,
+					"left": 27,
+					"width": 378,
+					"height": 10,
+					"textAlign": "left",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "(Poudre de lait)"
+				},
+				"Image1980436263": {
+					"type": "picture",
+					"top": 724,
+					"left": 32,
+					"width": 503,
+					"height": 78,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1980436263.png"
+				}
+			}
+		}
+	]
+}

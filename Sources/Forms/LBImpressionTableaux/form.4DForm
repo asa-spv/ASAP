@@ -1,0 +1,112 @@
+﻿{
+	"destination": "detailPrinter",
+	"rightMargin": 10,
+	"bottomMargin": 20,
+	"markerHeader": 20,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vEditMV": {
+					"type": "input",
+					"top": 743,
+					"left": 10,
+					"width": 540,
+					"height": 11,
+					"dataSource": "vEditMV",
+					"stroke": "#111111",
+					"class": "Etiquette_petite",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"wNomVis": {
+					"type": "input",
+					"top": 12,
+					"left": 10,
+					"width": 547,
+					"height": 19,
+					"stroke": "#111111",
+					"class": "Champ_grand",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LB_TableauxImpression": {
+					"type": "listbox",
+					"top": 35,
+					"left": 5,
+					"width": 552,
+					"height": 702,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"rowHeight": "19px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"columns": []
+				}
+			}
+		}
+	]
+}

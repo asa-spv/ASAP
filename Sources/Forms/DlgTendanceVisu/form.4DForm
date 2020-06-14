@@ -1,0 +1,716 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 850,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte1": {
+					"type": "text",
+					"top": 42,
+					"left": 3,
+					"width": 116,
+					"height": 19,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "N° du RAEMA :"
+				},
+				"TbNR": {
+					"type": "dropdown",
+					"top": 33,
+					"left": 123,
+					"width": 77,
+					"height": 29,
+					"dataSource": "TbNR",
+					"class": "Titre",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/TbNR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PageListBoxChose": {
+					"type": "listbox",
+					"top": 33,
+					"left": 220,
+					"width": 529,
+					"height": 278,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxChose",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Police système",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "ZoneChose",
+							"dataSource": "ZoneChose",
+							"width": 480,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbChoix",
+							"dataSource": "TbChoix",
+							"dataSourceTypeHint": "boolean",
+							"width": 34,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "Entête17",
+								"dataSource": "Entête17",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 987,
+					"left": 40,
+					"width": 302,
+					"height": 370,
+					"resizingMode": "legacy",
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "<>TbTendanceToutesNumRaema",
+							"dataSource": "<>TbTendanceToutesNumRaema",
+							"width": 98,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "N° Campagne",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "<>TbTendanceToutesNature",
+							"dataSource": "<>TbTendanceToutesNature",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/%3C%3ETbTendanceToutesNature.4dm",
+							"header": {
+								"name": "Entête4",
+								"text": "Nature",
+								"dataSource": "Entête4"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "<>TbTendanceToutesPL",
+							"dataSource": "<>TbTendanceToutesPL",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Page ligne",
+								"dataSource": "Entête5"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouPlein": {
+					"type": "button",
+					"top": 956,
+					"left": 40,
+					"width": 95,
+					"height": 27,
+					"dataSource": "BouPlein",
+					"text": "Remplir",
+					"method": "ObjectMethods/BouPlein.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 987,
+					"left": 351,
+					"width": 1388,
+					"height": 370,
+					"resizingMode": "legacy",
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne4",
+							"dataSource": "TbNumCampagne",
+							"width": 51,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "N°",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbPL",
+							"dataSource": "TbPL",
+							"width": 51,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "PL",
+								"dataSource": "Entête10"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "TbNature",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Nature",
+								"dataSource": "Entête4"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "TbGerme",
+							"width": 279,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Germe",
+								"dataSource": "Entête5"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "TbValeurs",
+							"width": 288,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Valeurs",
+								"dataSource": "Entête8"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbOccurrence",
+							"dataSource": "TbOccurrence",
+							"width": 52,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "Nb",
+								"dataSource": "Entête9"
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRangLigne",
+							"dataSource": "TbRangLigne",
+							"dataSourceTypeHint": "number",
+							"width": 52,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Rang"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbLabosConcernes",
+							"dataSource": "TbLabosConcernes",
+							"width": 500,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Labos concernés",
+								"dataSource": "Entête14"
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouPlein2": {
+					"type": "button",
+					"top": 956,
+					"left": 351,
+					"width": 95,
+					"height": 27,
+					"dataSource": "BouPlein2",
+					"text": "Remplir",
+					"method": "ObjectMethods/BouPlein2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCMethode": {
+					"type": "checkbox",
+					"top": 93,
+					"left": 35,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CaCMethode",
+					"text": "Check Box",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCFabricant": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 35,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CaCFabricant",
+					"text": "Check Box",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCMilieu": {
+					"type": "checkbox",
+					"top": 139,
+					"left": 35,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CaCMilieu",
+					"text": "Check Box",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 94,
+					"left": 64,
+					"width": 114,
+					"height": 17,
+					"text": "Méthode"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 117,
+					"left": 64,
+					"width": 114,
+					"height": 17,
+					"text": "Fabricant"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 140,
+					"left": 64,
+					"width": 114,
+					"height": 17,
+					"text": "Milieu"
+				},
+				"VarGerme": {
+					"type": "input",
+					"top": 33,
+					"left": 970,
+					"width": 308,
+					"height": 15,
+					"dataSource": "VarGerme",
+					"class": "Champ_normal",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 33,
+					"left": 857,
+					"width": 109,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "right",
+					"text": "Pour le germe :"
+				},
+				"List Box2": {
+					"type": "listbox",
+					"top": 76,
+					"left": 857,
+					"width": 565,
+					"height": 415,
+					"resizingMode": "legacy",
+					"dataSource": "List Box2",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne9",
+							"dataSource": "Colonne9",
+							"width": 397,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "Valeurs",
+								"dataSource": "Entête11"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne10N",
+							"dataSource": "Colonne10N",
+							"dataSourceTypeHint": "number",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Campagne1",
+								"text": "C1",
+								"dataSource": "Campagne1"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne11N",
+							"dataSource": "Colonne11N",
+							"dataSourceTypeHint": "number",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Campagne2",
+								"text": "C2",
+								"dataSource": "Campagne2"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne12N",
+							"dataSource": "Colonne12N",
+							"dataSourceTypeHint": "number",
+							"width": 43,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "left",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Rang",
+								"dataSource": "Entête13"
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 53,
+					"left": 857,
+					"width": 109,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "right",
+					"text": "et pour la nature :"
+				},
+				"VarNature": {
+					"type": "input",
+					"top": 53,
+					"left": 970,
+					"width": 167,
+					"height": 15,
+					"dataSource": "VarNature",
+					"class": "Champ_normal",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouFinal": {
+					"type": "button",
+					"top": 76,
+					"left": 1434,
+					"width": 95,
+					"height": 27,
+					"dataSource": "BouFinal",
+					"text": "Remplir",
+					"method": "ObjectMethods/BouFinal.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarNbLignes": {
+					"type": "input",
+					"top": 970,
+					"left": 460,
+					"width": 41,
+					"height": 13,
+					"dataSource": "VarNbLignes",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouImpr": {
+					"type": "button",
+					"top": 117,
+					"left": 1434,
+					"width": 95,
+					"height": 27,
+					"dataSource": "BouImpr",
+					"text": "Tout imprimer",
+					"method": "ObjectMethods/BouImpr.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitteTendances": {
+					"type": "button",
+					"top": 19,
+					"left": 1440,
+					"width": 120,
+					"height": 26,
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "default",
+					"focusable": false
+				}
+			}
+		}
+	]
+}

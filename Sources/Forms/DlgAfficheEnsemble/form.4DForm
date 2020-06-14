@@ -1,0 +1,264 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "ListBoxEns",
+	"rightMargin": 19,
+	"bottomMargin": 90,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 2,
+					"width": 1014,
+					"height": 752,
+					"fill": "automatic",
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListBoxEns": {
+					"type": "listbox",
+					"top": 10,
+					"left": 13,
+					"width": 554,
+					"height": 312,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxEns",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/ListBoxEns.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "ZTbEnsNom",
+							"width": 186,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Nom de l'ensemble",
+								"dataSource": "Entête1",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "ZTbEnsNbre",
+							"dataSourceTypeHint": "number",
+							"width": 52,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Nbre",
+								"dataSource": "Entête2",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "ZTbEnsDate",
+							"dataSourceTypeHint": "date",
+							"width": 92,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Date création",
+								"dataSource": "Entête3",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "ZTbEnsQVL",
+							"width": 212,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Auteur",
+								"dataSource": "Entête4",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "ZTbEnsNumEnr",
+							"dataSource": "ZTbEnsNumEnr",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"ZBouQuitte": {
+					"type": "button",
+					"top": 342,
+					"left": 159,
+					"width": 246,
+					"height": 52,
+					"dataSource": "ZBouQuitte",
+					"action": "cancel",
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Non, sans façon…",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "bevel",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

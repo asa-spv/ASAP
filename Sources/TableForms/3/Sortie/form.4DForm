@@ -1,0 +1,110 @@
+﻿{
+	"destination": "listScreen",
+	"inheritedForm": "ListeStandard",
+	"width": 1207,
+	"height": 297,
+	"markerHeader": 86,
+	"markerBody": 111,
+	"markerBreak": 111,
+	"markerFooter": 189,
+	"events": [
+		"onDisplayDetail"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S3_Champ": {
+					"type": "input",
+					"top": 89,
+					"left": 24,
+					"width": 344,
+					"height": 19,
+					"sizingX": "grow",
+					"dataSource": "[XFonctions:3]NomFonction:2",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 69,
+					"left": 91,
+					"width": 214,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "default",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Nom de la Fonction"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 69,
+					"left": 333,
+					"width": 214,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "default",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Attributaires"
+				},
+				"VarAttributaires": {
+					"type": "input",
+					"top": 89,
+					"left": 388,
+					"width": 755,
+					"height": 19,
+					"dataSource": "ZAfficheAttributaire ",
+					"class": "Champ_grand",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Image": {
+					"type": "picture",
+					"top": 13,
+					"left": 11,
+					"width": 78,
+					"height": 65,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fonctions.png"
+				}
+			}
+		}
+	]
+}

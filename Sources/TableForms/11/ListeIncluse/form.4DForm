@@ -1,0 +1,250 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 278,
+	"markerBreak": 278,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte11": {
+					"type": "text",
+					"top": 11,
+					"left": 18,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "LigneAdresse1 : "
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 38,
+					"left": 18,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "LigneAdresse2 : "
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 65,
+					"left": 18,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "LigneAdresse3 : "
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 92,
+					"left": 18,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "CodePostal : "
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 92,
+					"left": 175,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Ville : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 116,
+					"left": 18,
+					"width": 105,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Pays : "
+				},
+				"LigneAdresse1": {
+					"type": "input",
+					"top": 11,
+					"left": 128,
+					"width": 280,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse1:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LigneAdresse2": {
+					"type": "input",
+					"top": 38,
+					"left": 128,
+					"width": 280,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse2:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LigneAdresse3": {
+					"type": "input",
+					"top": 65,
+					"left": 128,
+					"width": 280,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse3:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CodePostal": {
+					"type": "input",
+					"top": 92,
+					"left": 128,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]CodePostal:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ville": {
+					"type": "input",
+					"top": 92,
+					"left": 285,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]Ville:7",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pays": {
+					"type": "input",
+					"top": 116,
+					"left": 128,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[PersonnesAdresses:11]Pays:8",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,71 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 15,
+	"markerBreak": 15,
+	"markerFooter": 55,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 2,
+					"left": 2,
+					"width": 445,
+					"height": 37,
+					"dataSource": "VarEtatRaema",
+					"class": "Champ_petit",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 2,
+					"left": 452,
+					"width": 452,
+					"height": 37,
+					"dataSource": "VarEtatRaemaE",
+					"class": "Champ_petit",
+					"fontStyle": "italic",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

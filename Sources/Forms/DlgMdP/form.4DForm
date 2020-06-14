@@ -1,0 +1,242 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectangle1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "594pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 351,
+					"height": 300,
+					"fill": "#666666",
+					"stroke": "#666666"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Titre": {
+					"type": "text",
+					"top": 18,
+					"left": 86,
+					"width": 254,
+					"height": 19,
+					"fill": "#666666",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Entrez votre code SVP"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 50,
+					"left": 146,
+					"width": 99,
+					"stroke": "#404040",
+					"strokeWidth": 3
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 72,
+					"left": 145,
+					"width": 101,
+					"stroke": "#CCCCCC",
+					"strokeWidth": 3
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 51,
+					"left": 145,
+					"height": 22,
+					"stroke": "#404040",
+					"strokeWidth": 3
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 51,
+					"left": 245,
+					"height": 24,
+					"stroke": "#CCCCCC",
+					"strokeWidth": 3
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 209,
+					"left": 35,
+					"width": 279,
+					"stroke": "#404040",
+					"strokeWidth": 3
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": 231,
+					"left": 35,
+					"width": 279,
+					"stroke": "#CCCCCC",
+					"strokeWidth": 3
+				},
+				"Ligne7": {
+					"type": "line",
+					"top": 210,
+					"left": 34,
+					"height": 22,
+					"stroke": "#404040",
+					"strokeWidth": 3
+				},
+				"Ligne8": {
+					"type": "line",
+					"top": 210,
+					"left": 313,
+					"height": 24,
+					"stroke": "#CCCCCC",
+					"strokeWidth": 3
+				},
+				"ZQuiCode": {
+					"type": "input",
+					"top": 53,
+					"left": 148,
+					"width": 97,
+					"height": 19,
+					"dataSource": "<>ZQuiCode",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ZQuiCode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ZVarBonjour": {
+					"type": "input",
+					"top": 93,
+					"left": 10,
+					"width": 331,
+					"height": 95,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#666666",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ZVarMdP": {
+					"type": "input",
+					"top": 213,
+					"left": 38,
+					"width": 276,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"multiline": "no",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ZBouAnnule": {
+					"type": "button",
+					"top": 261,
+					"left": 10,
+					"width": 123,
+					"height": 24,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"shortcutAlt": true,
+					"text": "Renoncer",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"stroke": "#000000",
+					"method": "ObjectMethods/ZBouAnnule.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouOK": {
+					"type": "button",
+					"top": 261,
+					"left": 145,
+					"width": 196,
+					"height": 24,
+					"shortcutKey": "[Return]",
+					"text": "C'est bon comme ça…",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"stroke": "#000000",
+					"method": "ObjectMethods/ZBouOK.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BtnEntree": {
+					"type": "button",
+					"top": 305,
+					"left": 62,
+					"width": 196,
+					"height": 24,
+					"shortcutKey": "[Enter]",
+					"text": "Touche Entrée",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BtnEntree.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Intrus": {
+					"type": "picture",
+					"top": 8,
+					"left": 8,
+					"width": 96,
+					"height": 96,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Buddy Group.png"
+				}
+			}
+		}
+	]
+}

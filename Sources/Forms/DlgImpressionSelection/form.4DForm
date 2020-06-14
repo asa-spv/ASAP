@@ -1,0 +1,319 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 380,
+	"height": 250,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 378,
+					"height": 252,
+					"stroke": "#FFFFFF"
+				},
+				"RectRond1": {
+					"type": "rectangle",
+					"top": 215,
+					"left": 247,
+					"width": 114,
+					"height": 29,
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 220,
+					"left": 23,
+					"width": 108,
+					"height": 20,
+					"dataSource": "ZNOK",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "ANNULER",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 219,
+					"left": 251,
+					"width": 106,
+					"height": 21,
+					"dataSource": "BouOK",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "VALIDER",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 4,
+					"left": 11,
+					"width": 39,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/Imprimante.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Image2": {
+					"type": "picture",
+					"top": 57,
+					"left": 90,
+					"width": 239,
+					"height": 69,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/buttons/Type impression.png"
+				},
+				"VarPortéeImpression": {
+					"type": "input",
+					"top": 156,
+					"left": 41,
+					"width": 320,
+					"height": 43,
+					"class": "Champ_normal",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 4,
+					"left": 147,
+					"width": 102,
+					"height": 23,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "IMPRIMER :"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 32,
+					"left": 77,
+					"width": 272,
+					"height": 17,
+					"class": "Etiquette_normale",
+					"text": "Cliquer sur l'image pour choisir le format d'impression"
+				},
+				"PortBRTout": {
+					"type": "radio",
+					"top": 153,
+					"left": 23,
+					"width": 349,
+					"height": 25,
+					"dataSource": "PortBRTout",
+					"text": "Tous",
+					"class": "Champ_normal",
+					"focusable": false,
+					"radioGroup": "Groupe9",
+					"events": [
+						"onClick"
+					]
+				},
+				"PortBRSel": {
+					"type": "radio",
+					"top": 176,
+					"left": 23,
+					"width": 349,
+					"height": 27,
+					"dataSource": "PortBRSel",
+					"text": "Sélection",
+					"class": "Champ_normal",
+					"radioGroup": "Groupe9",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton radio 3D1": {
+					"type": "radio",
+					"top": 163,
+					"left": 202,
+					"width": 1,
+					"height": 12,
+					"focusable": false,
+					"text": "Radio Button 3D",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 136,
+					"left": 23,
+					"width": 272,
+					"height": 17,
+					"class": "Etiquette_normale",
+					"text": "Portée de l'impression"
+				}
+			}
+		},
+		{
+			"objects": {
+				"PbLargeurbThermoCoeff": {
+					"type": "progress",
+					"top": 160,
+					"left": 61,
+					"width": 238,
+					"height": 16,
+					"dataSource": "bThermoCoeff",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 5,
+					"numberFormat": "### ##0",
+					"enterable": true,
+					"class": "Boutons",
+					"method": "ObjectMethods/PbLargeurbThermoCoeff.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PUMLBChoixET": {
+					"type": "dropdown",
+					"top": 22,
+					"left": 83,
+					"width": 286,
+					"height": 20,
+					"dataSource": "PUMLBChoixET",
+					"focusable": false,
+					"class": "Bouton_normal",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 6,
+					"left": 83,
+					"width": 171,
+					"height": 12,
+					"class": "Champ_normal",
+					"text": "Gestion des en-têtes"
+				},
+				"PbLargeurTexte9": {
+					"type": "text",
+					"top": 196,
+					"left": 56,
+					"width": 243,
+					"height": 11,
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"text": "% de la largeur d'impression"
+				},
+				"PUMTypeImpression": {
+					"type": "picturePopup",
+					"top": 55,
+					"left": 6,
+					"width": 59,
+					"height": 74,
+					"dataSource": "PUMTypeImpression",
+					"columnCount": 4,
+					"picture": "/RESOURCES/Images/buttons/Type impression.png",
+					"method": "ObjectMethods/PUMTypeImpression.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarComLargeur": {
+					"type": "input",
+					"top": 79,
+					"left": 77,
+					"width": 284,
+					"height": 43,
+					"class": "Champ_normal",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PUMLBChoixLargeur": {
+					"type": "dropdown",
+					"top": 136,
+					"left": 23,
+					"width": 346,
+					"height": 20,
+					"dataSource": "PUMLBChoixLargeur",
+					"focusable": false,
+					"class": "Boutons",
+					"method": "ObjectMethods/PUMLBChoixLargeur.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe9": [
+				"PortBRTout",
+				"PortBRSel"
+			]
+		}
+	}
+}

@@ -1,0 +1,152 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 9,
+	"markerBody": 781,
+	"markerBreak": 781,
+	"markerFooter": 781,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 203,
+					"left": 141,
+					"width": 244,
+					"height": 20,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "ATTESTATION"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 254,
+					"left": 38,
+					"width": 467,
+					"height": 64,
+					"text": "Je soussigné, Vincent CARLIER, Coordonnateur du RAEMA (Réseau d’Analyses et d’Echanges en Microbiologie des Aliments), atteste par la présente que :"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 324,
+					"left": 38,
+					"width": 479,
+					"height": 60,
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"text": "<VarNomAd>"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 376,
+					"left": 38,
+					"width": 479,
+					"height": 123,
+					"text": "a participé aux essais organisés lors du RAEMA N°<VarNumCamp>\r\rEn foi de quoi, j'ai rédigé la présente attestation pour servir et valoir ce que de droit.\r\rFait à Maisons Alfort, le <VarDateJour>\r\r"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 511,
+					"left": 296,
+					"width": 203,
+					"height": 16,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"text": "Vincent CARLIER"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 582,
+					"left": 296,
+					"width": 203,
+					"height": 16,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"text": "Coordonnateur du RAEMA"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 684,
+					"left": 20,
+					"width": 433,
+					"height": 28,
+					"class": "Etiquette_petite",
+					"text": "A.S.A. Animal Société Aliment\rBâtiment ZUNDEL - Ecole Nationale Vétérinaire d’Alfort 7, avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 727,
+					"left": 20,
+					"width": 525,
+					"height": 48,
+					"fill": "#C5FFC0",
+					"stroke": "transparent"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 736,
+					"left": 20,
+					"width": 520,
+					"height": 41,
+					"stroke": "#D23D26",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Tél : 01 56 29 36 30     Fax : 09 61 24 33 81       Courriel :  asa-spv@wanadoo.fr\rSite Web : www.asa-spv.asso.fr"
+				},
+				"Image117440522": {
+					"type": "picture",
+					"top": 85,
+					"left": 60,
+					"width": 413,
+					"height": 46,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image117440522.png"
+				},
+				"Image117440525": {
+					"type": "picture",
+					"top": 13,
+					"left": 226,
+					"width": 89,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image117440525.png"
+				},
+				"Image117440526": {
+					"type": "picture",
+					"top": 529,
+					"left": 316,
+					"width": 167,
+					"height": 52,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image117440526.png"
+				}
+			}
+		}
+	]
+}

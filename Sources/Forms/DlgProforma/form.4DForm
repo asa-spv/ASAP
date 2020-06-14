@@ -1,0 +1,193 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 19,
+					"left": 52,
+					"width": 297,
+					"height": 33,
+					"class": "Etiquette_grande",
+					"textAlign": "center",
+					"text": "Merci de préciser la date du RAEMA, le poids et les dimensions de chaque colis"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 86,
+					"left": 4,
+					"width": 121,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Date du RAEMA : "
+				},
+				"Variable": {
+					"type": "input",
+					"top": 85,
+					"left": 133,
+					"width": 309,
+					"height": 17,
+					"dataSource": "VarDate",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_grand",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 114,
+					"left": 9,
+					"width": 533,
+					"height": 289,
+					"resizingMode": "legacy",
+					"dataSource": "List Box",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#DDDDDD",
+					"events": [
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomLaboratoire",
+							"dataSource": "TbNomLaboratoire",
+							"width": 286,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#DDDDDD",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Nom du laboratoire",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbPoidsColis",
+							"dataSource": "TbPoidsColis",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#DDDDDD",
+							"textAlign": "center",
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/TbPoidsColis.4dm",
+							"header": {
+								"name": "Entête2",
+								"text": "Poids",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbDimensionColis",
+							"dataSource": "TbDimensionColis",
+							"width": 156,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#DDDDDD",
+							"textAlign": "center",
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/TbDimensionColis.4dm",
+							"header": {
+								"name": "Entête3",
+								"text": "Dimensions",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouAnnule": {
+					"type": "button",
+					"top": 413,
+					"left": 58,
+					"width": 133,
+					"height": 36,
+					"dataSource": "BouAnnule",
+					"action": "cancel",
+					"text": "Annuler",
+					"class": "Boutons",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImp": {
+					"type": "button",
+					"top": 413,
+					"left": 231,
+					"width": 244,
+					"height": 36,
+					"dataSource": "BouImp",
+					"action": "cancel",
+					"text": "Imprimer",
+					"class": "Boutons",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

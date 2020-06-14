@@ -1,0 +1,173 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 151,
+					"left": 24,
+					"width": 143,
+					"height": 86,
+					"class": "Etiquette_grande",
+					"textAlign": "center",
+					"text": "Veuiller noter ici les dilutions autorisées pour la campagne en cours ou à venir"
+				},
+				"ListBoxDilution": {
+					"type": "listbox",
+					"top": 16,
+					"left": 182,
+					"width": 167,
+					"height": 408,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"rowHeight": "28px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbDilution",
+							"dataSource": "TbDilution",
+							"width": 167,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 18,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Dilutions",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"BouPlusDil": {
+					"type": "button",
+					"top": 132,
+					"left": 385,
+					"width": 37,
+					"height": 30,
+					"text": "+",
+					"class": "Titre_grand",
+					"method": "ObjectMethods/BouPlusDil.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouEnsereDil": {
+					"type": "button",
+					"top": 168,
+					"left": 445,
+					"width": 37,
+					"height": 30,
+					"text": "=",
+					"class": "Titre_grand",
+					"method": "ObjectMethods/BouEnsereDil.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouMoinsDil": {
+					"type": "button",
+					"top": 202,
+					"left": 385,
+					"width": 37,
+					"height": 30,
+					"text": "-",
+					"class": "Titre_grand",
+					"method": "ObjectMethods/BouMoinsDil.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouKO": {
+					"type": "button",
+					"top": 436,
+					"left": 38,
+					"width": 139,
+					"height": 28,
+					"dataSource": "BouKO",
+					"text": "Sans changement",
+					"method": "ObjectMethods/BouKO.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouOK": {
+					"type": "button",
+					"top": 434,
+					"left": 190,
+					"width": 292,
+					"height": 33,
+					"text": "Enregistrer les changements",
+					"class": "default",
+					"method": "ObjectMethods/BouOK.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

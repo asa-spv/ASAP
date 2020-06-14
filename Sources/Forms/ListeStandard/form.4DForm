@@ -1,0 +1,194 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1207,
+					"height": 297,
+					"stroke": "#FFFFFF"
+				},
+				"VarFonCou": {
+					"type": "input",
+					"top": 87,
+					"left": 0,
+					"width": 1207,
+					"height": 24,
+					"dataSource": "VarFonCou",
+					"class": "default",
+					"fill": "#FFFFC0",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/VarFonCou.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"BouToutVoir": {
+					"type": "button",
+					"top": 121,
+					"left": 137,
+					"width": 89,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Tout voir",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_windows.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouToutVoir.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BouRechercheTout": {
+					"type": "button",
+					"top": 121,
+					"left": 232,
+					"width": 119,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Recherches ...",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_search.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouRechercheTout.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRechercheListe": {
+					"type": "button",
+					"top": 121,
+					"left": 356,
+					"width": 109,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Sélection",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Action.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouRechercheListe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouNouveau": {
+					"type": "button",
+					"top": 121,
+					"left": 504,
+					"width": 120,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Nouveau",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_add.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouNouveau.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupprime": {
+					"type": "button",
+					"top": 121,
+					"left": 669,
+					"width": 124,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Supprimer",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/24_bin.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouSupprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImprime": {
+					"type": "button",
+					"top": 121,
+					"left": 836,
+					"width": 89,
+					"height": 63,
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Imprimer",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_print.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouImprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitter": {
+					"type": "button",
+					"top": 121,
+					"left": 1058,
+					"width": 74,
+					"height": 63,
+					"action": "cancel",
+					"class": "Bouton_normal",
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouQuitter.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,787 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 261,
+	"markerBreak": 261,
+	"markerFooter": 261,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 108,
+					"left": 187,
+					"width": 448,
+					"height": 132,
+					"fill": "transparent"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 113,
+					"left": 28,
+					"width": 149,
+					"height": 23,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "Nombre de participant"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 140,
+					"left": 28,
+					"width": 149,
+					"height": 19,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "Nombre de fiche contact client"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 166,
+					"left": 28,
+					"width": 149,
+					"height": 19,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "Nombre de retours d’information"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 193,
+					"left": 28,
+					"width": 149,
+					"height": 20,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "Nombre de demande d’information"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 219,
+					"left": 0,
+					"width": 177,
+					"height": 24,
+					"class": "Champ_grand",
+					"textAlign": "right",
+					"text": "Nombre de réclamations"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 69,
+					"left": 528,
+					"width": 129,
+					"height": 25,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Evolution \r%(n+(n-1))/((n-2)+(n-3))\r"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 134,
+					"left": 187,
+					"width": 448
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 161,
+					"left": 187,
+					"width": 448
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 188,
+					"left": 187,
+					"width": 448
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 214,
+					"left": 187,
+					"width": 448
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 108,
+					"left": 274,
+					"height": 132
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 108,
+					"left": 357,
+					"height": 132
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": 108,
+					"left": 440,
+					"height": 132
+				},
+				"Ligne7": {
+					"type": "line",
+					"top": 108,
+					"left": 536,
+					"height": 132
+				},
+				"Variable33": {
+					"type": "input",
+					"top": 111,
+					"left": 196,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir5",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable34": {
+					"type": "input",
+					"top": 111,
+					"left": 279,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir6",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable35": {
+					"type": "input",
+					"top": 111,
+					"left": 362,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir7",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable36": {
+					"type": "input",
+					"top": 111,
+					"left": 452,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir8",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable37": {
+					"type": "input",
+					"top": 138,
+					"left": 196,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir9",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable38": {
+					"type": "input",
+					"top": 138,
+					"left": 279,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir10",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable39": {
+					"type": "input",
+					"top": 138,
+					"left": 362,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir11",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable40": {
+					"type": "input",
+					"top": 138,
+					"left": 452,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir12",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable41": {
+					"type": "input",
+					"top": 164,
+					"left": 196,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir13",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable42": {
+					"type": "input",
+					"top": 164,
+					"left": 279,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir14",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable43": {
+					"type": "input",
+					"top": 164,
+					"left": 362,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir15",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable44": {
+					"type": "input",
+					"top": 164,
+					"left": 452,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir16",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable46": {
+					"type": "input",
+					"top": 191,
+					"left": 196,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir17",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable47": {
+					"type": "input",
+					"top": 191,
+					"left": 279,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir18",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable48": {
+					"type": "input",
+					"top": 191,
+					"left": 362,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir19",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable49": {
+					"type": "input",
+					"top": 191,
+					"left": 452,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir20",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable50": {
+					"type": "input",
+					"top": 218,
+					"left": 196,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir21",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable51": {
+					"type": "input",
+					"top": 218,
+					"left": 279,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir22",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable52": {
+					"type": "input",
+					"top": 218,
+					"left": 362,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir23",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable53": {
+					"type": "input",
+					"top": 218,
+					"left": 453,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir24",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable54": {
+					"type": "input",
+					"top": 111,
+					"left": 541,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir25",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable55": {
+					"type": "input",
+					"top": 138,
+					"left": 541,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir26",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable56": {
+					"type": "input",
+					"top": 164,
+					"left": 541,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir27",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable57": {
+					"type": "input",
+					"top": 191,
+					"left": 541,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir28",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable45": {
+					"type": "input",
+					"top": 218,
+					"left": 542,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir29",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 69,
+					"left": 196,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir1",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 69,
+					"left": 279,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir2",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 69,
+					"left": 362,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir3",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable32": {
+					"type": "input",
+					"top": 69,
+					"left": 447,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir4",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 37,
+					"left": 0,
+					"width": 679,
+					"height": 26,
+					"dataSource": "VarTitre",
+					"class": "Bouton_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

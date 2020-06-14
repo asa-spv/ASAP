@@ -1,0 +1,109 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte1": {
+					"type": "text",
+					"top": 6,
+					"left": 43,
+					"width": 726,
+					"height": 21,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "Compte-rendu de l'envoi des mails"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 82,
+					"left": 43,
+					"width": 399,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Le présent compte-rendu vous sera envoyé par mail"
+				},
+				"VarTexteCRMail": {
+					"type": "input",
+					"top": 102,
+					"left": 43,
+					"width": 720,
+					"height": 468,
+					"dataSource": "VarTexteCRMail",
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 26,
+					"left": 45,
+					"width": 724,
+					"height": 42,
+					"dataSource": "VarConcluARMail",
+					"stroke": "#EC0F00",
+					"class": "Titre",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 77,
+					"left": 410,
+					"width": 248,
+					"height": 19,
+					"dataSource": "BouPP",
+					"text": "Mettre CR dans le presse-papier",
+					"class": "Boutons",
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

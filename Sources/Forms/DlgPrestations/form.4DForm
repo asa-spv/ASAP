@@ -1,0 +1,234 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 9,
+					"left": 14,
+					"width": 496,
+					"height": 21,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "Dialogue de création des prestations de l'année"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 42,
+					"left": 19,
+					"width": 131,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Année concernée"
+				},
+				"VarNomAnnee": {
+					"type": "input",
+					"top": 42,
+					"left": 157,
+					"width": 57,
+					"height": 14,
+					"dataSource": "VarNomAnnee",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxPrest": {
+					"type": "listbox",
+					"top": 69,
+					"left": 14,
+					"width": 516,
+					"height": 291,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxPrest",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "Colonne1",
+							"width": 339,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Libellé",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2N",
+							"dataSource": "Colonne2N",
+							"width": 87,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Prix",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne3N",
+							"dataSource": "Colonne3N",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "TVA",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 368,
+					"left": 30,
+					"width": 163,
+					"height": 47,
+					"dataSource": "BouAnnule",
+					"action": "cancel",
+					"text": "Annuler",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouOK": {
+					"type": "button",
+					"top": 368,
+					"left": 213,
+					"width": 317,
+					"height": 47,
+					"dataSource": "BouOK",
+					"action": "cancel",
+					"text": "Créer les prestations",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioPoudre": {
+					"type": "radio",
+					"top": 43,
+					"left": 271,
+					"width": 79,
+					"height": 15,
+					"dataSource": "RadioPoudre",
+					"text": "Poudre",
+					"class": "Champ_grand",
+					"radioGroup": "Groupe2",
+					"method": "ObjectMethods/RadioPoudre.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioGel": {
+					"type": "radio",
+					"top": 42,
+					"left": 363,
+					"width": 66,
+					"height": 16,
+					"dataSource": "RadioGel",
+					"text": "Gel",
+					"class": "Champ_grand",
+					"radioGroup": "Groupe2",
+					"method": "ObjectMethods/RadioGel.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe2": [
+				"RadioPoudre",
+				"RadioGel"
+			]
+		}
+	}
+}

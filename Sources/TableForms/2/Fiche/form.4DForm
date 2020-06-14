@@ -1,0 +1,196 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1200,
+	"height": 700,
+	"markerHeader": 96,
+	"markerBody": 175,
+	"markerBreak": 175,
+	"markerFooter": 205,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte12": {
+					"type": "text",
+					"top": 155,
+					"left": 344,
+					"width": 117,
+					"height": 17,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 128,
+					"left": 157,
+					"width": 117,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Prénom Nom : "
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 128,
+					"left": 13,
+					"width": 75,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Initiales : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 154,
+					"left": 113,
+					"width": 162,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Jour anniversaire : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 156,
+					"left": 466,
+					"width": 324,
+					"height": 12,
+					"dataSource": "[XUtilisateurs:2]UUID:1",
+					"class": "Champ_normal",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Initiales": {
+					"type": "input",
+					"top": 128,
+					"left": 93,
+					"width": 50,
+					"height": 19,
+					"dataSource": "[XUtilisateurs:2]Initiales:4",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"JourAnniversaire": {
+					"type": "input",
+					"top": 154,
+					"left": 280,
+					"width": 50,
+					"height": 19,
+					"dataSource": "[XUtilisateurs:2]Anniversaire:6",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Sexe": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 25,
+					"width": 63,
+					"height": 15,
+					"dataSource": "[XUtilisateurs:2]Mec:7",
+					"text": "Mec",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 33,
+					"left": 50,
+					"width": 76,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Personnel.png"
+				},
+				"VarNP": {
+					"type": "input",
+					"top": 128,
+					"left": 278,
+					"width": 525,
+					"height": 19,
+					"dataSource": "VarNP",
+					"class": "Champ_grand",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

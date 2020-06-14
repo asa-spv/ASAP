@@ -1,0 +1,1 @@
+ALERT:C41("Désolé, il n'est plus possible de modifier les caractéristiques de la campagne car la date de rendu des résultats est passée...")

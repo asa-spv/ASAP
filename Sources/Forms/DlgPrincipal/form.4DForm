@@ -1,0 +1,651 @@
+﻿{
+	"width": 1600,
+	"height": 850,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 1605,
+					"height": 849,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ZSaintDuJour": {
+					"type": "input",
+					"top": 181,
+					"left": 541,
+					"width": 371,
+					"height": 27,
+					"dataSource": "<>ZSaintDuJour",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDonneeDate": {
+					"type": "input",
+					"top": 149,
+					"left": 548,
+					"width": 357,
+					"height": 29,
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onGettingFocus",
+						"onBeforeKeystroke"
+					]
+				},
+				"ZBouChangeU": {
+					"type": "button",
+					"top": 731,
+					"left": 648,
+					"width": 169,
+					"height": 90,
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Changer Utilisateur",
+					"icon": "/RESOURCES/Images/Buttons/Logo ASA icône.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZBouChangeU.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"<>ZQuiVaLa1": {
+					"type": "input",
+					"top": 710,
+					"left": 645,
+					"width": 175,
+					"height": 14,
+					"dataSource": "<>ZQuiVaLa",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Clock": {
+					"type": "subform",
+					"top": 21,
+					"left": 666,
+					"width": 120,
+					"height": 120,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "TimeDisplay",
+					"focusable": false,
+					"hideFocusRing": true,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Clock.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"ZNews": {
+					"type": "button",
+					"top": 634,
+					"left": 107,
+					"width": 113,
+					"height": 88,
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "News",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_SendMail.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZNews.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouLaboratoire": {
+					"type": "button",
+					"top": 441,
+					"left": 436,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Laboratoires",
+					"icon": "/RESOURCES/Images/Buttons/Laboratoire.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouLaboratoire.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouSchema": {
+					"type": "button",
+					"top": 360,
+					"left": 883,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Schéma\\RAEMA",
+					"icon": "/RESOURCES/Images/Buttons/SchemaRAEMA.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouSchema.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaseSaisieRaema": {
+					"type": "checkbox",
+					"top": 655,
+					"left": 1006,
+					"width": 414,
+					"height": 47,
+					"dataSource": "CaseSaisieRaema",
+					"text": "Autoriser la saisie du RAEMA",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/CaseSaisieRaema.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouParam": {
+					"type": "button",
+					"top": 69,
+					"left": 78,
+					"width": 110,
+					"height": 115,
+					"action": "nextPage",
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Paramètres",
+					"icon": "/RESOURCES/Images/Buttons/Parametre.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouAdherents": {
+					"type": "button",
+					"top": 330,
+					"left": 436,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Adhérents",
+					"icon": "/RESOURCES/Images/Buttons/Adherent.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouAdherents.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouReponses": {
+					"type": "button",
+					"top": 360,
+					"left": 1321,
+					"width": 113,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Suivi des\\Réponses",
+					"icon": "/RESOURCES/Images/Buttons/SuiviReponse.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouReponses.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouEnvois": {
+					"type": "button",
+					"top": 204,
+					"left": 1088,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Envoi des\\Colis",
+					"icon": "/RESOURCES/Images/Buttons/EnvoiColis.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouEnvois.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouReponses1": {
+					"type": "button",
+					"top": 505,
+					"left": 1074,
+					"width": 146,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Suivi des\\Rapports",
+					"icon": "/RESOURCES/Images/Buttons/SuiviRapport.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouReponses1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouCourriels": {
+					"type": "button",
+					"top": 360,
+					"left": 110,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Courriels\\types",
+					"icon": "/RESOURCES/Images/Buttons/Courriel.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouCourriels.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouSchema1": {
+					"type": "button",
+					"top": 349,
+					"left": 1088,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Retours",
+					"icon": "/RESOURCES/Images/Buttons/Reclamation.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouSchema1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouGestionRG": {
+					"type": "button",
+					"top": 436,
+					"left": 684,
+					"width": 100,
+					"height": 113,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Gestion du\\RAEMA Gel",
+					"icon": "/RESOURCES/Images/Buttons/GestionGel.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouGestionRG.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouPrestations": {
+					"type": "button",
+					"top": 318,
+					"left": 671,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Prestations",
+					"icon": "/RESOURCES/Images/Buttons/Prestations.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouPrestations.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouFactures": {
+					"type": "button",
+					"top": 568,
+					"left": 436,
+					"width": 110,
+					"height": 115,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Factures",
+					"icon": "/RESOURCES/Images/Buttons/Facturation.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouFactures.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 94,
+					"left": 1386,
+					"width": 193,
+					"height": 64,
+					"action": "cancel",
+					"shortcutKey": "q",
+					"shortcutAccel": true,
+					"class": "default",
+					"focusable": false,
+					"text": "Quitter",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/tbIcon24_TurnOn.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarJourParticulier": {
+					"type": "input",
+					"top": 214,
+					"left": 541,
+					"width": 371,
+					"height": 81,
+					"dataSource": "VarJourParticulier",
+					"stroke": "#FF0000",
+					"class": "Etiquette_grande",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ZBouRetour": {
+					"type": "button",
+					"top": 69,
+					"left": 78,
+					"width": 110,
+					"height": 115,
+					"action": "firstPage",
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Retour\\écran général",
+					"icon": "/RESOURCES/Images/Buttons/bouton paramètre.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouParamMail": {
+					"type": "button",
+					"top": 169,
+					"left": 343,
+					"width": 110,
+					"height": 115,
+					"action": "firstPage",
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Paramètres\\Comptes mail",
+					"icon": "/RESOURCES/Images/Buttons/Email.png",
+					"style": "custom",
+					"method": "ObjectMethods/BouParamMail.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouUtilisateurs": {
+					"type": "button",
+					"top": 168,
+					"left": 933,
+					"width": 100,
+					"height": 90,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Utilisateurs",
+					"icon": "/RESOURCES/Images/Buttons/Logo ASA icône.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouUtilisateurs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouFonction": {
+					"type": "button",
+					"top": 305,
+					"left": 945,
+					"width": 88,
+					"height": 95,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Fonctions",
+					"icon": "/RESOURCES/Images/Buttons/Fonctions.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZBouFonction.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZSauvegarde": {
+					"type": "button",
+					"top": 423,
+					"left": 10,
+					"width": 113,
+					"height": 88,
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Sauvegarde",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_save.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZSauvegarde.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouConfiguration": {
+					"type": "button",
+					"top": 522,
+					"left": 10,
+					"width": 105,
+					"height": 78,
+					"visibility": "hidden",
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Configuration",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_settings.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZBouConfiguration.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"container1": {
+					"type": "input",
+					"top": 667,
+					"left": 1020,
+					"width": 45,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"method": "ObjectMethods/container1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"button1": {
+					"type": "input",
+					"top": 669,
+					"left": 1020,
+					"width": 20,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/button1.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"LogActive": {
+					"type": "text",
+					"top": 668,
+					"left": 1068,
+					"width": 100,
+					"height": 17,
+					"visibility": "hidden",
+					"class": "default",
+					"fontWeight": "bold",
+					"text": "Logs activés"
+				},
+				"val1": {
+					"type": "input",
+					"top": 1,
+					"left": 1324,
+					"width": 54,
+					"height": 16,
+					"class": "default",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ZbouPrestations1": {
+					"type": "button",
+					"top": 396,
+					"left": 349,
+					"width": 173,
+					"height": 174,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Utilisateurs\\AsaDia",
+					"icon": "/RESOURCES/Images/Buttons/AsaDiaUtilisateurs.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouPrestations1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZbouPrestations2": {
+					"type": "button",
+					"top": 420,
+					"left": 899,
+					"width": 173,
+					"height": 174,
+					"class": "Bouton_grand",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Utilisateurs\\ASAP",
+					"icon": "/RESOURCES/Images/Buttons/Formations.png",
+					"style": "custom",
+					"method": "ObjectMethods/ZbouPrestations2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 316,
+					"left": 570,
+					"width": 143,
+					"height": 41,
+					"text": "AsaContact",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Bouton1"
+			]
+		}
+	]
+}

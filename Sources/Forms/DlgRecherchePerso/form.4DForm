@@ -1,0 +1,378 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 22,
+					"left": 97,
+					"width": 208,
+					"height": 29,
+					"class": "Titre_normal",
+					"text": "Rechercher"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 14,
+					"left": 33,
+					"width": 31,
+					"height": 37,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Loupe.png"
+				},
+				"ListBoxRecherche": {
+					"type": "listbox",
+					"top": 62,
+					"left": 45,
+					"width": 816,
+					"height": 344,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"rowHeight": "2em",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/ListBoxRecherche.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "TbLiaison",
+							"dataSource": "TbLiaison",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/ToutEtOuSauf"
+							},
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Liaison"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbProprio",
+							"dataSource": "TbProprio",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/RubriquesPersonnes"
+							},
+							"width": 279,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Propriété"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbComparateur",
+							"dataSource": "TbComparateur",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/Comparateurs"
+							},
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"requiredList": {
+								"$ref": "/SOURCES/lists.json#/Comparateurs"
+							},
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Comparateur"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbValeurs",
+							"dataSource": "TbValeurs",
+							"width": 265,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/TbValeurs.4dm",
+							"header": {
+								"name": "Entête3",
+								"text": "Valeur"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNb",
+							"dataSource": "TbNb",
+							"dataSourceTypeHint": "number",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Nb"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbEnsemble",
+							"dataSource": "TbEnsemble",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Ensemble"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouPlus": {
+					"type": "button",
+					"top": 62,
+					"left": 11,
+					"width": 26,
+					"height": 36,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/001_plus.png",
+					"style": "custom",
+					"method": "ObjectMethods/BouPlus.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouMoins": {
+					"type": "button",
+					"top": 100,
+					"left": 11,
+					"width": 26,
+					"height": 36,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/001_moins.png",
+					"style": "custom",
+					"method": "ObjectMethods/BouMoins.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCh1": {
+					"type": "button",
+					"top": 511,
+					"left": 698,
+					"width": 163,
+					"height": 44,
+					"action": "cancel",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "Chercher",
+					"style": "bevel",
+					"method": "ObjectMethods/BouCh1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCh2": {
+					"type": "button",
+					"top": 511,
+					"left": 443,
+					"width": 235,
+					"height": 44,
+					"action": "cancel",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "Chercher dans sélection",
+					"style": "bevel",
+					"method": "ObjectMethods/BouCh2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCh3": {
+					"type": "button",
+					"top": 511,
+					"left": 45,
+					"width": 139,
+					"height": 44,
+					"action": "cancel",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "Annuler",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 426,
+					"left": 340,
+					"width": 455,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Résultat actuel de la recherche dans tous les laboratoires : "
+				},
+				"VarNbEnrTrouvés": {
+					"type": "input",
+					"top": 426,
+					"left": 800,
+					"width": 49,
+					"height": 19,
+					"dataSource": "VarNbEnrTrouvés",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 437,
+					"left": 834,
+					"width": 1,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 451,
+					"left": 340,
+					"width": 455,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Résultat actuel de la recherche dans la sélection initiale : "
+				},
+				"VarNbEnrTrouvésSel": {
+					"type": "input",
+					"top": 451,
+					"left": 800,
+					"width": 49,
+					"height": 19,
+					"dataSource": "VarNbEnrTrouvésSel",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

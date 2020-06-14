@@ -1,0 +1,4 @@
+APPEND TO ARRAY:C911(TbRef;"")
+APPEND TO ARRAY:C911(TbFr;"")
+APPEND TO ARRAY:C911(TbEn;"")
+LISTBOX SELECT ROW:C912(*;"ListBoxTraduction";Size of array:C274(TbRef))

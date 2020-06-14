@@ -1,0 +1,74 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 772,
+	"markerBreak": 772,
+	"markerFooter": 772,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 24,
+					"left": 11,
+					"width": 507,
+					"height": 36,
+					"dataSource": "VarETRapportAv",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 58,
+					"left": 6,
+					"width": 541,
+					"height": 704,
+					"dataSource": "VarCorpsRapportAv",
+					"textAlign": "left",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

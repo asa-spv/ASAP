@@ -1,0 +1,2226 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1600,
+	"height": 850,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 9,
+					"left": 842,
+					"width": 552,
+					"height": 102,
+					"class": "default",
+					"text": "Complément"
+				},
+				"BouNumEch": {
+					"type": "button",
+					"top": 30,
+					"left": 1216,
+					"width": 171,
+					"height": 28,
+					"text": "N° d'échantillons",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouNumEch.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 9,
+					"left": 521,
+					"width": 311,
+					"height": 102,
+					"class": "default",
+					"text": "Actions"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 29,
+					"left": 18,
+					"width": 116,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "N° du RAEMA :"
+				},
+				"BouQuitte": {
+					"type": "button",
+					"top": 19,
+					"left": 1440,
+					"width": 120,
+					"height": 26,
+					"dataSource": "BouQuitte",
+					"text": "Quitter",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouQuitte.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TbNR": {
+					"type": "dropdown",
+					"top": 20,
+					"left": 138,
+					"width": 77,
+					"height": 29,
+					"dataSource": "TbNR",
+					"class": "default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/TbNR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouDupRAEMA": {
+					"type": "button",
+					"top": 1113,
+					"left": 157,
+					"width": 151,
+					"height": 25,
+					"dataSource": "BouDupRAEMA",
+					"text": "Dupliquer RAEMA",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouDupRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupRAEMA": {
+					"type": "button",
+					"top": 66,
+					"left": 529,
+					"width": 135,
+					"height": 26,
+					"dataSource": "BouSupRAEMA",
+					"text": "Supprimer",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouSupRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExporteRAEMA": {
+					"type": "button",
+					"top": 1114,
+					"left": 379,
+					"width": 73,
+					"height": 24,
+					"dataSource": "BouExporteRAEMA",
+					"shortcutKey": "e",
+					"shortcutAccel": true,
+					"text": "Exporter",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouExporteRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImporteRAEMA": {
+					"type": "button",
+					"top": 1084,
+					"left": 379,
+					"width": 73,
+					"height": 24,
+					"dataSource": "BouImporteRAEMA",
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Importer",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouImporteRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RPSTexte4": {
+					"type": "text",
+					"top": 29,
+					"left": 221,
+					"width": 93,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Rang de tri :"
+				},
+				"RPSTbRR": {
+					"type": "dropdown",
+					"top": 20,
+					"left": 318,
+					"width": 60,
+					"height": 26,
+					"dataSource": "TbRR",
+					"class": "default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/RPSTbRR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImpRAEMA": {
+					"type": "button",
+					"top": 69,
+					"left": 676,
+					"width": 151,
+					"height": 24,
+					"dataSource": "BouImpRAEMA",
+					"text": "Imprimer",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouImpRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TradRAEMAComp": {
+					"type": "button",
+					"top": 67,
+					"left": 852,
+					"width": 171,
+					"height": 29,
+					"dataSource": "BouTradRAEMAComp",
+					"action": "nextPage",
+					"text": "Modifier la traduction",
+					"class": "default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 56,
+					"left": 18,
+					"width": 118,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Date d'envoi :"
+				},
+				"VarDateDebCamp": {
+					"type": "input",
+					"top": 56,
+					"left": 140,
+					"width": 91,
+					"height": 17,
+					"dataSource": "VarDateDebCamp",
+					"dataSourceTypeHint": "date",
+					"class": "default",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarDateDebCamp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouContaminationComp": {
+					"type": "button",
+					"top": 31,
+					"left": 852,
+					"width": 171,
+					"height": 27,
+					"dataSource": "BouContaminationComp",
+					"text": "Niveau de contamination",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouContaminationComp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 57,
+					"left": 221,
+					"width": 93,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Date limite :"
+				},
+				"VarDateFinCamp": {
+					"type": "input",
+					"top": 57,
+					"left": 318,
+					"width": 91,
+					"height": 17,
+					"dataSource": "VarDateFinCamp",
+					"dataSourceTypeHint": "date",
+					"class": "default",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarDateFinCamp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 76,
+					"left": 8,
+					"width": 128,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Date mise en ligne :"
+				},
+				"VarDateWebCamp": {
+					"type": "input",
+					"top": 76,
+					"left": 140,
+					"width": 91,
+					"height": 17,
+					"dataSource": "VarDateWebCamp",
+					"dataSourceTypeHint": "date",
+					"class": "default",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarDateWebCamp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CaseAccredite": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 422,
+					"width": 84,
+					"height": 23,
+					"dataSource": "CaseAccredite",
+					"text": "Accrédité",
+					"class": "default",
+					"method": "ObjectMethods/CaseAccredite.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaseRI": {
+					"type": "checkbox",
+					"top": 69,
+					"left": 422,
+					"width": 75,
+					"height": 20,
+					"dataSource": "CaseRI",
+					"text": "RI",
+					"class": "default",
+					"method": "ObjectMethods/CaseRI.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 77,
+					"left": 216,
+					"width": 117,
+					"height": 17,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Nbre de labos :"
+				},
+				"VarNbreLabos": {
+					"type": "input",
+					"top": 77,
+					"left": 338,
+					"width": 38,
+					"height": 17,
+					"dataSource": "VarNbreLabos",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarNbreLabos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouDilutionComp": {
+					"type": "button",
+					"top": 67,
+					"left": 1031,
+					"width": 171,
+					"height": 28,
+					"text": "Dilutions autorisées",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouDilutionComp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"GermeBouAd": {
+					"type": "button",
+					"top": 430,
+					"left": 18,
+					"width": 130,
+					"height": 24,
+					"text": "Ajouter un germe",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/GermeBouAd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"GermeBouSup": {
+					"type": "button",
+					"top": 430,
+					"left": 425,
+					"width": 234,
+					"height": 24,
+					"text": "Supprimer un germe",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/GermeBouSup.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LignesListBox": {
+					"type": "listbox",
+					"top": 126,
+					"left": 706,
+					"width": 878,
+					"height": 397,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxLignes",
+					"sortable": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/LignesListBox.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onRowMove"
+					],
+					"columns": [
+						{
+							"name": "TbNomLigneFr",
+							"dataSource": "TbNomLigneFr",
+							"width": 382,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Intitulé de la ligne en français",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNomLigneEn",
+							"dataSource": "TbNomLigneEn",
+							"width": 367,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Intitulé de la ligne en anglais",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbEscamotable",
+							"dataSource": "TbEscamotable",
+							"dataSourceTypeHint": "boolean",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Escamotable",
+								"dataSource": "Entête17",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbMultiple",
+							"dataSource": "TbMultiple",
+							"dataSourceTypeHint": "boolean",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Mul",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbIdentifiantLigne",
+							"dataSource": "TbIdentifiantLigne",
+							"width": 72,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête24",
+								"text": "Id Ligne",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied24",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNumEnrLigne",
+							"dataSource": "TbNumEnrLigne",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête21",
+								"text": "NumEnr",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied21",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"ValeurBouSup": {
+					"type": "button",
+					"top": 530,
+					"left": 549,
+					"width": 234,
+					"height": 26,
+					"text": "Supprimer une valeur",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/ValeurBouSup.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"GermeBouIns": {
+					"type": "button",
+					"top": 430,
+					"left": 157,
+					"width": 135,
+					"height": 24,
+					"text": "Insérer un germe",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/GermeBouIns.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ValeursListBox": {
+					"type": "listbox",
+					"top": 561,
+					"left": 8,
+					"width": 802,
+					"height": 266,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxValeurs",
+					"sortable": false,
+					"rowHeight": "18px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"verticalLineStroke": "transparent",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ValeursListBox.4dm",
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onRowMove"
+					],
+					"columns": [
+						{
+							"name": "TbNomValeurFr",
+							"dataSource": "TbNomValeurFr",
+							"width": 340,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "Valeurs en français",
+								"dataSource": "Entête8",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNomValeurEn",
+							"dataSource": "TbNomValeurEn",
+							"width": 328,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête18",
+								"text": "Valeurs en anglais",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied18",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbEscamotage",
+							"dataSource": "TbEscamotage",
+							"dataSourceTypeHint": "boolean",
+							"width": 84,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête19",
+								"text": "Escamotage",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied19",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbPrecision",
+							"dataSource": "TbPrecision",
+							"dataSourceTypeHint": "boolean",
+							"width": 39,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Pré",
+								"dataSource": "Entête9",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbIdentifiantValeur",
+							"dataSource": "TbIdentifiantValeur",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête22",
+								"text": "Identifiant",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied22",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNumEnrValeurs",
+							"dataSource": "TbNumEnrValeurs",
+							"width": 161,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête26",
+								"text": "Num enr",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied26",
+								"timeFormat": "hh_mm_ss",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"ValeurBouAjout": {
+					"type": "button",
+					"top": 530,
+					"left": 10,
+					"width": 130,
+					"height": 26,
+					"text": "Ajouter une valeur",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/ValeurBouAjout.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ValeurBouInsere": {
+					"type": "button",
+					"top": 530,
+					"left": 149,
+					"width": 135,
+					"height": 26,
+					"text": "Insérer une valeur",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/ValeurBouInsere.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ValeurTipsFrPrec": {
+					"type": "input",
+					"top": 672,
+					"left": 820,
+					"width": 220,
+					"height": 81,
+					"dataSource": "VarTipsFr",
+					"class": "default",
+					"borderStyle": "solid",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ValeurTipsFrPrec.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ValeurVarTipsEnPrec": {
+					"type": "input",
+					"top": 672,
+					"left": 1076,
+					"width": 220,
+					"height": 81,
+					"dataSource": "VarTipsEn",
+					"class": "default",
+					"borderStyle": "solid",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ValeurVarTipsEnPrec.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ValeurTexteTipsFrPrec": {
+					"type": "text",
+					"top": 655,
+					"left": 820,
+					"width": 125,
+					"height": 17,
+					"class": "default",
+					"textAlign": "left",
+					"text": "Tips en français"
+				},
+				"ValeurTexteTipsEnPrec": {
+					"type": "text",
+					"top": 655,
+					"left": 1076,
+					"width": 117,
+					"height": 17,
+					"class": "default",
+					"textAlign": "left",
+					"text": "Tips en anglais"
+				},
+				"ValeurTextePrec": {
+					"type": "text",
+					"top": 635,
+					"left": 820,
+					"width": 618,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "left",
+					"text": "Précision pour la ligne <VarValeur> :"
+				},
+				"ValeurTexteMilieuLien": {
+					"type": "text",
+					"top": 766,
+					"left": 798,
+					"width": 78,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Milieu :"
+				},
+				"ValeurTexteFabLien": {
+					"type": "text",
+					"top": 766,
+					"left": 1048,
+					"width": 93,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Fabricant :"
+				},
+				"ValeurPUMMilieuLien": {
+					"type": "dropdown",
+					"top": 763,
+					"left": 882,
+					"width": 146,
+					"height": 23,
+					"dataSource": "PUMMilieuLien",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/ValeurPUMMilieuLien.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ValeurPUMFabLien": {
+					"type": "dropdown",
+					"top": 762,
+					"left": 1147,
+					"width": 146,
+					"height": 22,
+					"dataSource": "PUMFournisseurLien",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/ValeurPUMFabLien.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GermesListBox": {
+					"type": "listbox",
+					"top": 126,
+					"left": 18,
+					"width": 641,
+					"height": 294,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxGermes",
+					"sortable": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"method": "ObjectMethods/GermesListBox.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onRowMove"
+					],
+					"columns": [
+						{
+							"name": "TbNomGermeFr",
+							"dataSource": "TbNomGermeFr",
+							"width": 297,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Entête28",
+								"text": "Nom des germes en Fr",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied28",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNomGermeEn1",
+							"dataSource": "TbNomGermeEn",
+							"width": 257,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête29",
+								"text": "Nom des germes en En",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied29",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "GelTbCofracGerme",
+							"dataSource": "TbCofracGerme",
+							"dataSourceTypeHint": "boolean",
+							"width": 48,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête30",
+								"text": "Cofrac",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied30",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "GelTbExperimentalGerme",
+							"dataSource": "TbExperimentalGerme",
+							"dataSourceTypeHint": "boolean",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête27",
+								"text": "Exp",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied27",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbIdentifiantGerme",
+							"dataSource": "TbIdentifiantGerme",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête20",
+								"text": "Identifiant"
+							},
+							"footer": {
+								"name": "Pied20",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEnrGerme",
+							"dataSource": "TbNumEnrGerme",
+							"dataSourceTypeHint": "number",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête23",
+								"text": "TbNumEnr"
+							},
+							"footer": {
+								"name": "Pied23",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"LigneBouAd": {
+					"type": "button",
+					"top": 531,
+					"left": 874,
+					"width": 118,
+					"height": 24,
+					"text": "Ajouter une ligne",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/LigneBouAd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LigneBouSup": {
+					"type": "button",
+					"top": 531,
+					"left": 1312,
+					"width": 272,
+					"height": 24,
+					"text": "Supprimer une ligne",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/LigneBouSup.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LigneBouIns": {
+					"type": "button",
+					"top": 531,
+					"left": 999,
+					"width": 112,
+					"height": 24,
+					"text": "Insérer une ligne",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/LigneBouIns.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LigneBouCopier": {
+					"type": "button",
+					"top": 531,
+					"left": 1138,
+					"width": 64,
+					"height": 24,
+					"text": "Copier",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/LigneBouCopier.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LigneBouColler": {
+					"type": "button",
+					"top": 531,
+					"left": 1208,
+					"width": 64,
+					"height": 24,
+					"text": "Coller",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/LigneBouColler.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ValeurBouCopier": {
+					"type": "button",
+					"top": 531,
+					"left": 318,
+					"width": 64,
+					"height": 24,
+					"text": "Copier",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/ValeurBouCopier.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ValeurBouColler": {
+					"type": "button",
+					"top": 531,
+					"left": 388,
+					"width": 64,
+					"height": 24,
+					"text": "Coller",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"method": "ObjectMethods/ValeurBouColler.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouNomGermeComp": {
+					"type": "button",
+					"top": 30,
+					"left": 1216,
+					"width": 171,
+					"height": 28,
+					"action": "lastPage",
+					"text": "Noms des germes",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouNomGermeComp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouFabricantComp": {
+					"type": "button",
+					"top": 30,
+					"left": 1031,
+					"width": 171,
+					"height": 28,
+					"text": "Fabricants",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouFabricantComp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouNewRAEMA": {
+					"type": "button",
+					"top": 32,
+					"left": 529,
+					"width": 135,
+					"height": 25,
+					"dataSource": "BouNewRAEMA",
+					"text": "Nouveau RAEMA",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouNewRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRemplir": {
+					"type": "button",
+					"top": 32,
+					"left": 676,
+					"width": 151,
+					"height": 25,
+					"dataSource": "BouRemplir",
+					"text": "Compléter la saisie",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouRemplir.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouTendancesComp": {
+					"type": "button",
+					"top": 65,
+					"left": 1216,
+					"width": 171,
+					"height": 28,
+					"text": "Tendances",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/BouTendancesComp.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"BouNumEch",
+				"BouQuitte",
+				"TbNR",
+				"BouDupRAEMA",
+				"BouSupRAEMA",
+				"BouExporteRAEMA",
+				"BouImporteRAEMA",
+				"RPSTbRR",
+				"BouImpRAEMA",
+				"TradRAEMAComp",
+				"BouContaminationComp",
+				"CaseAccredite",
+				"CaseRI",
+				"BouDilutionComp",
+				"GermeBouAd",
+				"GermeBouSup",
+				"LignesListBox",
+				"ValeurBouSup",
+				"GermeBouIns",
+				"ValeursListBox",
+				"ValeurBouAjout",
+				"ValeurBouInsere",
+				"ValeurPUMMilieuLien",
+				"ValeurPUMFabLien",
+				"GermesListBox",
+				"LigneBouAd",
+				"LigneBouSup",
+				"LigneBouIns",
+				"LigneBouCopier",
+				"LigneBouColler",
+				"ValeurBouCopier",
+				"ValeurBouColler",
+				"BouNomGermeComp",
+				"BouFabricantComp",
+				"BouNewRAEMA",
+				"BouRemplir",
+				"BouTendancesComp"
+			]
+		},
+		{
+			"objects": {
+				"BouImpTradRAEMA": {
+					"type": "button",
+					"top": 9,
+					"left": 32,
+					"width": 293,
+					"height": 30,
+					"dataSource": "BouImpTradRAEMA",
+					"text": "Importer la traduction à partir d'un fichier",
+					"class": "default",
+					"method": "ObjectMethods/BouImpTradRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRetRAEMA": {
+					"type": "button",
+					"top": 9,
+					"left": 1339,
+					"width": 163,
+					"height": 30,
+					"dataSource": "BouRetRAEMA",
+					"action": "previousPage",
+					"text": "Revenir au RAEMA",
+					"class": "default",
+					"method": "ObjectMethods/BouRetRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTbF": {
+					"type": "input",
+					"top": 676,
+					"left": 75,
+					"width": 700,
+					"height": 81,
+					"dataSource": "VarTbF",
+					"class": "default",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouEnrChamp1": {
+					"type": "button",
+					"top": 758,
+					"left": 75,
+					"width": 715,
+					"height": 30,
+					"dataSource": "BouEnrChamp1",
+					"text": "Enregistrer le contenu du champ",
+					"class": "default",
+					"method": "ObjectMethods/BouEnrChamp1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTbA": {
+					"type": "input",
+					"top": 676,
+					"left": 795,
+					"width": 726,
+					"height": 81,
+					"dataSource": "VarTbA",
+					"class": "default",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouEnrChamp2": {
+					"type": "button",
+					"top": 758,
+					"left": 795,
+					"width": 741,
+					"height": 30,
+					"dataSource": "BouEnrChamp2",
+					"text": "Enregistrer le contenu du champ",
+					"class": "default",
+					"method": "ObjectMethods/BouEnrChamp2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExpTradRAEMA": {
+					"type": "button",
+					"top": 9,
+					"left": 338,
+					"width": 213,
+					"height": 30,
+					"dataSource": "BouExpTradRAEMA",
+					"text": "Exporter la traduction",
+					"class": "default",
+					"method": "ObjectMethods/BouExpTradRAEMA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxTraductions": {
+					"type": "listbox",
+					"top": 51,
+					"left": 32,
+					"width": 1504,
+					"height": 613,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxTraductions",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxTraductions.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbTraducN",
+							"dataSource": "TbTraducN",
+							"dataSourceTypeHint": "number",
+							"width": 43,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "N°",
+								"dataSource": "Entête3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbTraducTableauF",
+							"dataSource": "TbTraducTableauF",
+							"width": 719,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Français",
+								"dataSource": "Entête4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbTraducTableauA",
+							"dataSource": "TbTraducTableauA",
+							"width": 727,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "Anglais",
+								"dataSource": "Entête10",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"BouImpTradRAEMA",
+				"BouRetRAEMA",
+				"BouEnrChamp1",
+				"BouEnrChamp2",
+				"BouExpTradRAEMA",
+				"ListBoxTraductions"
+			]
+		},
+		{
+			"objects": {
+				"PoudreListBoxConta": {
+					"type": "listbox",
+					"top": 264,
+					"left": 94,
+					"width": 866,
+					"height": 293,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxContamination",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "24px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "30px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"textAlign": "center",
+					"verticalAlign": "middle",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PoudreListBoxConta.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomGermeConta",
+							"dataSource": "TbNomGermeConta",
+							"width": 366,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "Nom des germes",
+								"dataSource": "Entête11",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie1Conta",
+							"dataSource": "TbSerie1Conta",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "Série 1",
+								"dataSource": "Entête12",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie2Conta",
+							"dataSource": "TbSerie2Conta",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Série 2",
+								"dataSource": "Entête13",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie3Conta",
+							"dataSource": "TbSerie3Conta",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Série 3",
+								"dataSource": "Entête14",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie4Conta",
+							"dataSource": "TbSerie4Conta",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "Série 4",
+								"dataSource": "Entête15",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie5Conta",
+							"dataSource": "TbSerie5Conta",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête16",
+								"text": "Série 5",
+								"dataSource": "Entête16",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"BouRetourRAEMAP3": {
+					"type": "button",
+					"top": 9,
+					"left": 1339,
+					"width": 163,
+					"height": 30,
+					"dataSource": "BouRetourRAEMAP3",
+					"action": "firstPage",
+					"text": "Revenir au RAEMA",
+					"class": "default",
+					"method": "ObjectMethods/BouRetourRAEMAP3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 231,
+					"left": 101,
+					"width": 494,
+					"height": 17,
+					"dataSource": "VarNomTableau",
+					"class": "default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GelListBoxConta": {
+					"type": "listbox",
+					"top": 264,
+					"left": 173,
+					"width": 490,
+					"height": 293,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxContaminationA",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "24px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "30px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"textAlign": "center",
+					"verticalAlign": "middle",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/GelListBoxConta.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomGermeConta1",
+							"dataSource": "TbNomGermeConta",
+							"width": 366,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Nom des germes",
+								"dataSource": "Entête11",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbSerie1Conta1",
+							"dataSource": "TbSerie1Conta",
+							"width": 124,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Valeur",
+								"dataSource": "Entête12",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"PoudreBouImporteNum1": {
+					"type": "button",
+					"top": 856,
+					"left": 646,
+					"width": 349,
+					"height": 41,
+					"dataSource": "BouImporteNumEch",
+					"text": "Importer les n° d'échantillons",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/PoudreBouImporteNum1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte2": {
+					"type": "text",
+					"top": 33,
+					"left": 72,
+					"width": 287,
+					"height": 21,
+					"class": "Titre",
+					"text": "Gestion des noms des germes"
+				},
+				"ListBoxNomsGermes": {
+					"type": "listbox",
+					"top": 107,
+					"left": 72,
+					"width": 1406,
+					"height": 587,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxNomsGermes.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "<>TbNomGermeSchémaGEL",
+							"dataSource": "<>TbNomGermeSchémaGEL",
+							"width": 279,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête31",
+								"text": "Nom du germe dans le schéma",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied31",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "<>TbNomGermeCampagneGEL",
+							"dataSource": "<>TbNomGermeCampagneGEL",
+							"width": 267,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête32",
+								"text": "Nom du germe dans la campagne",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied32",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "<>TbPetitNomGermeWeb",
+							"dataSource": "<>TbPetitNomGermeWeb",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête33",
+								"text": "Petit nom Web",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied33",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbParticipeGermeGEL",
+							"dataSource": "TbParticipeGermeGEL",
+							"width": 178,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête34",
+								"text": "Tableau participation",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied34",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbLotoGermeGELNCGSR",
+							"dataSource": "TbLotoGermeGELNCGSR",
+							"width": 234,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête35",
+								"text": "Tableau pots sans rapport",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied35",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbLotoGermeGELNCGAR",
+							"dataSource": "TbLotoGermeGELNCGAR",
+							"width": 234,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête36",
+								"text": "Tableau pots avec rapport",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied36",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "<>TbOrdreGermeCampagneGEL",
+							"dataSource": "<>TbOrdreGermeCampagneGEL",
+							"dataSourceTypeHint": "number",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête37",
+								"text": "Ordre",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied37",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouRetourRAEMAP1": {
+					"type": "button",
+					"top": 9,
+					"left": 1339,
+					"width": 163,
+					"height": 30,
+					"dataSource": "BouRetourRAEMAP3",
+					"action": "firstPage",
+					"text": "Revenir au RAEMA",
+					"class": "default",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

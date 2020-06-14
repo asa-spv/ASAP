@@ -1,0 +1,370 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PoudreBouImporteNum": {
+					"type": "button",
+					"top": 9,
+					"left": 769,
+					"width": 349,
+					"height": 41,
+					"dataSource": "BouImporteNumEch",
+					"text": "Créer les n° d'échantillons",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/PoudreBouImporteNum.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PoudreLBNumEchRaema": {
+					"type": "listbox",
+					"top": 10,
+					"left": 1133,
+					"width": 102,
+					"height": 813,
+					"resizingMode": "legacy",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNumEchRaema",
+							"dataSource": "TbNumEchRaema",
+							"width": 87,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 18,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête25",
+								"text": "Entête25",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied25",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"BouRetourRAEMAP3": {
+					"type": "button",
+					"top": 9,
+					"left": 1339,
+					"width": 163,
+					"height": 30,
+					"dataSource": "BouRetourRAEMAP3",
+					"action": "cancel",
+					"text": "Revenir au RAEMA",
+					"class": "default",
+					"method": "ObjectMethods/BouRetourRAEMAP3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PoudreBouITrouveNumEch": {
+					"type": "button",
+					"top": 70,
+					"left": 769,
+					"width": 349,
+					"height": 41,
+					"text": "Proposer des numéros pour les tests",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/PoudreBouITrouveNumEch.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxRaemaEchantillons": {
+					"type": "listbox",
+					"top": 95,
+					"left": 38,
+					"width": 615,
+					"height": 733,
+					"resizingMode": "legacy",
+					"headerHeight": "2em",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNumEchRaema1",
+							"dataSource": "TbNumEchRaema1",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Série 1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEchRaema2",
+							"dataSource": "TbNumEchRaema2",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Série 2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEchRaema3",
+							"dataSource": "TbNumEchRaema3",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Série 3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEchRaema4",
+							"dataSource": "TbNumEchRaema4",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Série 4",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEchRaema5",
+							"dataSource": "TbNumEchRaema5",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Série 5",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 18,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"PoudreBouTriRang": {
+					"type": "button",
+					"top": 140,
+					"left": 962,
+					"width": 156,
+					"height": 41,
+					"text": "Trier par rang",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/PoudreBouTriRang.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PoudreBouTriNum": {
+					"type": "button",
+					"top": 146,
+					"left": 769,
+					"width": 156,
+					"height": 41,
+					"text": "Trier par n°",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/PoudreBouTriNum.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarNumEch": {
+					"type": "input",
+					"top": 233,
+					"left": 983,
+					"width": 135,
+					"height": 22,
+					"dataSource": "VarNumEch",
+					"class": "Titre",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarNumEch.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 70,
+					"left": 239,
+					"width": 28,
+					"height": 21,
+					"dataSource": "TbRR{TbRR}",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 70,
+					"left": 71,
+					"width": 162,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Rang de codage :"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 16,
+					"left": 38,
+					"width": 681,
+					"height": 29,
+					"class": "Titre_normal",
+					"text": "Gestion des numéros d'échantillons"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 236,
+					"left": 749,
+					"width": 214,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Tester un n° d'échantillon :"
+				}
+			}
+		}
+	]
+}

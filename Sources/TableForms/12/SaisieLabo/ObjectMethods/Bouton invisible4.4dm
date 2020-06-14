@@ -1,0 +1,1 @@
+SET TEXT TO PASTEBOARD:C523([Personnes:12]Identificateur:4)

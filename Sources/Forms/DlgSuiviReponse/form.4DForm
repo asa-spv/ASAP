@@ -1,0 +1,927 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 900,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BouQuitter": {
+					"type": "button",
+					"top": 43,
+					"left": 1415,
+					"width": 117,
+					"height": 36,
+					"dataSource": "BouQuitter",
+					"action": "cancel",
+					"shortcutKey": "q",
+					"shortcutAccel": true,
+					"text": "Quitter",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"vSVG": {
+					"type": "input",
+					"top": 437,
+					"left": 610,
+					"width": 152,
+					"height": 145,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNumRaema": {
+					"type": "input",
+					"top": 64,
+					"left": 317,
+					"width": 67,
+					"height": 18,
+					"dataSource": "VarNumRaema",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarNumRaema.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 65,
+					"left": 204,
+					"width": 106,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "N° campagne"
+				},
+				"ListBoxParticipant": {
+					"type": "listbox",
+					"top": 118,
+					"left": 66,
+					"width": 112,
+					"height": 663,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxParticipant",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"rowFillSource": "TbCouleurFond",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxParticipant.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbParticipantA",
+							"dataSource": "TbParticipantA",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"VarNbLaboP": {
+					"type": "input",
+					"top": 64,
+					"left": 85,
+					"width": 67,
+					"height": 18,
+					"dataSource": "VarNbLaboP",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarHistorique": {
+					"type": "input",
+					"top": 209,
+					"left": 1112,
+					"width": 362,
+					"height": 320,
+					"dataSource": "VarHistorique",
+					"focusable": false,
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Cadran1": {
+					"type": "progress",
+					"top": 194,
+					"left": 554,
+					"width": 129,
+					"height": 10,
+					"dataSource": "Cadran1",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 174,
+					"left": 547,
+					"width": 143,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Absence de réponse"
+				},
+				"VarAvancementAbsence": {
+					"type": "input",
+					"top": 209,
+					"left": 586,
+					"width": 55,
+					"height": 16,
+					"dataSource": "VarAvancementAbsence",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PUMChoix": {
+					"type": "dropdown",
+					"top": 87,
+					"left": 61,
+					"width": 117,
+					"height": 25,
+					"dataSource": "PUMChoix",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"method": "ObjectMethods/PUMChoix.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Cadran2": {
+					"type": "progress",
+					"top": 274,
+					"left": 554,
+					"width": 129,
+					"height": 10,
+					"dataSource": "Cadran2",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 254,
+					"left": 547,
+					"width": 143,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "En cours de saisie"
+				},
+				"VarAvancementEncours": {
+					"type": "input",
+					"top": 289,
+					"left": 586,
+					"width": 55,
+					"height": 16,
+					"dataSource": "VarAvancementEncours",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Cadran3": {
+					"type": "progress",
+					"top": 359,
+					"left": 554,
+					"width": 129,
+					"height": 10,
+					"dataSource": "Cadran3",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 339,
+					"left": 547,
+					"width": 143,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Réponse envoyée"
+				},
+				"VarAvancementEnvoyée": {
+					"type": "input",
+					"top": 374,
+					"left": 586,
+					"width": 55,
+					"height": 16,
+					"dataSource": "VarAvancementEnvoyée",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxConnexion": {
+					"type": "listbox",
+					"top": 526,
+					"left": 578,
+					"width": 393,
+					"height": 298,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxConnexion",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"rowFillSource": "TbCouleurWE",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxConnexion.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbWE",
+							"dataSource": "TbWE",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Jour de la semaine",
+								"dataSource": "Entête7",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbDate1",
+							"dataSource": "TbDateGraph",
+							"dataSourceTypeHint": "date",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Date",
+								"dataSource": "Entête2",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbType1",
+							"dataSource": "TbNbLaboGraph",
+							"dataSourceTypeHint": "number",
+							"width": 59,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Nbre",
+								"dataSource": "Entête3",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbXGraph",
+							"dataSource": "TbXGraph",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "J",
+								"dataSource": "J",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"vSVGBouP2": {
+					"type": "button",
+					"top": 410,
+					"left": 604,
+					"width": 158,
+					"height": 110,
+					"action": "nextPage",
+					"display": false,
+					"method": "ObjectMethods/vSVGBouP2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarDateJour": {
+					"type": "input",
+					"top": 26,
+					"left": 808,
+					"width": 500,
+					"height": 70,
+					"dataSource": "VarDateJour",
+					"class": "Champ_grand",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxCP": {
+					"type": "listbox",
+					"top": 121,
+					"left": 373,
+					"width": 112,
+					"height": 223,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxCP",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbCasParticuliersA",
+							"dataSource": "TbCasParticuliersA",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête44",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied44",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne30",
+							"dataSource": "TbCasParticuliersN",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne31",
+							"dataSource": "TbNumEnrParticuliers",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête45",
+								"text": "Entête45",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied45",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 89,
+					"left": 343,
+					"width": 106,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Cas \rparticuliers"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 121,
+					"left": 198,
+					"width": 87,
+					"height": 16,
+					"text": "Motif :"
+				},
+				"PUMMotifsCP": {
+					"type": "dropdown",
+					"top": 138,
+					"left": 194,
+					"width": 169,
+					"height": 22,
+					"dataSource": "PUMMotifsCP",
+					"class": "Champ_normal",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"BouAddCP": {
+					"type": "button",
+					"top": 174,
+					"left": 262,
+					"width": 41,
+					"height": 32,
+					"dataSource": "BouAddCP",
+					"text": "->",
+					"method": "ObjectMethods/BouAddCP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupCP": {
+					"type": "button",
+					"top": 215,
+					"left": 262,
+					"width": 41,
+					"height": 35,
+					"dataSource": "BouSupCP",
+					"text": "<-",
+					"method": "ObjectMethods/BouSupCP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouMail": {
+					"type": "button",
+					"top": 280,
+					"left": 227,
+					"width": 108,
+					"height": 28,
+					"dataSource": "BouMail",
+					"text": "Mail relance",
+					"method": "ObjectMethods/BouMail.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 549,
+					"left": 1072,
+					"width": 106,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Commentaire lors de la saisie"
+				},
+				"ListBoxCS": {
+					"type": "listbox",
+					"top": 586,
+					"left": 1082,
+					"width": 96,
+					"height": 216,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxCS",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxCS.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbComSaisie",
+							"dataSource": "TbComSaisie",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"VarComSaisie": {
+					"type": "input",
+					"top": 586,
+					"left": 1184,
+					"width": 279,
+					"height": 208,
+					"dataSource": "VarComSaisie",
+					"focusable": false,
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouToutMailComAsa": {
+					"type": "button",
+					"top": 549,
+					"left": 1184,
+					"width": 166,
+					"height": 28,
+					"dataSource": "BouToutMailComAsa",
+					"text": "Tous les mails à l'ASA",
+					"method": "ObjectMethods/BouToutMailComAsa.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouPPCom": {
+					"type": "button",
+					"top": 549,
+					"left": 1439,
+					"width": 39,
+					"height": 28,
+					"dataSource": "BouPP",
+					"text": "PP",
+					"method": "ObjectMethods/BouPPCom.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCeMailComAsa": {
+					"type": "button",
+					"top": 549,
+					"left": 1356,
+					"width": 73,
+					"height": 28,
+					"dataSource": "BouCeMailComAsa",
+					"text": "Ce mail",
+					"method": "ObjectMethods/BouCeMailComAsa.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bossuton1": {
+					"type": "button",
+					"top": 437,
+					"left": 813,
+					"width": 192,
+					"height": 32,
+					"dataSource": "BouDifférence",
+					"text": "Différence Ghislaine - Web",
+					"method": "ObjectMethods/Bossuton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BossEnvoiFichier": {
+					"type": "button",
+					"top": 476,
+					"left": 813,
+					"width": 192,
+					"height": 32,
+					"dataSource": "BouEnvoiFichier",
+					"text": "Envoi Fichier pour Stat",
+					"method": "ObjectMethods/BossEnvoiFichier.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouEnvoiSaise": {
+					"type": "button",
+					"top": 804,
+					"left": 1184,
+					"width": 166,
+					"height": 28,
+					"dataSource": "BouEnvoiSaise",
+					"text": "Envoyer la saisie à l'ASA",
+					"method": "ObjectMethods/BouEnvoiSaise.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"BouP1": {
+					"type": "button",
+					"top": 652,
+					"left": 112,
+					"width": 163,
+					"height": 91,
+					"action": "firstPage",
+					"text": "Retour à la page 1",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarGraphe": {
+					"type": "input",
+					"top": 82,
+					"left": 30,
+					"width": 1483,
+					"height": 544,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "VarGraphe",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "scaled",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PUMTypeGraphe": {
+					"type": "dropdown",
+					"top": 32,
+					"left": 30,
+					"width": 268,
+					"height": 30,
+					"dataSource": "PUMTypeGraphe",
+					"class": "default",
+					"method": "ObjectMethods/PUMTypeGraphe.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"CaseDetail": {
+					"type": "checkbox",
+					"top": 30,
+					"left": 389,
+					"width": 221,
+					"height": 35,
+					"dataSource": "CaseDetail",
+					"text": "Voir le détail",
+					"class": "default",
+					"method": "ObjectMethods/CaseDetail.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouP3": {
+					"type": "button",
+					"top": 39,
+					"left": 884,
+					"width": 80,
+					"height": 26,
+					"dataSource": "BouP3",
+					"action": "nextPage",
+					"text": "Page 3",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

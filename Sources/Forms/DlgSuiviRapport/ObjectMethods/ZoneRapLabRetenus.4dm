@@ -1,0 +1,1 @@
+RapAfficheParticipation (Self:C308)

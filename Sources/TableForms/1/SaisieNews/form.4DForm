@@ -1,0 +1,120 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 36,
+					"left": 111,
+					"width": 353,
+					"height": 29,
+					"class": "Grand_titre",
+					"text": "Saisie d'une nouvelle"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 85,
+					"left": 33,
+					"width": 239,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"text": "Entrer ici le texte de la nouvelle :"
+				},
+				"Champ": {
+					"type": "input",
+					"top": 108,
+					"left": 34,
+					"width": 430,
+					"height": 145,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[XData:1]XTexte:9",
+					"borderStyle": "solid",
+					"styledText": true,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouAnnule": {
+					"type": "button",
+					"top": 267,
+					"left": 349,
+					"width": 56,
+					"height": 42,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"class": "default",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_delete.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouStockeNews": {
+					"type": "button",
+					"top": 267,
+					"left": 415,
+					"width": 64,
+					"height": 42,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/newspaper_go.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 33,
+					"left": 33,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/newspaper.png"
+				},
+				"Texte35": {
+					"type": "text",
+					"top": 33,
+					"left": 376,
+					"width": 88,
+					"height": 29,
+					"class": "Grand_titre",
+					"textAlign": "center",
+					"text": "NEWS"
+				}
+			}
+		}
+	]
+}

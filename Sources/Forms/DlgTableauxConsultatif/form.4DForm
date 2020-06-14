@@ -1,0 +1,570 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PumDomaine": {
+					"type": "dropdown",
+					"top": 170,
+					"left": 562,
+					"width": 196,
+					"height": 19,
+					"dataSource": "PumDomaine",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/PumDomaine.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 2,
+					"left": 0,
+					"width": 745,
+					"height": 15,
+					"dataSource": "VarTitre",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouImprimeEcran": {
+					"type": "button",
+					"top": 360,
+					"left": 32,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouImprimeEcran",
+					"text": "Imprimer l'écran",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouImprimeEcran.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 360,
+					"left": 230,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouImpTableaux",
+					"text": "Imprimer les tableaux",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 360,
+					"left": 503,
+					"width": 237,
+					"height": 31,
+					"dataSource": "BouQuitte",
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Champ_normal",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarDateDebut": {
+					"type": "input",
+					"top": 103,
+					"left": 602,
+					"width": 71,
+					"height": 15,
+					"dataSource": "VarDateDebut",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDateFin": {
+					"type": "input",
+					"top": 136,
+					"left": 602,
+					"width": 71,
+					"height": 15,
+					"dataSource": "VarDateFin",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxRetours": {
+					"type": "listbox",
+					"top": 77,
+					"left": 13,
+					"width": 504,
+					"height": 242,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxRetours",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbCampagnesConcernees",
+							"dataSource": "TbCampagnesConcernees",
+							"width": 46,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "Entête10",
+								"dataSource": "Entête10"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRASA",
+							"dataSource": "TbRASA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRADILVA",
+							"dataSource": "TbRADILVA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRTotal",
+							"dataSource": "TbRTotal",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Entête3",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRIASA",
+							"dataSource": "TbRIASA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Entête4",
+								"dataSource": "Entête4"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRIADILVA",
+							"dataSource": "TbRIADILVA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"dataSource": "Entête5"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbRITotal",
+							"dataSource": "TbRITotal",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Entête6",
+								"dataSource": "Entête6"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbDIASA",
+							"dataSource": "TbDIASA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Entête7",
+								"dataSource": "Entête7"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbDIADILVA",
+							"dataSource": "TbDIADILVA",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Entête8",
+								"dataSource": "Entête8"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbDITotal",
+							"dataSource": "TbDITotal",
+							"dataSourceTypeHint": "number",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Entête9",
+								"dataSource": "Entête9"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 49,
+					"left": 94,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Réclamations"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 63,
+					"left": 60,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 63,
+					"left": 110,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 63,
+					"left": 160,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 49,
+					"left": 244,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Retours"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 63,
+					"left": 210,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 63,
+					"left": 260,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 63,
+					"left": 310,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 49,
+					"left": 394,
+					"width": 94,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"text": "Demandes"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 63,
+					"left": 360,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ASA"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 63,
+					"left": 410,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 63,
+					"left": 460,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 63,
+					"left": 13,
+					"width": 43,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"text": "RAEMA"
+				},
+				"BouTop5": {
+					"type": "button",
+					"top": 202,
+					"left": 562,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouTop5",
+					"text": "Top 5 classification",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouTop5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouReclam": {
+					"type": "button",
+					"top": 246,
+					"left": 562,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouReclam",
+					"text": "Tableau réclamation",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouReclam.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

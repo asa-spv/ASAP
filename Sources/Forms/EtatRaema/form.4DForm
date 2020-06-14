@@ -1,0 +1,57 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 19,
+	"markerBreak": 33,
+	"markerFooter": 36,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 3,
+					"left": 5,
+					"width": 774,
+					"height": 17,
+					"dataSource": "VarEtatRaema",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

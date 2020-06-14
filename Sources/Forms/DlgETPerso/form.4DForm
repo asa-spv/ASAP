@@ -1,0 +1,190 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BouQuitte": {
+					"type": "button",
+					"top": 15,
+					"left": 843,
+					"width": 100,
+					"height": 45,
+					"action": "cancel",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouOK": {
+					"type": "button",
+					"top": 108,
+					"left": 628,
+					"width": 279,
+					"height": 45,
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "  Enregistrer les modifications",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_save.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "bevel",
+					"method": "ObjectMethods/BouOK.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte2": {
+					"type": "text",
+					"top": 9,
+					"left": 0,
+					"width": 820,
+					"height": 29,
+					"class": "Titre_normal",
+					"textAlign": "center",
+					"text": "En-têtes des champs affiché dans la gestion par ListBox  "
+				},
+				"TbNomTable1": {
+					"type": "dropdown",
+					"top": 50,
+					"left": 29,
+					"width": 248,
+					"height": 27,
+					"dataSource": "TbNomTable",
+					"focusable": false,
+					"class": "Champ_grand",
+					"method": "ObjectMethods/TbNomTable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxChamp": {
+					"type": "listbox",
+					"top": 83,
+					"left": 21,
+					"width": 592,
+					"height": 453,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomStructure",
+							"dataSource": "TbNomStructure",
+							"width": 259,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Nom du champ en structure"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNomAffiche",
+							"dataSource": "TbNomAffiche",
+							"width": 318,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Nom du champ dans les listes"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumChampAffiche",
+							"dataSource": "TbNumChampAffiche",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "NumChamp"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

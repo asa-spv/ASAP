@@ -1,0 +1,387 @@
+﻿{
+	"destination": "detailScreen",
+	"inheritedForm": "SaisieStandard",
+	"width": 1600,
+	"height": 850,
+	"markerBody": 245,
+	"markerBreak": 245,
+	"markerFooter": 255,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte8": {
+					"type": "text",
+					"top": 662,
+					"left": 55,
+					"width": 59,
+					"height": 13,
+					"class": "Etiquette_petite",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 141,
+					"left": 60,
+					"width": 187,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Nom de la fonction : "
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 174,
+					"left": 151,
+					"width": 96,
+					"height": 14,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Description : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 662,
+					"left": 116,
+					"width": 384,
+					"height": 12,
+					"dataSource": "[XFonctions:3]UUID:1",
+					"class": "Champ_petit",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NomFonction": {
+					"type": "input",
+					"top": 141,
+					"left": 252,
+					"width": 496,
+					"height": 15,
+					"dataSource": "[XFonctions:3]NomFonction:2",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Description": {
+					"type": "input",
+					"top": 174,
+					"left": 252,
+					"width": 820,
+					"height": 155,
+					"dataSource": "[XFonctions:3]Description:3",
+					"class": "Champ_normal",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 25,
+					"left": 49,
+					"width": 78,
+					"height": 65,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fonctions.png"
+				},
+				"ListBoxProfils": {
+					"type": "listbox",
+					"top": 343,
+					"left": 252,
+					"width": 836,
+					"height": 292,
+					"resizingMode": "legacy",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/ListBoxProfils.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "TbTableSensible",
+							"dataSource": "TbTableSensible",
+							"width": 215,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Table sensible"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbVoir",
+							"dataSource": "TbVoir",
+							"dataSourceTypeHint": "boolean",
+							"width": 52,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Voir"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbAjouter",
+							"dataSource": "TbAjouter",
+							"dataSourceTypeHint": "boolean",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Ajouter"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbModifier",
+							"dataSource": "TbModifier",
+							"dataSourceTypeHint": "boolean",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Modifier"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbSupprimer",
+							"dataSource": "TbSupprimer",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Supprimer"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbImprimer",
+							"dataSource": "TbImprimer",
+							"width": 86,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Imprimer"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbSpecial1",
+							"dataSource": "TbSpecial1",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Spécial 1"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbSpecial2",
+							"dataSource": "TbSpecial2",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Spécial 2"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEnr",
+							"dataSource": "TbNumEnr",
+							"width": 236,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "NumEnr"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 344,
+					"left": 55,
+					"width": 187,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Profils : "
+				}
+			}
+		}
+	]
+}

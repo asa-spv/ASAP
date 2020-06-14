@@ -1,0 +1,376 @@
+﻿{
+	"destination": "detailScreen",
+	"inheritedForm": "SaisieStandard",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "MiniBarre",
+	"markerBody": 272,
+	"markerBreak": 272,
+	"markerFooter": 282,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte9": {
+					"type": "text",
+					"top": 817,
+					"left": 65,
+					"width": 120,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 817,
+					"left": 1089,
+					"width": 120,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "UUIDPersonne : "
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 128,
+					"left": 99,
+					"width": 120,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "NumCampagne : "
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 165,
+					"left": 99,
+					"width": 120,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "TexteParticipation : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 817,
+					"left": 190,
+					"width": 311,
+					"height": 21,
+					"dataSource": "[CampagneParticipations:17]UUID:1",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UUIDPersonne": {
+					"type": "input",
+					"top": 817,
+					"left": 1238,
+					"width": 287,
+					"height": 21,
+					"dataSource": "[CampagneParticipations:17]UUIDPersonne:2",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NumCampagne": {
+					"type": "input",
+					"top": 128,
+					"left": 224,
+					"width": 64,
+					"height": 21,
+					"dataSource": "[CampagneParticipations:17]NumCampagne:3",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TexteParticipation": {
+					"type": "input",
+					"top": 186,
+					"left": 99,
+					"width": 610,
+					"height": 495,
+					"dataSource": "[CampagneParticipations:17]TexteParticipation:4",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TexteParticipation1": {
+					"type": "input",
+					"top": 186,
+					"left": 755,
+					"width": 497,
+					"height": 257,
+					"dataSource": "[CampagneParticipations:17]Arguments:5",
+					"dataSourceTypeHint": "object",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 128,
+					"left": 328,
+					"width": 120,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "N° labo : "
+				},
+				"VarNumLabo": {
+					"type": "input",
+					"top": 128,
+					"left": 451,
+					"width": 73,
+					"height": 21,
+					"dataSource": "VarNumLabo",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 817,
+					"left": 593,
+					"width": 204,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "N° d'enregistrement"
+				},
+				"VarNumEnr": {
+					"type": "input",
+					"top": 816,
+					"left": 805,
+					"width": 124,
+					"height": 21,
+					"dataSource": "VarNumEnr",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxGermes": {
+					"type": "listbox",
+					"top": 456,
+					"left": 756,
+					"width": 505,
+					"height": 218,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"headerHeight": "2em",
+					"highlightSet": "$ListboxSet",
+					"table": 25,
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "[CampagneGelGermes:25]NomDuGerme:3",
+							"width": 306,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Nom du germe"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "[CampagneGelGermes:25]NbreColisSupAvecRapport:5",
+							"dataSourceTypeHint": "integer",
+							"width": 92,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "AR"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "[CampagneGelGermes:25]NbreColisSupSansRapport:4",
+							"dataSourceTypeHint": "integer",
+							"width": 92,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "SR"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

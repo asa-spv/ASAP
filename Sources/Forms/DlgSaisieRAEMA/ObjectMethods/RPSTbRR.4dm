@@ -1,0 +1,5 @@
+READ WRITE:C146([RAEMACampagnes:20])
+QUERY:C277([RAEMACampagnes:20];[RAEMACampagnes:20]NumCampagne:2=TbNR{TbNR})
+OB SET:C1220([RAEMACampagnes:20]Arguments:7;"Rang";TbRR{TbRR})
+SAVE RECORD:C53([RAEMACampagnes:20])
+ZAmnistiePartielle (->[RAEMACampagnes:20];True:C214)

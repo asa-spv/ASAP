@@ -1,0 +1,383 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 19,
+	"markerBody": 44,
+	"markerBreak": 47,
+	"markerFooter": 47,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image7": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 1277,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Image7.png"
+				},
+				"S1_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "NomLong : "
+				},
+				"S2_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 336,
+					"width": 192,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "NomCourt : "
+				},
+				"S3_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 560,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "Arguments : "
+				},
+				"S4_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 992,
+					"width": 81,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "Identificateur : "
+				},
+				"S5_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1105,
+					"width": 88,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "TypePersonne : "
+				},
+				"S6_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1225,
+					"width": 36,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "UUID : "
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 19,
+					"left": 0,
+					"width": 1277,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 24,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]NomLong:2",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 336,
+					"width": 192,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]NomCourt:3",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 560,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]Arguments:7",
+					"dataSourceTypeHint": "object",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 992,
+					"width": 81,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]Identificateur:4",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1105,
+					"width": 88,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]TypePersonne:5",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1225,
+					"width": 36,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnes:12]UUID:1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Line10": {
+					"type": "line",
+					"top": -5,
+					"left": 1277,
+					"height": 49,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Line11": {
+					"type": "line",
+					"top": -5,
+					"left": 1209,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur2": {
+					"type": "button",
+					"top": -5,
+					"left": 1208,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": -5,
+					"left": 1089,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur3": {
+					"type": "button",
+					"top": -5,
+					"left": 1088,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line13": {
+					"type": "line",
+					"top": -5,
+					"left": 976,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur4": {
+					"type": "button",
+					"top": -5,
+					"left": 975,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line14": {
+					"type": "line",
+					"top": -5,
+					"left": 544,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur5": {
+					"type": "button",
+					"top": -5,
+					"left": 543,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line15": {
+					"type": "line",
+					"top": -5,
+					"left": 320,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur6": {
+					"type": "button",
+					"top": -5,
+					"left": 319,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

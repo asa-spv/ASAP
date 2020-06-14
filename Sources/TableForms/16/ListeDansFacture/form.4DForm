@@ -1,0 +1,321 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 42,
+	"markerBody": 82,
+	"markerBreak": 83,
+	"markerFooter": 83,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 256,
+					"height": 38,
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 257,
+					"width": 52,
+					"height": 38,
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 368,
+					"width": 71,
+					"height": 38,
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 437,
+					"width": 81,
+					"height": 38,
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 308,
+					"width": 62,
+					"height": 38,
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 0,
+					"width": 255,
+					"height": 42,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 11,
+					"left": 1,
+					"width": 266,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Désignation"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 11,
+					"left": 380,
+					"width": 59,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Prix UHT"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 11,
+					"left": 444,
+					"width": 73,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Montant HT"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 11,
+					"left": 315,
+					"width": 55,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Taux TVA"
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 46,
+					"left": 4,
+					"width": 247,
+					"height": 29,
+					"dataSource": "[Ventes:16]Intitule:3",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 257,
+					"width": 54,
+					"height": 42,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 54,
+					"left": 271,
+					"width": 24,
+					"height": 15,
+					"dataSource": "[Ventes:16]Quantité:6",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 378,
+					"width": 63,
+					"height": 42,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 54,
+					"left": 365,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Ventes:16]PrixUHT:5",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "### ### ##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 442,
+					"width": 76,
+					"height": 42,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Champ4": {
+					"type": "input",
+					"top": 54,
+					"left": 442,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Ventes:16]PrixTotalHT:7",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "### ### ##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 313,
+					"width": 63,
+					"height": 42,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Champ5": {
+					"type": "input",
+					"top": 54,
+					"left": 313,
+					"width": 52,
+					"height": 15,
+					"dataSource": "[Ventes:16]TauxTVA:8",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0.00 %",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 11,
+					"left": 258,
+					"width": 51,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Quantité"
+				}
+			}
+		}
+	]
+}

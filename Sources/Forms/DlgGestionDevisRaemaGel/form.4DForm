@@ -1,0 +1,1488 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 850,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Image2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1763,
+					"height": 869,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fond Blanc.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 341,
+					"left": 407,
+					"width": 727,
+					"height": 392,
+					"class": "Titre",
+					"text": "Quoi :"
+				},
+				"Zone de groupe": {
+					"type": "groupBox",
+					"top": 73,
+					"left": 407,
+					"width": 727,
+					"height": 239,
+					"class": "Titre",
+					"text": "Qui :"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 21,
+					"left": 267,
+					"width": 911,
+					"height": 29,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 24,
+					"text": "Gestion des devis RAEMA Gel <<>AnCourantDevisRGA>"
+				},
+				"BouQuitter": {
+					"type": "button",
+					"top": 18,
+					"left": 1006,
+					"width": 128,
+					"height": 35,
+					"dataSource": "BouQuitter",
+					"action": "cancel",
+					"text": "Quitter",
+					"method": "ObjectMethods/BouQuitter.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarNbDevis": {
+					"type": "input",
+					"top": 40,
+					"left": 23,
+					"width": 97,
+					"height": 15,
+					"dataSource": "VarNbDevis",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"AnnonceMai": {
+					"type": "text",
+					"top": 375,
+					"left": 453,
+					"width": 183,
+					"height": 21,
+					"class": "Titre",
+					"text": "Mai"
+				},
+				"BouValideDevis": {
+					"type": "button",
+					"top": 778,
+					"left": 453,
+					"width": 515,
+					"height": 59,
+					"text": "Valider le devis",
+					"class": "Titre",
+					"method": "ObjectMethods/BouValideDevis.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 108,
+					"left": 423,
+					"width": 110,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Nom"
+				},
+				"VarNom": {
+					"type": "input",
+					"top": 108,
+					"left": 546,
+					"width": 569,
+					"height": 17,
+					"dataSource": "VarNom",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 134,
+					"left": 423,
+					"width": 110,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Adresse"
+				},
+				"VarAdresse": {
+					"type": "input",
+					"top": 134,
+					"left": 546,
+					"width": 332,
+					"height": 80,
+					"dataSource": "VarAdresse",
+					"focusable": false,
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 224,
+					"left": 423,
+					"width": 110,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "CP -  Ville"
+				},
+				"VarCP": {
+					"type": "input",
+					"top": 224,
+					"left": 546,
+					"width": 79,
+					"height": 16,
+					"dataSource": "VarCP",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarVille": {
+					"type": "input",
+					"top": 224,
+					"left": 645,
+					"width": 337,
+					"height": 16,
+					"dataSource": "VarVille",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 255,
+					"left": 424,
+					"width": 110,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Pays"
+				},
+				"VarPays": {
+					"type": "input",
+					"top": 255,
+					"left": 547,
+					"width": 346,
+					"height": 16,
+					"dataSource": "VarPays",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 280,
+					"left": 424,
+					"width": 110,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Mail"
+				},
+				"VarMail": {
+					"type": "input",
+					"top": 280,
+					"left": 547,
+					"width": 346,
+					"height": 16,
+					"dataSource": "VarMail",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxNumOK": {
+					"type": "listbox",
+					"top": 59,
+					"left": 176,
+					"width": 94,
+					"height": 669,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxNumOK",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/ListBoxNumOK.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbDevisOK",
+							"dataSource": "TbDevisOK",
+							"dataSourceTypeHint": "number",
+							"width": 82,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "N° labo",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEnrOK",
+							"dataSource": "TbNumEnrOK",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Entête4",
+								"dataSource": "Entête4"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 24,
+					"left": 23,
+					"width": 95,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Devis à valider"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 24,
+					"left": 175,
+					"width": 91,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Devis validés"
+				},
+				"VarNbOK": {
+					"type": "input",
+					"top": 40,
+					"left": 173,
+					"width": 97,
+					"height": 15,
+					"dataSource": "VarNbOK",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouRetour": {
+					"type": "button",
+					"top": 161,
+					"left": 126,
+					"width": 40,
+					"height": 27,
+					"dataSource": "BouRetour",
+					"text": "<=",
+					"class": "Titre",
+					"method": "ObjectMethods/BouRetour.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAnnuleDevis": {
+					"type": "button",
+					"top": 242,
+					"left": 126,
+					"width": 39,
+					"height": 42,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Poubelle bis.png",
+					"style": "bevel",
+					"method": "ObjectMethods/BouAnnuleDevis.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouADILVA": {
+					"type": "button",
+					"top": 788,
+					"left": 1099,
+					"width": 73,
+					"height": 38,
+					"text": "ADILVA",
+					"method": "ObjectMethods/BouADILVA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxNumAdilva": {
+					"type": "listbox",
+					"top": 59,
+					"left": 284,
+					"width": 94,
+					"height": 669,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxNumAdilva",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/ListBoxNumAdilva.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbDevisAdilva",
+							"dataSource": "TbNumEnrDevisAdilva",
+							"dataSourceTypeHint": "number",
+							"width": 82,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"header": {
+								"name": "Entête16",
+								"text": "N° labo",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEnrOK1",
+							"dataSource": "TbNumEnrOK",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "Entête4",
+								"dataSource": "Entête4"
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 24,
+					"left": 284,
+					"width": 91,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "ADILVA"
+				},
+				"VarNbAdilva": {
+					"type": "input",
+					"top": 40,
+					"left": 281,
+					"width": 97,
+					"height": 15,
+					"dataSource": "VarNbAdilva",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNbTotal": {
+					"type": "input",
+					"top": 6,
+					"left": 225,
+					"width": 97,
+					"height": 15,
+					"dataSource": "VarNbTotal",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxMai": {
+					"type": "listbox",
+					"top": 405,
+					"left": 475,
+					"width": 597,
+					"height": 133,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomGermeMai",
+							"dataSource": "TbNomGermeMai",
+							"width": 334,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête18",
+								"text": "Entête18",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied18",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbPSARMai",
+							"dataSource": "TbPSARMai",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête19",
+								"text": "Entête19",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied19",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbPSSRMai",
+							"dataSource": "TbPSSRMai",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête20",
+								"text": "Entête20",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied20",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 372,
+					"left": 808,
+					"width": 122,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Pots supplémentaires AVEC rapports"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 372,
+					"left": 933,
+					"width": 122,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Pots supplémentaires SANS rapport"
+				},
+				"ListBoxDec": {
+					"type": "listbox",
+					"top": 582,
+					"left": 475,
+					"width": 597,
+					"height": 132,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomGermeDec",
+							"dataSource": "TbNomGermeDec",
+							"width": 334,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête21",
+								"text": "Entête18",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied21",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbPSARDec",
+							"dataSource": "TbPSARDec",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête22",
+								"text": "Entête19",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied22",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbPSSRDec",
+							"dataSource": "TbPSSRDec",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête23",
+								"text": "Entête20",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied23",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 546,
+					"left": 808,
+					"width": 122,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Pots supplémentaires AVEC rapports"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 546,
+					"left": 933,
+					"width": 122,
+					"height": 29,
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Pots supplémentaires SANS rapport"
+				},
+				"ListBoxWeb": {
+					"type": "listbox",
+					"top": 70,
+					"left": 1174,
+					"width": 358,
+					"height": 629,
+					"resizingMode": "legacy",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "automatic",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNoms",
+							"dataSource": "TbNoms",
+							"width": 248,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête24",
+								"text": "TbNoms",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied24",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbValeurs",
+							"dataSource": "TbValeurs",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête25",
+								"text": "TbValeurs",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied25",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"AnnonceDec": {
+					"type": "text",
+					"top": 553,
+					"left": 453,
+					"width": 183,
+					"height": 21,
+					"class": "Titre",
+					"text": "Mai"
+				},
+				"Champ": {
+					"type": "input",
+					"top": 26,
+					"left": 1185,
+					"width": 327,
+					"height": 17,
+					"dataSource": "[XData:1]UUID:1",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ1": {
+					"type": "checkbox",
+					"top": 49,
+					"left": 1185,
+					"width": 87,
+					"height": 17,
+					"dataSource": "[XData:1]XBool:14",
+					"text": "XBool",
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 49,
+					"left": 1306,
+					"width": 87,
+					"height": 17,
+					"dataSource": "[XData:1]XDate:4",
+					"dataSourceTypeHint": "date",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 49,
+					"left": 1425,
+					"width": 87,
+					"height": 17,
+					"dataSource": "[XData:1]XHeure:5",
+					"dataSourceTypeHint": "time",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"timeFormat": "hh_mm_ss",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxNumLabo": {
+					"type": "listbox",
+					"top": 59,
+					"left": 23,
+					"width": 97,
+					"height": 669,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxNumLabo",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/ListBoxNumLabo.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Colonne1EC",
+							"dataSource": "Colonne1EC",
+							"dataSourceTypeHint": "number",
+							"width": 82,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "N° labo",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2N",
+							"dataSource": "Colonne2N",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte8": {
+					"type": "text",
+					"top": 21,
+					"left": 1,
+					"width": 1177,
+					"height": 57,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 24,
+					"text": "Gestion des devis RAEMA Gel <VarPermMilleRaemaGel>\rpour l'ADILVA"
+				},
+				"BouFichierAdilva": {
+					"type": "button",
+					"top": 167,
+					"left": 87,
+					"width": 394,
+					"height": 47,
+					"text": "Sélectionner le fichier de l'ADILVA",
+					"class": "Titre",
+					"method": "ObjectMethods/BouFichierAdilva.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarCDFichier": {
+					"type": "input",
+					"top": 174,
+					"left": 517,
+					"width": 574,
+					"height": 33,
+					"dataSource": "VarCDFichier",
+					"class": "Etiquette_grande",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"AdilvaTexte9": {
+					"type": "text",
+					"top": 256,
+					"left": 95,
+					"width": 269,
+					"height": 21,
+					"class": "Titre",
+					"text": "Aperçu"
+				},
+				"AdilvaListBoxAperçu": {
+					"type": "listbox",
+					"top": 282,
+					"left": 105,
+					"width": 830,
+					"height": 396,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxAperçu",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "Colonne1",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "N°",
+								"dataSource": "Entête5",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "Colonne2",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Bacillus",
+								"dataSource": "Entête6",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "Colonne3",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Pseudo",
+								"dataSource": "Entête7",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "Colonne4",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Lactiques",
+								"dataSource": "Entête8",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "Colonne5",
+							"width": 84,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Lev Mois Ens",
+								"dataSource": "Entête9",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "Colonne6",
+							"width": 84,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "Lev Mois Sep",
+								"dataSource": "Entête10",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "Colonne7",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "Bacillus",
+								"dataSource": "Entête11",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne8",
+							"dataSource": "Colonne8",
+							"width": 58,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "Pseudo",
+								"dataSource": "Entête12",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne9",
+							"dataSource": "Colonne9",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Lactiques",
+								"dataSource": "Entête13",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne10",
+							"dataSource": "Colonne10",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Lev Mois Ens",
+								"dataSource": "Entête14",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne11",
+							"dataSource": "Colonne11",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "Lev Mois Sep",
+								"dataSource": "Entête15",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"AdilvaTexte10": {
+					"type": "text",
+					"top": 256,
+					"left": 171,
+					"width": 373,
+					"height": 21,
+					"class": "Titre",
+					"textAlign": "center",
+					"borderStyle": "solid",
+					"text": "Mai"
+				},
+				"AdilvaTexte11": {
+					"type": "text",
+					"top": 256,
+					"left": 547,
+					"width": 373,
+					"height": 21,
+					"class": "Titre",
+					"textAlign": "center",
+					"borderStyle": "solid",
+					"text": "Décembre"
+				},
+				"BouADILVA1": {
+					"type": "button",
+					"top": 704,
+					"left": 1061,
+					"width": 73,
+					"height": 38,
+					"action": "previousPage",
+					"text": "Retour",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouIncorporeAdilva": {
+					"type": "button",
+					"top": 695,
+					"left": 187,
+					"width": 593,
+					"height": 47,
+					"text": "Incorporer le fichier de l'ADILVA",
+					"class": "Titre",
+					"method": "ObjectMethods/BouIncorporeAdilva.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

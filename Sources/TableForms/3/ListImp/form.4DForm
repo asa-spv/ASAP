@@ -1,0 +1,218 @@
+﻿{
+	"destination": "listScreen",
+	"width": 1207,
+	"height": 297,
+	"markerHeader": 86,
+	"markerBody": 105,
+	"markerBreak": 105,
+	"markerFooter": 150,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1207,
+					"height": 297,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"S2_Champ": {
+					"type": "input",
+					"top": 418,
+					"left": 98,
+					"width": 168,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XFonctions:3]NomFonction:2",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Champ": {
+					"type": "input",
+					"top": 89,
+					"left": 8,
+					"width": 283,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[XFonctions:3]NomFonction:2",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 68,
+					"left": 8,
+					"width": 289,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "default",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Nom de la Fonction"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 68,
+					"left": 250,
+					"width": 214,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "default",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Attributaires"
+				},
+				"VarAttributaires": {
+					"type": "input",
+					"top": 89,
+					"left": 317,
+					"width": 491,
+					"height": 12,
+					"dataSource": "VarAttributaires",
+					"class": "Champ_normal",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarAttributaires.4dm",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Image": {
+					"type": "picture",
+					"top": 4,
+					"left": 8,
+					"width": 61,
+					"height": 50,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fonctions.png"
+				},
+				"vPageNum": {
+					"type": "input",
+					"top": 124,
+					"left": 269,
+					"width": 100,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vPageNum",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vPageNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"vDate": {
+					"type": "input",
+					"top": 122,
+					"left": 699,
+					"width": 100,
+					"height": 17,
+					"dataSource": "vDate",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vDate.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				}
+			}
+		}
+	]
+}

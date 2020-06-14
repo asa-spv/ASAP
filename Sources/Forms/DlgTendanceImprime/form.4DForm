@@ -1,0 +1,212 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 220,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CouleurFond": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 10,
+					"width": 390,
+					"height": 14,
+					"fill": "transparent"
+				},
+				"VarGerme": {
+					"type": "input",
+					"top": 75,
+					"left": 101,
+					"width": 308,
+					"height": 15,
+					"dataSource": "VarGerme",
+					"class": "Champ_normal",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 75,
+					"left": 16,
+					"width": 114,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Pour le germe"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 88,
+					"left": 55,
+					"width": 53,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "et pour "
+				},
+				"VarNature": {
+					"type": "input",
+					"top": 88,
+					"left": 101,
+					"width": 167,
+					"height": 15,
+					"dataSource": "VarNature",
+					"class": "Champ_normal",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarValeur": {
+					"type": "input",
+					"top": 106,
+					"left": 16,
+					"width": 267,
+					"height": 13,
+					"dataSource": "VarValeur",
+					"stroke": "#404040",
+					"textAlign": "right",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarC1": {
+					"type": "input",
+					"top": 88,
+					"left": 286,
+					"width": 52,
+					"height": 15,
+					"dataSource": "VarC1",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"fontStyle": "italic",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onPrintingDetail"
+					]
+				},
+				"VarC2": {
+					"type": "input",
+					"top": 88,
+					"left": 344,
+					"width": 47,
+					"height": 15,
+					"dataSource": "VarC2",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"fontStyle": "italic",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onPrintingDetail"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 88,
+					"left": 231,
+					"width": 47,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Valeur"
+				},
+				"VarOccurrence1": {
+					"type": "input",
+					"top": 106,
+					"left": 286,
+					"width": 52,
+					"height": 13,
+					"dataSource": "VarOccurrence1",
+					"dataSourceTypeHint": "number",
+					"stroke": "#404040",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarOccurrence2": {
+					"type": "input",
+					"top": 106,
+					"left": 339,
+					"width": 57,
+					"height": 13,
+					"dataSource": "VarOccurrence2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#404040",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 12,
+					"left": 10,
+					"width": 413,
+					"height": 22,
+					"dataSource": "VarTitre",
+					"class": "Titre",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

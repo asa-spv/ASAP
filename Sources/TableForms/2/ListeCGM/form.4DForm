@@ -1,0 +1,625 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 38,
+	"markerBody": 57,
+	"markerBreak": 57,
+	"markerFooter": 194,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 1001,
+					"height": 198,
+					"stroke": "transparent"
+				},
+				"VarFondPyjama": {
+					"type": "input",
+					"top": 40,
+					"left": 1,
+					"width": 1001,
+					"height": 16,
+					"dataSource": "VarFondPyjama",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarFondPyjama.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte1": {
+					"type": "text",
+					"top": 17,
+					"left": 10,
+					"width": 138,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Prénom"
+				},
+				"ZNbEnr": {
+					"type": "input",
+					"top": 5,
+					"left": 928,
+					"width": 55,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#000000",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ZBouSupEnr": {
+					"type": "button",
+					"top": 65,
+					"left": 666,
+					"width": 56,
+					"height": 62,
+					"text": "Supprimer la fiche",
+					"display": false,
+					"method": "ObjectMethods/ZBouSupEnr.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouTriSel": {
+					"type": "button",
+					"top": 66,
+					"left": 510,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"text": "Trier",
+					"display": false,
+					"method": "ObjectMethods/ZBouTriSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 65,
+					"left": 124,
+					"width": 56,
+					"height": 62,
+					"dataSource": "ZBouRechTotale",
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"text": "Recherches ...",
+					"display": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 65,
+					"left": 183,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "l",
+					"shortcutAccel": true,
+					"text": "Recherches sur liste",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouEnlèveSel": {
+					"type": "button",
+					"top": 65,
+					"left": 360,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/ZBouEnlèveSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouVireNoirSel": {
+					"type": "button",
+					"top": 65,
+					"left": 242,
+					"width": 56,
+					"height": 62,
+					"text": "Virer les fiches noires",
+					"display": false,
+					"method": "ObjectMethods/ZBouVireNoirSel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseMove"
+					]
+				},
+				"ZBouEtatSel": {
+					"type": "button",
+					"top": 65,
+					"left": 855,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "e",
+					"shortcutAccel": true,
+					"text": "Etats",
+					"display": false,
+					"method": "ObjectMethods/ZBouEtatSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouImpSel": {
+					"type": "button",
+					"top": 65,
+					"left": 797,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Imprimer",
+					"display": false,
+					"method": "ObjectMethods/ZBouImpSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouSupSel": {
+					"type": "button",
+					"top": 65,
+					"left": 724,
+					"width": 61,
+					"height": 62,
+					"text": "Supprimer sélection",
+					"display": false,
+					"method": "ObjectMethods/ZBouSupSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouAppelEns": {
+					"type": "button",
+					"top": 130,
+					"left": 185,
+					"width": 56,
+					"height": 62,
+					"text": "Appeler un ensemble",
+					"display": false,
+					"method": "ObjectMethods/ZBouAppelEns.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouSauvEns": {
+					"type": "button",
+					"top": 130,
+					"left": 125,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Enregistrer la liste",
+					"display": false,
+					"method": "ObjectMethods/ZBouSauvEns.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouSupEns": {
+					"type": "button",
+					"top": 130,
+					"left": 305,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": "Supprimer un ensemble",
+					"display": false,
+					"method": "ObjectMethods/ZBouSupEns.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseMove"
+					]
+				},
+				"ZBouAjouteASel": {
+					"type": "button",
+					"top": 65,
+					"left": 301,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/ZBouAjouteASel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouRecupeSel": {
+					"type": "button",
+					"top": 65,
+					"left": 419,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "[Backspace]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/ZBouRecupeSel.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouAjouteEnr": {
+					"type": "button",
+					"top": 65,
+					"left": 597,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "n",
+					"shortcutAccel": true,
+					"text": "Nouveau",
+					"display": false,
+					"method": "ObjectMethods/ZBouAjouteEnr.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouQuitteListe": {
+					"type": "button",
+					"top": 136,
+					"left": 873,
+					"width": 97,
+					"height": 51,
+					"action": "cancel",
+					"shortcutKey": "q",
+					"shortcutAccel": true,
+					"text": "Annuler",
+					"display": false,
+					"method": "ObjectMethods/ZBouQuitteListe.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"ZBouCalculEns": {
+					"type": "button",
+					"top": 130,
+					"left": 245,
+					"width": 56,
+					"height": 62,
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "Calcul",
+					"display": false,
+					"method": "ObjectMethods/ZBouCalculEns.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Champ": {
+					"type": "input",
+					"top": 41,
+					"left": 9,
+					"width": 139,
+					"height": 16,
+					"dataSource": "[XUtilisateurs:2]Prenom:3",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 17,
+					"left": 139,
+					"width": 183,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Nom"
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 41,
+					"left": 138,
+					"width": 184,
+					"height": 16,
+					"dataSource": "[XUtilisateurs:2]Nom:2",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 17,
+					"left": 300,
+					"width": 183,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Attributions"
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 41,
+					"left": 300,
+					"width": 661,
+					"height": 16,
+					"dataSource": "ZVarAtt",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Quitter"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 65,
+					"left": 798,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CG Imprimer Sélection.png"
+				},
+				"Image9": {
+					"type": "picture",
+					"top": 65,
+					"left": 856,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/CGM liste Etat.png"
+				},
+				"Image20": {
+					"type": "picture",
+					"top": 65,
+					"left": 597,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Nouvelle fiche.png"
+				},
+				"Image21": {
+					"type": "picture",
+					"top": 65,
+					"left": 666,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Supprimer fiche.png"
+				},
+				"Image22": {
+					"type": "picture",
+					"top": 65,
+					"left": 724,
+					"width": 61,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Supprimer sélection.png"
+				},
+				"Image23": {
+					"type": "picture",
+					"top": 136,
+					"left": 873,
+					"width": 97,
+					"height": 51,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/CGM liste Quitter.png"
+				},
+				"Image24": {
+					"type": "picture",
+					"top": 66,
+					"left": 510,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Trier la sélection.png"
+				},
+				"Image25": {
+					"type": "picture",
+					"top": 65,
+					"left": 419,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Reprendre sélection.png"
+				},
+				"Image10": {
+					"type": "picture",
+					"top": 65,
+					"left": 360,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Enlever à sélection.png"
+				},
+				"Image11": {
+					"type": "picture",
+					"top": 65,
+					"left": 305,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Ajouter à sélection.png"
+				},
+				"Image12": {
+					"type": "picture",
+					"top": 65,
+					"left": 245,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Oter fiches.png"
+				},
+				"Image14": {
+					"type": "picture",
+					"top": 65,
+					"left": 185,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Sélection sur liste.png"
+				},
+				"Image15": {
+					"type": "picture",
+					"top": 66,
+					"left": 124,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/CGM liste Recherche sur tout.png"
+				},
+				"Image16": {
+					"type": "picture",
+					"top": 130,
+					"left": 125,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Enregistrer ensemble.png"
+				},
+				"Image17": {
+					"type": "picture",
+					"top": 130,
+					"left": 185,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Appeler ensemble.png"
+				},
+				"Image18": {
+					"type": "picture",
+					"top": 130,
+					"left": 245,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Calcul ensemble.png"
+				},
+				"Image19": {
+					"type": "picture",
+					"top": 130,
+					"left": 305,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Standard/CGM liste Supprimer ensemble.png"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,317 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 635,
+	"height": 450,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"RectRond1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 689,
+					"height": 509,
+					"stroke": "#FFFFFF",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"RectRond2": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 466,
+					"width": 162,
+					"height": 369,
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 27,
+					"left": 476,
+					"width": 141,
+					"height": 339,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Cet écran vous permet de supprimer une ou plusieurs listes que vous avez créées.\r \rPour cela sélectionner les lignes concernées en cliquant dessus tout en maintenant la touche contrôle sous Windows, commande sous Mac puis cliquer sur le bouton \"Supprimer les listes surlignées\".\r\rNB : cette manoeuvre ne supprime que les listes sans supprimer les enregistrements"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 19,
+					"width": 445,
+					"height": 39,
+					"fill": "#000000"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 29,
+					"left": 22,
+					"width": 129,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nom de la liste"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 15,
+					"left": 293,
+					"width": 69,
+					"height": 34,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Date de \rcréation"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 15,
+					"left": 377,
+					"width": 79,
+					"height": 31,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nombre \rde colonnes"
+				},
+				"BouSupprime": {
+					"type": "button",
+					"top": 401,
+					"left": 22,
+					"width": 439,
+					"height": 41,
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "  Supprimer les listes surlignées",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/24_bin.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "bevel",
+					"method": "ObjectMethods/BouSupprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitte": {
+					"type": "button",
+					"top": 401,
+					"left": 508,
+					"width": 120,
+					"height": 41,
+					"action": "cancel",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxListes": {
+					"type": "listbox",
+					"top": 50,
+					"left": 21,
+					"width": 441,
+					"height": 331,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxListes",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"fill": "#EBEBEB",
+					"alternateFill": "automatic",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNomListe",
+							"dataSource": "TbNomListe",
+							"width": 271,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#EBEBEB",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#EBEBEB",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbDateListe",
+							"dataSource": "TbDateListe",
+							"dataSourceTypeHint": "date",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#EBEBEB",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#EBEBEB",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNbListe",
+							"dataSource": "TbNbListe",
+							"dataSourceTypeHint": "number",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#EBEBEB",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#EBEBEB",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNumEnrListe",
+							"dataSource": "TbNumEnrListe",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fill": "#EBEBEB",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#EBEBEB",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

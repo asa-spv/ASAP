@@ -1,0 +1,567 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 900,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 1,
+					"width": 1687,
+					"height": 870,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"VarLogoTable": {
+					"type": "input",
+					"top": 16,
+					"left": 97,
+					"width": 65,
+					"height": 65,
+					"dataSourceTypeHint": "picture",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ZNbEnr": {
+					"type": "input",
+					"top": 61,
+					"left": 1211,
+					"width": 55,
+					"height": 16,
+					"dataSource": "ZNbEnr",
+					"dataSourceTypeHint": "number",
+					"stroke": "#9400D3",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Lb_Tableaux": {
+					"type": "listbox",
+					"top": 86,
+					"left": 95,
+					"width": 1432,
+					"height": 692,
+					"dataSource": "Lb_Tableaux",
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"showFooters": true,
+					"lockedColumnCount": 7,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DFE4FF",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Lb_Tableaux.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDragOver",
+						"onColumnMove",
+						"onColumnResize",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "TbNumFactureASA",
+							"dataSource": "TbNumFactureASA",
+							"width": 85,
+							"minWidth": 85,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "N°",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbDateFactureASA",
+							"dataSource": "TbDateFactureASA",
+							"dataSourceTypeHint": "date",
+							"width": 117,
+							"minWidth": 117,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Date",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNomPersonneFacture",
+							"dataSource": "TbNomPersonneFacture",
+							"width": 765,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Destinataire",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"dataSource": "VarPiedTotal",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "right",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbHTFactureASA",
+							"dataSource": "TbHTFactureASA",
+							"dataSourceTypeHint": "number",
+							"width": 139,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.00 €",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "HT",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,###,##0.00 €",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbTVAFactureASA",
+							"dataSource": "TbTVAFactureASA",
+							"dataSourceTypeHint": "number",
+							"width": 137,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.00 €",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "TVA",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,###,##0.00 €",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbTTCFactureASA",
+							"dataSource": "TbTTCFactureASA",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.00 €",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "TTC",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,###,##0.00 €",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbRegléeFactureASA",
+							"dataSource": "TbRegléeFactureASA",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.00 €",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"rowFillSource": "TbCouleurFondReglefacture",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Réglée",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"numberFormat": "###,###,##0.00 €",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNumEnr",
+							"dataSource": "TbNumEnr",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFE4FF",
+							"textAlign": "left",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "N° enr",
+								"stroke": "#000000",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"ZBouQuitteListe": {
+					"type": "button",
+					"top": 22,
+					"left": 770,
+					"width": 55,
+					"height": 50,
+					"action": "cancel",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZBouQuitteListe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SupVariable2": {
+					"type": "button",
+					"top": 18,
+					"left": 1014,
+					"width": 56,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/24_bin.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/SupVariable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarRechercheGlobale": {
+					"type": "input",
+					"top": 61,
+					"left": 1307,
+					"width": 158,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/VarRechercheGlobale.4dm",
+					"events": [
+						"onLoad",
+						"onAfterKeystroke"
+					]
+				},
+				"Image26": {
+					"type": "picture",
+					"top": 63,
+					"left": 1286,
+					"width": 12,
+					"height": 12,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image26.png"
+				},
+				"LapinZBouLapin": {
+					"type": "button",
+					"top": 8,
+					"left": 224,
+					"width": 75,
+					"height": 70,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/hat.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/LapinZBouLapin.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ImpZBouImpSel": {
+					"type": "button",
+					"top": 22,
+					"left": 526,
+					"width": 56,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_print.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ImpZBouImpSel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouModifieSelection": {
+					"type": "button",
+					"top": 19,
+					"left": 450,
+					"width": 56,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_search.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZBouModifieSelection.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouAjouteEnr": {
+					"type": "button",
+					"top": 22,
+					"left": 610,
+					"width": 56,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/22_add.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZBouAjouteEnr.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"EnsZBouEnsembles": {
+					"type": "button",
+					"top": 17,
+					"left": 369,
+					"width": 56,
+					"height": 52,
+					"class": "Champ_petit",
+					"fontWeight": "bold",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_Selection.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/EnsZBouEnsembles.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"VarLogoTable",
+				"ZNbEnr",
+				"Lb_Tableaux"
+			]
+		}
+	]
+}

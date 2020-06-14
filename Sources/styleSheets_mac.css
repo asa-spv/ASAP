@@ -1,0 +1,102 @@
+.Bouton_grand {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.Bouton_normal {
+	font-family: Chicago;
+	font-size: 12px;
+}
+
+.Bouton_petit {
+	font-family: Charcoal;
+	font-size: 10px;
+}
+
+.Boutons {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.Calendar {
+	font-family: Lucida Grande;
+	font-size: 11px;
+}
+
+.Champ_grand {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.Champ_normal {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.Champ_petit {
+	font-family: Geneva;
+	font-size: 9px;
+}
+
+.default {
+	font-family: Lucida Grande;
+	font-size: 13px;
+}
+
+.Etiquette_grande {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.Etiquette_normale {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.Etiquette_normale1 {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.Etiquette_petite {
+	font-family: Geneva;
+	font-size: 10px;
+}
+
+.Grand_titre {
+	font-family: Arial;
+	font-size: 36px;
+}
+
+.Log_Champ_Normal {
+	font-family: Lucida Grande;
+	font-size: 12px;
+}
+
+.Statique {
+	font-family: Lucida Grande;
+	font-size: 11px;
+}
+
+.Titre {
+	font-family: Lucida Grande;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.Titre_grand {
+	font-family: Arial;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.Titre_normal {
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: bold;
+}
+

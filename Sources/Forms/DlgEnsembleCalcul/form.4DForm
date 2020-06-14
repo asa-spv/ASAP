@@ -1,0 +1,632 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 650,
+	"height": 415,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"RectRond1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 689,
+					"height": 509,
+					"stroke": "#FFFFFF",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": 267,
+					"left": 6,
+					"width": 638,
+					"height": 65,
+					"fill": "transparent"
+				},
+				"RectRond2": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 469,
+					"width": 149,
+					"height": 215,
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 23,
+					"left": 476,
+					"width": 131,
+					"height": 187,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": "Cet écran vous permet d'effectuer \rdes opérations sur les ensembles: il faut cliquer sur leur nom dans la liste des deux ensembles à combiner ou les écrire directement dans les cases adéquates."
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 289,
+					"left": 452,
+					"width": 37,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"startPoint": "bottomLeft"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 299,
+					"left": 452,
+					"width": 37,
+					"strokeWidth": 0.1
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 272,
+					"left": 16,
+					"width": 178,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Ensemble 1 de départ"
+				},
+				"Variable8": {
+					"type": "radio",
+					"top": 271,
+					"left": 199,
+					"width": 58,
+					"height": 16,
+					"dataSource": "RadioET",
+					"text": "ET",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#FF1A00",
+					"focusable": false,
+					"radioGroup": "Groupe7",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "radio",
+					"top": 290,
+					"left": 199,
+					"width": 58,
+					"height": 16,
+					"dataSource": "RadioOU",
+					"text": "OU",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#FF0F00",
+					"focusable": false,
+					"radioGroup": "Groupe7",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 309,
+					"left": 199,
+					"width": 57,
+					"height": 16,
+					"dataSource": "RadioSAUF",
+					"text": "SAUF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#FF0F00",
+					"focusable": false,
+					"radioGroup": "Groupe7",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 293,
+					"left": 16,
+					"width": 153,
+					"height": 12,
+					"dataSource": "ZVarEnsDep",
+					"stroke": "#FF0400",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 293,
+					"left": 262,
+					"width": 160,
+					"height": 12,
+					"dataSource": "ZVarEnsArr",
+					"stroke": "#FF0400",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 19,
+					"width": 445,
+					"height": 41,
+					"fill": "#000000"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 23,
+					"left": 22,
+					"width": 129,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nom de l'ensemble"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 17,
+					"left": 159,
+					"width": 69,
+					"height": 34,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Date de \rcréation"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 17,
+					"left": 239,
+					"width": 53,
+					"height": 34,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nombre \rde fiches"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 23,
+					"left": 297,
+					"width": 131,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Auteur de l'ensemble"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 311,
+					"left": 15,
+					"width": 179,
+					"height": 16,
+					"dataSource": "ZVarNbDep",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FF9F00",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 272,
+					"left": 499,
+					"width": 134,
+					"height": 16,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Ensemble résultant"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 272,
+					"left": 262,
+					"width": 180,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Ensemble 2 de départ"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 310,
+					"left": 262,
+					"width": 180,
+					"height": 16,
+					"dataSource": "ZVarNbArr",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFA003",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CalculBouCalcul": {
+					"type": "button",
+					"top": 343,
+					"left": 282,
+					"width": 62,
+					"height": 68,
+					"class": "Boutons",
+					"focusable": false,
+					"text": "Calculer",
+					"icon": "/RESOURCES/Images/Buttons/Calculette.png",
+					"style": "custom",
+					"method": "ObjectMethods/CalculBouCalcul.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CalculVoir": {
+					"type": "button",
+					"top": 343,
+					"left": 138,
+					"width": 118,
+					"height": 68,
+					"action": "cancel",
+					"class": "Boutons",
+					"focusable": false,
+					"text": "Voir l'ensemble\\calculé",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/eye.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/CalculVoir.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 289,
+					"left": 498,
+					"width": 136,
+					"height": 16,
+					"dataSource": "ZNbEnrFinal",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFA003",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 343,
+					"left": 575,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"CalculEffectuer": {
+					"type": "button",
+					"top": 343,
+					"left": 484,
+					"width": 57,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"class": "Boutons",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_application_save.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/CalculEffectuer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxChoixEnsemble": {
+					"type": "listbox",
+					"top": 53,
+					"left": 20,
+					"width": 442,
+					"height": 209,
+					"resizingMode": "legacy",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxChoixEnsemble.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "ZTbEnsNom",
+							"dataSource": "ZTbEnsNom",
+							"width": 143,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "ZTbEnsDate",
+							"dataSource": "ZTbEnsDate",
+							"dataSourceTypeHint": "date",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Entête6",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "ZTbEnsNbre",
+							"dataSource": "ZTbEnsNbre",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Entête7",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "ZTbEnsQVL",
+							"width": 152,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Entête8",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"BouEffaceDep": {
+					"type": "button",
+					"top": 288,
+					"left": 175,
+					"width": 19,
+					"height": 23,
+					"method": "ObjectMethods/BouEffaceDep.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouEffaceArr": {
+					"type": "button",
+					"top": 287,
+					"left": 423,
+					"width": 19,
+					"height": 23,
+					"method": "ObjectMethods/BouEffaceArr.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe7": [
+				"Variable8",
+				"Variable9",
+				"Variable10"
+			]
+		}
+	}
+}

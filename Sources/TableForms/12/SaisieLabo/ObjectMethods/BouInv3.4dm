@@ -1,0 +1,1 @@
+ALERT:C41("La modification est verrouillée, pour la déverrouiller, cliquer sur le cadenas")

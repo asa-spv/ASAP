@@ -1,0 +1,235 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1000,
+					"height": 615,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListBoxAsaContact": {
+					"type": "listbox",
+					"top": 73,
+					"left": 57,
+					"width": 876,
+					"height": 506,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "ListBoxAsaContact",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSet0",
+					"table": 1,
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "[XData:1]XEntier:6",
+							"dataSourceTypeHint": "integer",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "N°",
+								"dataSource": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "[XData:1]XDate:4",
+							"dataSourceTypeHint": "date",
+							"width": 72,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Date",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "[XData:1]XValeur:7",
+							"dataSourceTypeHint": "number",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Nb",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "[XData:1]XNom:2",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Nom du fichier",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "[XData:1]XTexte:9",
+							"width": 572,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Adresse DropBox",
+								"dataSource": "Entête3"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 25,
+					"left": 57,
+					"width": 369,
+					"height": 42,
+					"class": "Grand_titre",
+					"text": "AsaContact"
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 37,
+					"left": 819,
+					"width": 114,
+					"height": 30,
+					"dataSource": "Bouton",
+					"action": "cancel",
+					"text": "Quitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible": {
+					"type": "button",
+					"top": 25,
+					"left": 453,
+					"width": 90,
+					"height": 42,
+					"dataSource": "Bouton invisible",
+					"text": "Dossier",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/Bouton invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

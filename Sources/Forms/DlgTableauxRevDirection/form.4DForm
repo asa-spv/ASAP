@@ -1,0 +1,686 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 24,
+	"markerBody": 245,
+	"markerBreak": 245,
+	"markerFooter": 245,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"RadPoudre": {
+					"type": "radio",
+					"top": 34,
+					"left": 174,
+					"width": 84,
+					"height": 23,
+					"dataSource": "RadPoudre",
+					"text": "Poudre",
+					"class": "Champ_grand",
+					"radioGroup": "Groupe1",
+					"method": "ObjectMethods/RadPoudre.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadGel": {
+					"type": "radio",
+					"top": 34,
+					"left": 264,
+					"width": 84,
+					"height": 23,
+					"dataSource": "RadGel",
+					"text": "Gel",
+					"class": "Champ_grand",
+					"radioGroup": "Groupe1",
+					"method": "ObjectMethods/RadGel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PumDomaine": {
+					"type": "dropdown",
+					"top": 36,
+					"left": 350,
+					"width": 196,
+					"height": 19,
+					"dataSource": "PumDomaine",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/PumDomaine.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 113,
+					"left": 15,
+					"width": 149,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right",
+					"text": "Nombre de participant"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 140,
+					"left": 15,
+					"width": 149,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right",
+					"text": "Nombre de fiche contact client"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 166,
+					"left": 15,
+					"width": 149,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right",
+					"text": "Nombre de retours d’information"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 193,
+					"left": 15,
+					"width": 149,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right",
+					"text": "Nombre de demande d’information"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 220,
+					"left": 15,
+					"width": 149,
+					"height": 13,
+					"class": "Champ_petit",
+					"textAlign": "right",
+					"text": "Nombre de réclamations"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 82,
+					"left": 513,
+					"width": 166,
+					"height": 25,
+					"class": "Champ_petit",
+					"text": "Evolution \r%(n+(n-1))/((n-2)+(n-3))\r"
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 3,
+					"left": 0,
+					"width": 679,
+					"height": 17,
+					"dataSource": "VarTitre",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouImprimeEcran": {
+					"type": "button",
+					"top": 255,
+					"left": 28,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouImprimeEcran",
+					"text": "Imprimer l'écran",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouImprimeEcran.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 255,
+					"left": 242,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouImpTableaux",
+					"text": "Imprimer les tableaux",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 255,
+					"left": 499,
+					"width": 188,
+					"height": 31,
+					"dataSource": "BouQuitte",
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Champ_grand",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 69,
+					"left": 168,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir1",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 69,
+					"left": 251,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir2",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 69,
+					"left": 334,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir3",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable32": {
+					"type": "input",
+					"top": 69,
+					"left": 417,
+					"width": 74,
+					"height": 37,
+					"dataSource": "VarTbRevDir4",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable33": {
+					"type": "input",
+					"top": 111,
+					"left": 168,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir5",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable34": {
+					"type": "input",
+					"top": 111,
+					"left": 251,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir6",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable35": {
+					"type": "input",
+					"top": 111,
+					"left": 334,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir7",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable36": {
+					"type": "input",
+					"top": 111,
+					"left": 417,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir8",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable37": {
+					"type": "input",
+					"top": 138,
+					"left": 168,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir9",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable38": {
+					"type": "input",
+					"top": 138,
+					"left": 251,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir10",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable39": {
+					"type": "input",
+					"top": 138,
+					"left": 334,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir11",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable40": {
+					"type": "input",
+					"top": 138,
+					"left": 417,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir12",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable41": {
+					"type": "input",
+					"top": 164,
+					"left": 168,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir13",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable42": {
+					"type": "input",
+					"top": 164,
+					"left": 251,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir14",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable43": {
+					"type": "input",
+					"top": 164,
+					"left": 334,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir15",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable44": {
+					"type": "input",
+					"top": 164,
+					"left": 417,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir16",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable46": {
+					"type": "input",
+					"top": 191,
+					"left": 168,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir17",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable47": {
+					"type": "input",
+					"top": 191,
+					"left": 251,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir18",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable48": {
+					"type": "input",
+					"top": 191,
+					"left": 334,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir19",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable49": {
+					"type": "input",
+					"top": 191,
+					"left": 417,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir20",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable50": {
+					"type": "input",
+					"top": 218,
+					"left": 168,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir21",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable51": {
+					"type": "input",
+					"top": 218,
+					"left": 251,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir22",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable52": {
+					"type": "input",
+					"top": 218,
+					"left": 334,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir23",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable53": {
+					"type": "input",
+					"top": 218,
+					"left": 417,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir24",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable54": {
+					"type": "input",
+					"top": 111,
+					"left": 506,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir25",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable55": {
+					"type": "input",
+					"top": 138,
+					"left": 506,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir26",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable56": {
+					"type": "input",
+					"top": 164,
+					"left": 506,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir27",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable57": {
+					"type": "input",
+					"top": 191,
+					"left": 506,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir28",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable45": {
+					"type": "input",
+					"top": 218,
+					"left": 506,
+					"width": 74,
+					"height": 17,
+					"dataSource": "VarTbRevDir29",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe1": [
+				"RadPoudre",
+				"RadGel"
+			]
+		}
+	}
+}

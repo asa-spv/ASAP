@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="45">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<general startup_environnement="1">
+			<mover always_display_dialog="2" filters="1" lists="1" menu_bars="1" pictures="1" style_sheets="1" tips="1"/>
+		</general>
+		<compiler>
+			<options error_file="true" symbol_file="true"/>
+		</compiler>
+		<server>
+			<network>
+				<client_server auto_register_clients="true" update_resources_folder="0" use_encryption="false"/>
+				<options publication_name="ASAP" publication_port="19999" use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<structure remote_open_mode="read_only"/>
+		<database>
+			<cache adaptative="false" flush_buffer_delay="20s" size_fixed="2000"/>
+			<misc/>
+		</database>
+		<interface>
+			<developper design_acces="15001"/>
+			<user default_user="-11" formula_editor_with_full_lists="true"/>
+			<shortcuts>
+				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+			</shortcuts>
+		</interface>
+		<web>
+			<remote>
+				<configuration port_number="8888" publish_at_startup="true"/>
+				<options>
+					<cache cache_max_size="524288"/>
+					<text_conversion send_extended="true"/>
+					<keep_alive requests_number="100"/>
+				</options>
+				<webservices>
+					<server allow_requests="false" name="A_WebService"/>
+				</webservices>
+			</remote>
+			<standalone_server>
+				<configuration allow_ssl="true" https_port_number="444" port_number="8888" publish_at_startup="true">
+					<hosts>
+						<host home_page="index.shtml" html_root="./pages_Web/" id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<options>
+					<web_processes timeout_for_inactives="0"/>
+				</options>
+			</standalone_server>
+		</web>
+		<sql>
+			<publication allow_flash_player_requests="false" launch_at_startup="true" port_number="19832"/>
+		</sql>
+		<php ip_address="127.0.0.1"/>
+	</com.4d>
+</preferences>

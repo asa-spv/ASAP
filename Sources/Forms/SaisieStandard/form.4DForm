@@ -1,0 +1,206 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Rectangle1",
+	"rightMargin": 50,
+	"bottomMargin": 20,
+	"menuBar": "MiniBarre",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1628,
+					"height": 877,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 99,
+					"left": 43,
+					"width": 1472,
+					"height": 704,
+					"fill": "#F4F4F4"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 74,
+					"left": 968,
+					"width": 216,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Etiquette_petite",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"BouPrem": {
+					"type": "button",
+					"top": 32,
+					"left": 968,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg."
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/tbIcon24_Previous.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouPrem.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouPrec": {
+					"type": "button",
+					"top": 26,
+					"left": 1026,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. précéden"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Arrow_Left.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouPrec.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSuiv": {
+					"type": "button",
+					"top": 26,
+					"left": 1084,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Arrow_Right.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouSuiv.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouDernier": {
+					"type": "button",
+					"top": 32,
+					"left": 1136,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg."
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/tbIcon24_Next.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BouDernier.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 26,
+					"left": 1361,
+					"width": 48,
+					"height": 48,
+					"dataSource": "BouAnnuleFiche",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"ModifBouValide": {
+					"type": "button",
+					"top": 25,
+					"left": 1269,
+					"width": 57,
+					"height": 51,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_application_save.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarLogoTable": {
+					"type": "input",
+					"top": 16,
+					"left": 51,
+					"width": 65,
+					"height": 65,
+					"dataSourceTypeHint": "picture",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

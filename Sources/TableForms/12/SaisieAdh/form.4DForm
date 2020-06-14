@@ -1,0 +1,1341 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 850,
+	"menuBar": "MiniBarre",
+	"markerBody": 401,
+	"markerBreak": 401,
+	"markerFooter": 411,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1628,
+					"height": 877,
+					"stroke": "#FFFFFF"
+				},
+				"BouP1": {
+					"type": "button",
+					"top": 67,
+					"left": 468,
+					"width": 119,
+					"height": 35,
+					"text": "Généralités",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouP1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouP2": {
+					"type": "button",
+					"top": 67,
+					"left": 607,
+					"width": 127,
+					"height": 35,
+					"text": "Cotisation",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouP2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouP4": {
+					"type": "button",
+					"top": 67,
+					"left": 755,
+					"width": 96,
+					"height": 35,
+					"text": "Courriers",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouP4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 391,
+					"width": 1147,
+					"height": 703,
+					"fill": "#F4F4F4"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 809,
+					"left": 29,
+					"width": 73,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 26,
+					"left": 1361,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"ModifBouValide": {
+					"type": "button",
+					"top": 25,
+					"left": 1249,
+					"width": 57,
+					"height": 51,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/32_application_save.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"RectangleListBoxAdh": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 25,
+					"width": 363,
+					"height": 703,
+					"fill": "#C0C0C0"
+				},
+				"ListBoxAdh": {
+					"type": "listbox",
+					"top": 109,
+					"left": 36,
+					"width": 341,
+					"height": 688,
+					"resizingMode": "legacy",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "TbPerNom",
+							"dataSource": "TbPerNom",
+							"width": 326,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/TbPerNom.4dm",
+							"header": {
+								"name": "Entête18",
+								"text": "Entête18",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied18",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Bouton invisible": {
+					"type": "button",
+					"top": 935,
+					"left": 19,
+					"width": 93,
+					"height": 19,
+					"shortcutKey": "[down arrow]",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible1": {
+					"type": "button",
+					"top": 907,
+					"left": 19,
+					"width": 93,
+					"height": 19,
+					"shortcutKey": "[up arrow]",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarAnnonceAdh": {
+					"type": "input",
+					"top": 25,
+					"left": 121,
+					"width": 1122,
+					"height": 29,
+					"dataSource": "VarAnnonceAdh",
+					"class": "Titre_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton invisible2": {
+					"type": "button",
+					"top": 877,
+					"left": 19,
+					"width": 93,
+					"height": 19,
+					"shortcutKey": "[left arrow]",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible3": {
+					"type": "button",
+					"top": 968,
+					"left": 15,
+					"width": 93,
+					"height": 19,
+					"shortcutKey": "[right arrow]",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image4": {
+					"type": "picture",
+					"top": 21,
+					"left": 33,
+					"width": 75,
+					"height": 75,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Adherent.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe": {
+					"type": "groupBox",
+					"top": 366,
+					"left": 428,
+					"width": 595,
+					"height": 393,
+					"class": "Champ_grand",
+					"text": "Coordonnées :"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 817,
+					"left": 1277,
+					"width": 123,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Identificateur : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 122,
+					"left": 466,
+					"width": 79,
+					"height": 29,
+					"class": "Titre_normal",
+					"textAlign": "right",
+					"text": "Nom : "
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 819,
+					"left": 879,
+					"width": 123,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "TypePersonne : "
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 819,
+					"left": 287,
+					"width": 123,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Identificateur": {
+					"type": "input",
+					"top": 817,
+					"left": 1403,
+					"width": 119,
+					"height": 21,
+					"dataSource": "[Personnes:12]Identificateur:4",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NomLong": {
+					"type": "input",
+					"top": 122,
+					"left": 552,
+					"width": 535,
+					"height": 29,
+					"dataSource": "[Personnes:12]NomLong:2",
+					"class": "Titre_normal",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TypePersonne": {
+					"type": "input",
+					"top": 819,
+					"left": 1007,
+					"width": 96,
+					"height": 16,
+					"dataSource": "[Personnes:12]TypePersonne:5",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UUID": {
+					"type": "input",
+					"top": 819,
+					"left": 415,
+					"width": 250,
+					"height": 16,
+					"dataSource": "[Personnes:12]UUID:1",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PUMAdresse": {
+					"type": "dropdown",
+					"top": 366,
+					"left": 557,
+					"width": 169,
+					"height": 26,
+					"dataSource": "PUMAdresse",
+					"focusable": false,
+					"class": "Champ_grand",
+					"method": "ObjectMethods/PUMAdresse.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 399,
+					"left": 441,
+					"width": 125,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "LigneAdresse1 : "
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 426,
+					"left": 433,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "LigneAdresse2 : "
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 453,
+					"left": 441,
+					"width": 125,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "LigneAdresse3 : "
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 480,
+					"left": 461,
+					"width": 105,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "CodePostal : "
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 480,
+					"left": 657,
+					"width": 52,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Ville : "
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 504,
+					"left": 461,
+					"width": 105,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Pays : "
+				},
+				"LigneAdresse1": {
+					"type": "input",
+					"top": 399,
+					"left": 571,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse1:3",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LigneAdresse2": {
+					"type": "input",
+					"top": 426,
+					"left": 571,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse2:4",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LigneAdresse3": {
+					"type": "input",
+					"top": 453,
+					"left": 571,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]LigneAdresse3:5",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CodePostal": {
+					"type": "input",
+					"top": 480,
+					"left": 571,
+					"width": 80,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]CodePostal:6",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ville": {
+					"type": "input",
+					"top": 480,
+					"left": 714,
+					"width": 288,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]Ville:7",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pays": {
+					"type": "input",
+					"top": 504,
+					"left": 571,
+					"width": 305,
+					"height": 16,
+					"dataSource": "[PersonnesAdresses:11]Pays:8",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ListBoxMail": {
+					"type": "listbox",
+					"top": 620,
+					"left": 503,
+					"width": 505,
+					"height": 116,
+					"resizingMode": "legacy",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbMails",
+							"dataSource": "TbMails",
+							"width": 505,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/TbMails.4dm",
+							"header": {
+								"name": "Entête5",
+								"text": "Adresse mail"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 216,
+					"left": 935,
+					"width": 123,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Remarque : "
+				},
+				"VarRemarque": {
+					"type": "input",
+					"top": 216,
+					"left": 1065,
+					"width": 441,
+					"height": 497,
+					"dataSource": "VarRemarque",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarRemarque.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 162,
+					"left": 409,
+					"width": 136,
+					"height": 29,
+					"class": "Titre_normal",
+					"textAlign": "right",
+					"text": "Prénom : "
+				},
+				"VarPrénom": {
+					"type": "input",
+					"top": 162,
+					"left": 552,
+					"width": 526,
+					"height": 29,
+					"dataSource": "VarPrénom",
+					"class": "Titre_normal",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarPrénom.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouAjoutMail": {
+					"type": "button",
+					"top": 620,
+					"left": 461,
+					"width": 30,
+					"height": 32,
+					"text": "+",
+					"class": "Titre_normal",
+					"focusable": false,
+					"method": "ObjectMethods/BouAjoutMail.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouDetruitMail": {
+					"type": "button",
+					"top": 660,
+					"left": 461,
+					"width": 30,
+					"height": 32,
+					"text": "-",
+					"class": "Titre_normal",
+					"focusable": false,
+					"method": "ObjectMethods/BouDetruitMail.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarNumPersonne": {
+					"type": "input",
+					"top": 215,
+					"left": 552,
+					"width": 50,
+					"height": 21,
+					"dataSource": "VarNumPersonne",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 216,
+					"left": 420,
+					"width": 125,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "N° d'adhérent :"
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 254,
+					"left": 428,
+					"width": 595,
+					"height": 92,
+					"class": "Champ_grand",
+					"text": "Participation aux instances et groupes de travail :"
+				},
+				"CacCA": {
+					"type": "checkbox",
+					"top": 282,
+					"left": 469,
+					"width": 107,
+					"height": 26,
+					"text": "CA",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/CacCA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CacBureau": {
+					"type": "checkbox",
+					"top": 282,
+					"left": 639,
+					"width": 107,
+					"height": 26,
+					"text": "Bureau",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/CacBureau.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CacAD": {
+					"type": "checkbox",
+					"top": 313,
+					"left": 469,
+					"width": 107,
+					"height": 26,
+					"text": "AsaDia",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/CacAD.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CacADG": {
+					"type": "checkbox",
+					"top": 313,
+					"left": 639,
+					"width": 159,
+					"height": 26,
+					"text": "AsaDia Gibier",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/CacADG.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCadenas": {
+					"type": "pictureButton",
+					"top": 35,
+					"left": 1476,
+					"width": 30,
+					"height": 30,
+					"dataSource": "BouCadenas",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/Cadenas2.png",
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/BouCadenas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouInv2": {
+					"type": "button",
+					"top": 103,
+					"left": 391,
+					"width": 1147,
+					"height": 697,
+					"display": false,
+					"method": "ObjectMethods/BouInv2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"NomLong",
+				"TypePersonne",
+				"UUID",
+				"PUMAdresse",
+				"LigneAdresse1",
+				"LigneAdresse2",
+				"LigneAdresse3",
+				"CodePostal",
+				"Ville",
+				"Pays",
+				"ListBoxMail",
+				"VarPrénom",
+				"BouAjoutMail",
+				"BouDetruitMail",
+				"CacCA",
+				"CacBureau",
+				"CacAD",
+				"CacADG"
+			]
+		},
+		{
+			"objects": {
+				"CaCTVA": {
+					"type": "checkbox",
+					"top": 125,
+					"left": 453,
+					"width": 212,
+					"height": 24,
+					"dataSource": "CaCTVA",
+					"text": "Non soumis à TVA ",
+					"class": "Champ_grand",
+					"focusable": false,
+					"method": "ObjectMethods/CaCTVA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxVentes": {
+					"type": "listbox",
+					"top": 180,
+					"left": 443,
+					"width": 850,
+					"height": 603,
+					"resizingMode": "legacy",
+					"rowHeight": "30px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbNumFacture",
+							"dataSource": "TbNumFacture",
+							"width": 104,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"rowFillSource": "TbCouleursF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "N° facture",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbDateF",
+							"dataSource": "TbDateF",
+							"dataSourceTypeHint": "date",
+							"width": 92,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"rowFillSource": "TbCouleursF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Date",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbIntituleF",
+							"dataSource": "TbIntituleF",
+							"width": 445,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"rowFillSource": "TbCouleursF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Intitulé",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbPrixF",
+							"dataSource": "TbPrixF",
+							"dataSourceTypeHint": "number",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "^^^,^^0.00 €",
+							"rowFillSource": "TbCouleursF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "Prix HT",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbPayeF",
+							"dataSource": "TbPayeF",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"rowFillSource": "TbCouleursRegle",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête16",
+								"text": "Réglée",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbNumEnrF",
+							"dataSource": "TbNumEnrF",
+							"dataSourceTypeHint": "number",
+							"width": 237,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"rowFillSource": "TbCouleursF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "Num enr",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 157,
+					"left": 448,
+					"width": 274,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Détail des ventes"
+				}
+			}
+		},
+		{
+			"objects": {
+				"BaCMailTexteBrut": {
+					"type": "checkbox",
+					"top": 125,
+					"left": 404,
+					"width": 303,
+					"height": 33,
+					"dataSource": "BaCMailTexteBrut",
+					"text": "Envoi des mails en texte brut",
+					"class": "Champ_grand",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 178,
+					"left": 406,
+					"width": 245,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Liste des courriels reçus"
+				},
+				"ListBoxPersonnesCourriels": {
+					"type": "listbox",
+					"top": 199,
+					"left": 406,
+					"width": 701,
+					"height": 583,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"highlightSet": "$ListboxSet",
+					"table": 31,
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxPersonnesCourriels.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "[PersonnesCourriels:31]SujetCourriel:3",
+							"width": 290,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Sujet",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "[PersonnesCourriels:31]DateCourriel:4",
+							"dataSourceTypeHint": "date",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Date",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "[PersonnesCourriels:31]HeureCourriel:5",
+							"dataSourceTypeHint": "time",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Heure",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "[PersonnesCourriels:31]DestinataireCourriel:6",
+							"width": 264,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Destinataire",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 199,
+					"left": 1134,
+					"width": 369,
+					"height": 577,
+					"dataSource": "[PersonnesCourriels:31]CorpsCourriel:7",
+					"focusable": false,
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 178,
+					"left": 1134,
+					"width": 245,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Corps du courriel"
+				}
+			}
+		}
+	]
+}

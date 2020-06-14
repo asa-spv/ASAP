@@ -1,0 +1,16 @@
+C_LONGINT:C283($C;$L)
+LISTBOX GET CELL POSITION:C971(ListBoxLabo;$C;$L)
+If ($L>0)
+	  //LECTURE ÉCRITURE([CourrielsTypes])
+	  //CHERCHER([CourrielsTypes];[CourrielsTypes]Descriptif=Colonne1N{$L})
+	  //SUPPRIMER ENREGISTREMENT([CourrielsTypes])
+	  //LIBÉRER ENREGISTREMENT([CourrielsTypes])
+	  //LISTBOX SUPPRIMER LIGNES(ListBoxLabo;$L)
+	READ WRITE:C146([RetoursAdherents:27])
+	QUERY:C277([RetoursAdherents:27];[RetoursAdherents:27]UUID:1=TbUUIDAdhérent{$L})
+	DELETE RECORD:C58([RetoursAdherents:27])
+	LISTBOX DELETE ROWS:C914(ListBoxLabo;$L)
+Else 
+	ALERT:C41("Merci de cliquer sur un laboratoire")
+End if 
+READ ONLY:C145([RetoursAdherents:27])

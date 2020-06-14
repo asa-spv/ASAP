@@ -1,0 +1,139 @@
+﻿{
+	"destination": "listScreen",
+	"inheritedForm": "ListeStandard",
+	"width": 1200,
+	"height": 297,
+	"markerHeader": 86,
+	"markerBody": 111,
+	"markerBreak": 111,
+	"markerFooter": 191,
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S2_Texte": {
+					"type": "text",
+					"top": 65,
+					"left": 89,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"class": "Etiquette_grande",
+					"text": "Nom : "
+				},
+				"S3_Texte": {
+					"type": "text",
+					"top": 65,
+					"left": 401,
+					"width": 136,
+					"height": 17,
+					"sizingX": "grow",
+					"class": "Etiquette_grande",
+					"text": "Prenom : "
+				},
+				"S4_Texte": {
+					"type": "text",
+					"top": 65,
+					"left": 557,
+					"width": 87,
+					"height": 17,
+					"sizingX": "grow",
+					"class": "Etiquette_grande",
+					"text": "Initiales : "
+				},
+				"S2_Champ": {
+					"type": "input",
+					"top": 90,
+					"left": 77,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XUtilisateurs:2]Nom:2",
+					"class": "Champ_grand",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Champ": {
+					"type": "input",
+					"top": 90,
+					"left": 389,
+					"width": 136,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XUtilisateurs:2]Prenom:3",
+					"class": "Champ_grand",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Champ": {
+					"type": "input",
+					"top": 90,
+					"left": 557,
+					"width": 51,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XUtilisateurs:2]Initiales:4",
+					"class": "Champ_grand",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 8,
+					"left": 10,
+					"width": 76,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Personnel.png"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1218 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 700,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte2": {
+					"type": "text",
+					"top": 60,
+					"left": 369,
+					"width": 607,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Titre",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Laboratoires participants au RAEMA <NumRAEMACourant>"
+				},
+				"BouQuit": {
+					"type": "button",
+					"top": 4,
+					"left": 1431,
+					"width": 120,
+					"height": 40,
+					"dataSource": "BouQuit",
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Boutons",
+					"method": "ObjectMethods/BouQuit.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 15,
+					"left": 8,
+					"width": 106,
+					"height": 22,
+					"class": "Titre",
+					"text": "RAEMA n°"
+				},
+				"PUMNRFLP": {
+					"type": "dropdown",
+					"top": 9,
+					"left": 108,
+					"width": 72,
+					"height": 33,
+					"dataSource": "PUMNRFLP",
+					"dataSourceTypeHint": "arrayNumber",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/PUMNRFLP.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 7,
+					"left": 345,
+					"width": 659,
+					"height": 15,
+					"stroke": "#0000FF",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "La couleur Bleu indique que le laboratoire a demandé des colis supplémentaires sans rapport COFRAC <Nb1A>"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 24,
+					"left": 299,
+					"width": 751,
+					"height": 15,
+					"stroke": "#EE0000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "La couleur Rouge indique que le laboratoire a demandé des colis supplémentaires avec rapport COFRAC  <Nb2A>"
+				},
+				"ListBoxLoto": {
+					"type": "listbox",
+					"top": 84,
+					"left": 47,
+					"width": 1258,
+					"height": 592,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "2em",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxLoto.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "Colonne1",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond1",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "Colonne2",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond2",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "Colonne3",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond3",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "Colonne4",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond4",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "Colonne5",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond5",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Entête6",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "Colonne6",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond6",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Entête7",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "Colonne7",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond7",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Entête8",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne8",
+							"dataSource": "Colonne8",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond8",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Entête9",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne9",
+							"dataSource": "Colonne9",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond9",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "Entête10",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne10",
+							"dataSource": "Colonne10",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond10",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "Entête11",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne11",
+							"dataSource": "Colonne11",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond11",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "Entête12",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne12",
+							"dataSource": "Colonne12",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond2",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Entête13",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne13",
+							"dataSource": "Colonne13",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond13",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Entête14",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne14",
+							"dataSource": "Colonne14",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond14",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "Entête15",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne15",
+							"dataSource": "Colonne15",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond15",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête16",
+								"text": "Entête16",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne16",
+							"dataSource": "Colonne16",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond1",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "Entête17",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne17",
+							"dataSource": "Colonne17",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond17",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête18",
+								"text": "Entête18",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied18",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne18",
+							"dataSource": "Colonne18",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond18",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête19",
+								"text": "Entête19",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied19",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne19",
+							"dataSource": "Colonne19",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond19",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête20",
+								"text": "Entête20",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied20",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne20",
+							"dataSource": "Colonne20",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond20",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête21",
+								"text": "Entête21",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied21",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne21",
+							"dataSource": "Colonne21",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond21",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête22",
+								"text": "Entête22",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied22",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne22",
+							"dataSource": "Colonne22",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond22",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête23",
+								"text": "Entête23",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied23",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne23",
+							"dataSource": "Colonne23",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond23",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête24",
+								"text": "Entête24",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied24",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne24",
+							"dataSource": "Colonne24",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond24",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête25",
+								"text": "Entête25",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied25",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne25",
+							"dataSource": "Colonne25",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond25",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête26",
+								"text": "Entête26",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied26",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne26",
+							"dataSource": "Colonne26",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond26",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête27",
+								"text": "Entête27",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied27",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne27",
+							"dataSource": "Colonne27",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond27",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête28",
+								"text": "Entête28",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied28",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne28",
+							"dataSource": "Colonne28",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond28",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête29",
+								"text": "Entête29",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied29",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne29",
+							"dataSource": "Colonne29",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond29",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête30",
+								"text": "Entête30",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied30",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne30",
+							"dataSource": "Colonne30",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"rowFillSource": "TbCouleurFond30",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête31",
+								"text": "Entête31",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied31",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 42,
+					"left": 299,
+					"width": 751,
+					"height": 15,
+					"stroke": "#777777",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "La couleur Gris indique que le laboratoire s'est inscrit sans participer à la campagne <Nb3A>"
+				},
+				"VarNbLabos": {
+					"type": "input",
+					"top": 62,
+					"left": 1258,
+					"width": 42,
+					"height": 16,
+					"dataSource": "VarNbLabos",
+					"dataSourceTypeHint": "number",
+					"class": "Bouton_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

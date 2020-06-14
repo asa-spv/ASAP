@@ -1,0 +1,849 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 19,
+	"markerBody": 44,
+	"markerBreak": 47,
+	"markerFooter": 47,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image16": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 3435,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Image16.png"
+				},
+				"S1_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 36,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "UUID : "
+				},
+				"S2_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 92,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailIDMessage : "
+				},
+				"S3_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 404,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MaillDe : "
+				},
+				"S4_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 716,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailA : "
+				},
+				"S5_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1028,
+					"width": 89,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailDateEnvoi : "
+				},
+				"S6_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1149,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailDateHeureEnvoi : "
+				},
+				"S7_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1461,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailDateHeureReception : "
+				},
+				"S8_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 1773,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailObjet : "
+				},
+				"S9_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 2085,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailCopieA : "
+				},
+				"S10_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 2397,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailNomFichier : "
+				},
+				"S11_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 2709,
+					"width": 70,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailEdition : "
+				},
+				"S12_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 2811,
+					"width": 62,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailEnvoi : "
+				},
+				"S13_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 2905,
+					"width": 240,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailCorpsMessage : "
+				},
+				"S14_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 3177,
+					"width": 111,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailEntrantNonLu : "
+				},
+				"S15_Texte": {
+					"type": "text",
+					"top": 0,
+					"left": 3320,
+					"width": 99,
+					"height": 17,
+					"sizingX": "grow",
+					"text": "MailClassement : "
+				},
+				"Rectangle17": {
+					"type": "rectangle",
+					"top": 19,
+					"left": 0,
+					"width": 3435,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 24,
+					"width": 36,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]UUID:1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 92,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailIDMessage:2",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 404,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MaillDe:3",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 716,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailA:4",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1028,
+					"width": 89,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailDateEnvoi:5",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1149,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailDateHeureEnvoi:6",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1461,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailDateHeureReception:7",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 1773,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailObjet:8",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 2085,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailCopieA:9",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S10_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 2397,
+					"width": 280,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailNomFichier:10",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Champ": {
+					"type": "checkbox",
+					"top": 23,
+					"left": 2709,
+					"width": 70,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailEdition:11",
+					"text": "Vrai",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S12_Champ": {
+					"type": "checkbox",
+					"top": 23,
+					"left": 2811,
+					"width": 62,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailEnvoi:12",
+					"text": "Vrai",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S13_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 2905,
+					"width": 240,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailCorpsMessage:13",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S14_Champ": {
+					"type": "checkbox",
+					"top": 23,
+					"left": 3177,
+					"width": 111,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailEntrantNonLu:14",
+					"text": "Vrai",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S15_Champ": {
+					"type": "input",
+					"top": 23,
+					"left": 3320,
+					"width": 99,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[XMails:9]MailClassement:15",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line18": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Line19": {
+					"type": "line",
+					"top": -5,
+					"left": 3435,
+					"height": 49,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Line20": {
+					"type": "line",
+					"top": -5,
+					"left": 3304,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur2": {
+					"type": "button",
+					"top": -5,
+					"left": 3303,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line21": {
+					"type": "line",
+					"top": -5,
+					"left": 3161,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur3": {
+					"type": "button",
+					"top": -5,
+					"left": 3160,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line22": {
+					"type": "line",
+					"top": -5,
+					"left": 2889,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur4": {
+					"type": "button",
+					"top": -5,
+					"left": 2888,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line23": {
+					"type": "line",
+					"top": -5,
+					"left": 2795,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur5": {
+					"type": "button",
+					"top": -5,
+					"left": 2794,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line24": {
+					"type": "line",
+					"top": -5,
+					"left": 2693,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur6": {
+					"type": "button",
+					"top": -5,
+					"left": 2692,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line25": {
+					"type": "line",
+					"top": -5,
+					"left": 2381,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur7": {
+					"type": "button",
+					"top": -5,
+					"left": 2380,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line26": {
+					"type": "line",
+					"top": -5,
+					"left": 2069,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur8": {
+					"type": "button",
+					"top": -5,
+					"left": 2068,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line27": {
+					"type": "line",
+					"top": -5,
+					"left": 1757,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur9": {
+					"type": "button",
+					"top": -5,
+					"left": 1756,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line28": {
+					"type": "line",
+					"top": -5,
+					"left": 1445,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur10": {
+					"type": "button",
+					"top": -5,
+					"left": 1444,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line29": {
+					"type": "line",
+					"top": -5,
+					"left": 1133,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur11": {
+					"type": "button",
+					"top": -5,
+					"left": 1132,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line30": {
+					"type": "line",
+					"top": -5,
+					"left": 1012,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur12": {
+					"type": "button",
+					"top": -5,
+					"left": 1011,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line31": {
+					"type": "line",
+					"top": -5,
+					"left": 700,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur13": {
+					"type": "button",
+					"top": -5,
+					"left": 699,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line32": {
+					"type": "line",
+					"top": -5,
+					"left": 388,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur14": {
+					"type": "button",
+					"top": -5,
+					"left": 387,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line33": {
+					"type": "line",
+					"top": -5,
+					"left": 76,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Séparateur15": {
+					"type": "button",
+					"top": -5,
+					"left": 75,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

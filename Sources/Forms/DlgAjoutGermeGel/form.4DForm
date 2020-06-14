@@ -1,0 +1,205 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 20,
+					"left": 120,
+					"width": 412,
+					"height": 22,
+					"class": "Titre",
+					"text": "Ajout d'un germe d'un RAEMA gel"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 69,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Nom du germe dans le schéma"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 98,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Nom du germe dans la campagne"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 127,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Petit nom Web"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 156,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Tableau participation"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 185,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Tableau pots sans rapport"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 214,
+					"left": 4,
+					"width": 249,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Tableau pots avec rapport"
+				},
+				"VarNomGermeSchema": {
+					"type": "input",
+					"top": 69,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarNomGermeSchema",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomGermeCampagne": {
+					"type": "input",
+					"top": 98,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarNomGermeCampagne",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPetitNomWeb": {
+					"type": "input",
+					"top": 127,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarPetitNomWeb",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomTbParticipation": {
+					"type": "input",
+					"top": 156,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarNomTbParticipation",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomTbNbPotsSR": {
+					"type": "input",
+					"top": 185,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarNomTbNbPotsSR",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomTbNbPotsAR": {
+					"type": "input",
+					"top": 214,
+					"left": 261,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarNomTbNbPotsAR",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouOK": {
+					"type": "button",
+					"top": 265,
+					"left": 279,
+					"width": 240,
+					"height": 47,
+					"text": "Ajouter le germe",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAnnule": {
+					"type": "button",
+					"top": 265,
+					"left": 54,
+					"width": 150,
+					"height": 47,
+					"action": "cancel",
+					"text": "Annuler",
+					"class": "Etiquette_grande",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

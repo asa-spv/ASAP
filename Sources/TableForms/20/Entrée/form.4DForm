@@ -1,0 +1,959 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 353,
+	"markerBreak": 353,
+	"markerFooter": 363,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 58,
+					"left": 89,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 32,
+					"left": 855,
+					"width": 380,
+					"height": 44,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 36,
+					"text": "RAEMACampagnes"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 509,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 273,
+					"width": 48,
+					"height": 48,
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 336,
+					"width": 48,
+					"height": 48,
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 32,
+					"left": 423,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 84,
+					"left": 50,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": "N° de campagne : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 84,
+					"left": 261,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Date de début : "
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 84,
+					"left": 489,
+					"width": 157,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Date limite de réponse : "
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 84,
+					"left": 984,
+					"width": 150,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Nb de participants : "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 84,
+					"left": 752,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Date de mise en ligne : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 697,
+					"left": 1074,
+					"width": 147,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Arguments : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 32,
+					"left": 563,
+					"width": 237,
+					"height": 17,
+					"dataSource": "[XData:1]UUID:1",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NumRAEMA": {
+					"type": "input",
+					"top": 81,
+					"left": 188,
+					"width": 53,
+					"height": 22,
+					"dataSource": "[RAEMACampagnes:20]NumCampagne:2",
+					"stroke": "#FF0000",
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateDebut": {
+					"type": "input",
+					"top": 84,
+					"left": 399,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[RAEMACampagnes:20]DateEnvoiColis:3",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateLimiteReponse": {
+					"type": "input",
+					"top": 84,
+					"left": 651,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[RAEMACampagnes:20]DateLimiteReponse:4",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NbLaboratoires": {
+					"type": "input",
+					"top": 84,
+					"left": 1139,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[RAEMACampagnes:20]NbParticipants:6",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateMiseEnLigne": {
+					"type": "input",
+					"top": 84,
+					"left": 890,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[RAEMACampagnes:20]DateMiseEnLigne:5",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Arguments": {
+					"type": "input",
+					"top": 718,
+					"left": 1146,
+					"width": 581,
+					"height": 513,
+					"dataSource": "[RAEMACampagnes:20]Arguments:7",
+					"dataSourceTypeHint": "object",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ListBoxGermes": {
+					"type": "listbox",
+					"top": 238,
+					"left": 31,
+					"width": 438,
+					"height": 320,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"sortable": false,
+					"movableRows": false,
+					"highlightSet": "$ListboxSet",
+					"table": 21,
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxGermes.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "[RAEMAGermes:21]Identifiant:3",
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Ref"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "[RAEMAGermes:21]NomFr:4",
+							"width": 366,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Nom du germe en Français"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"ListBoxLignes": {
+					"type": "listbox",
+					"top": 154,
+					"left": 489,
+					"width": 538,
+					"height": 541,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"highlightSet": "$ListboxSet",
+					"table": 22,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxLignes.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne5",
+							"dataSource": "[RAEMALignes:22]Identifiant:3",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Ref"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "[RAEMALignes:22]NomFr:4",
+							"width": 381,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Nom de la ligne en Français"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "OB Lire:C1224([RAEMALignes:22]Arguments:6;\"Escamotable\";Est un booléen:K8:9)",
+							"dataSourceTypeHint": "boolean",
+							"width": 38,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Escamotable"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbMulti",
+							"dataSource": "OB Lire:C1224([RAEMALignes:22]Arguments:6;\"ChoixMultiple\";Est un booléen:K8:9)",
+							"dataSourceTypeHint": "boolean",
+							"width": 36,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "Multiple"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"ListBoxValeurs": {
+					"type": "listbox",
+					"top": 593,
+					"left": 21,
+					"width": 381,
+					"height": 541,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"highlightSet": "$ListboxSet",
+					"table": 23,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxValeurs.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne3",
+							"dataSource": "[RAEMAValeurs:23]Identifiant:3",
+							"width": 89,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Ref"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "[RAEMAValeurs:23]NomFr:4",
+							"width": 434,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Nom de la valeur en Français"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"VarTipsFr": {
+					"type": "input",
+					"top": 766,
+					"left": 489,
+					"width": 260,
+					"height": 129,
+					"dataSource": "VarTipsFr",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 747,
+					"left": 489,
+					"width": 123,
+					"height": 17,
+					"text": "Tips en français"
+				},
+				"VarTipsEn": {
+					"type": "input",
+					"top": 766,
+					"left": 763,
+					"width": 260,
+					"height": 129,
+					"dataSource": "VarTipsEn",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 747,
+					"left": 763,
+					"width": 123,
+					"height": 17,
+					"text": "Tips en anglais"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 915,
+					"left": 489,
+					"width": 123,
+					"height": 17,
+					"text": "Milieu"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 952,
+					"left": 489,
+					"width": 123,
+					"height": 17,
+					"text": "Fabricant"
+				},
+				"VarMilieu": {
+					"type": "input",
+					"top": 915,
+					"left": 534,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarMilieu",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarMilieu1": {
+					"type": "input",
+					"top": 952,
+					"left": 556,
+					"width": 271,
+					"height": 17,
+					"dataSource": "VarFabricant",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 84,
+					"left": 1251,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Rang de codage : "
+				},
+				"VarRang": {
+					"type": "input",
+					"top": 84,
+					"left": 1391,
+					"width": 37,
+					"height": 17,
+					"dataSource": "OB Lire:C1224([RAEMACampagnes:20]Arguments:7;\"Rang\";Est un numérique:K8:4)",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxTraductions": {
+					"type": "listbox",
+					"top": 157,
+					"left": 1046,
+					"width": 766,
+					"height": 534,
+					"resizingMode": "legacy",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#FFFACD",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbF",
+							"dataSource": "TbF",
+							"width": 384,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#FFFACD",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Français"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbA",
+							"dataSource": "TbA",
+							"width": 367,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#FFFACD",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Anglais"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"VarNumEch": {
+					"type": "input",
+					"top": 108,
+					"left": 1824,
+					"width": 104,
+					"height": 1135,
+					"dataSource": "VarNumEch",
+					"textAlign": "center",
+					"fontFamily": "Courier Bold",
+					"fontSize": 18,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 84,
+					"left": 1448,
+					"width": 85,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Accrédité : "
+				},
+				"VarCOFRAC": {
+					"type": "input",
+					"top": 84,
+					"left": 1540,
+					"width": 37,
+					"height": 17,
+					"dataSource": "VarCOFRAC",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 84,
+					"left": 1581,
+					"width": 212,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Exemple de RI sur le site : "
+				},
+				"VarRang3": {
+					"type": "input",
+					"top": 84,
+					"left": 1797,
+					"width": 37,
+					"height": 17,
+					"dataSource": "OB Lire:C1224([RAEMACampagnes:20]Arguments:7;\"Rang\";Est un numérique:K8:4)",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PUMMilieu": {
+					"type": "dropdown",
+					"top": 902,
+					"left": 879,
+					"width": 210,
+					"height": 42,
+					"dataSource": "PUMMilieu",
+					"focusable": false,
+					"method": "ObjectMethods/PUMMilieu.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

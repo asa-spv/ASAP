@@ -1,0 +1,361 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 906,
+	"markerBreak": 906,
+	"markerFooter": 906,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 291,
+					"left": 340,
+					"width": 217,
+					"height": 137,
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 141,
+					"left": 18,
+					"width": 524,
+					"height": 107,
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"Texte": {
+					"type": "text",
+					"top": 4,
+					"left": 5,
+					"width": 547,
+					"height": 22,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "BON DE COMMANDE\r"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 57,
+					"left": 5,
+					"width": 547,
+					"height": 37,
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontStyle": "italic",
+					"text": "Suite à votre demande sur le Web, veuillez trouver le bon de commande à nous renvoyer signé à l'adresse mail suivante : asa-spv@wanadoo.fr.\rNous vous précisons que le contrôle de l'homogénéité et de la stabilité de la contamination est une étape sous-traitée."
+				},
+				"VarTitrecampagne": {
+					"type": "input",
+					"top": 118,
+					"left": 13,
+					"width": 526,
+					"height": 21,
+					"dataSource": "VarTitrecampagne",
+					"class": "Champ_grand",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 159,
+					"left": 27,
+					"width": 97,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Germes"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 141,
+					"left": 277,
+					"width": 85,
+					"height": 38,
+					"textAlign": "center",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Envoi principal avec édition d'un rapport"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 179,
+					"left": 18,
+					"width": 524
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 201,
+					"left": 18,
+					"width": 524
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 141,
+					"left": 277,
+					"height": 107
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 141,
+					"left": 362,
+					"height": 107
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 179,
+					"left": 451,
+					"height": 69
+				},
+				"Var": {
+					"type": "input",
+					"top": 183,
+					"left": 18,
+					"width": 259,
+					"height": 15,
+					"dataSource": "Var1",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Var1": {
+					"type": "input",
+					"top": 179,
+					"left": 300,
+					"width": 40,
+					"height": 26,
+					"dataSource": "Var2",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Var2": {
+					"type": "input",
+					"top": 181,
+					"left": 393,
+					"width": 26,
+					"height": 21,
+					"dataSource": "Var3",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Var3": {
+					"type": "input",
+					"top": 181,
+					"left": 485,
+					"width": 26,
+					"height": 21,
+					"dataSource": "Var4",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 292,
+					"left": 13,
+					"width": 326,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"text": "Si vous avez un numéro de bon de commande à nous transmettre, veuillez nous le mentionner :"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 319,
+					"left": 27,
+					"width": 149,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "left",
+					"text": "Numéro de commande:"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 337,
+					"left": 18,
+					"width": 507,
+					"height": 28,
+					"class": "Etiquette_petite",
+					"text": "A…………………………………   LE …………………………………\rSIGNATURE ET CACHET DE L’ENTREPRISE"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 296,
+					"left": 344,
+					"width": 208,
+					"height": 14,
+					"class": "Etiquette_petite",
+					"text": "Bénéficiaire du devis"
+				},
+				"VarAdresse": {
+					"type": "input",
+					"top": 311,
+					"left": 349,
+					"width": 203,
+					"height": 113,
+					"dataSource": "VarAdresse",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPrixHT": {
+					"type": "input",
+					"top": 268,
+					"left": 5,
+					"width": 547,
+					"height": 21,
+					"dataSource": "VarPrixHT",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 882,
+					"left": 127,
+					"width": 430,
+					"height": 12,
+					"fontFamily": "Times New Roman",
+					"fontSize": 9,
+					"text": "* sous accréditation Cofrac (Accréditation N° 1-1836, portée disponible sur le site du Cofrac )"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 148,
+					"left": 170,
+					"width": 97,
+					"height": 13,
+					"textAlign": "right",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Modalités"
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 164,
+					"left": 370,
+					"width": 78,
+					"height": 14,
+					"textAlign": "center",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "AVEC rapport"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 147,
+					"left": 389,
+					"width": 125,
+					"height": 14,
+					"textAlign": "center",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Pots supplémentaires"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 164,
+					"left": 451,
+					"width": 85,
+					"height": 14,
+					"textAlign": "center",
+					"fontFamily": "Arial Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "SANS rapport"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 142,
+					"left": 25,
+					"width": 252,
+					"height": 37
+				},
+				"VarAnneeGel": {
+					"type": "input",
+					"top": 29,
+					"left": 173,
+					"width": 214,
+					"height": 22,
+					"dataSource": "VarAnneeGel",
+					"class": "Titre",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

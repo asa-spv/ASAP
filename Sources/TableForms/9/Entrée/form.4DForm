@@ -1,0 +1,754 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 569,
+	"markerBreak": 569,
+	"markerFooter": 579,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 96,
+					"left": 554,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 515,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "XMails"
+				},
+				"Line19": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 644,
+					"sizingX": "grow"
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 126,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 153,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailIDMessage : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 180,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MaillDe : "
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 207,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailA : "
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 234,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailDateEnvoi : "
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 261,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailDateHeureEnvoi : "
+				},
+				"Texte26": {
+					"type": "text",
+					"top": 288,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailDateHeureReception : "
+				},
+				"Texte27": {
+					"type": "text",
+					"top": 315,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailObjet : "
+				},
+				"Texte28": {
+					"type": "text",
+					"top": 342,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailCopieA : "
+				},
+				"Texte29": {
+					"type": "text",
+					"top": 369,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailNomFichier : "
+				},
+				"Texte30": {
+					"type": "text",
+					"top": 396,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailEdition : "
+				},
+				"Texte31": {
+					"type": "text",
+					"top": 423,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailEnvoi : "
+				},
+				"Texte32": {
+					"type": "text",
+					"top": 450,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailCorpsMessage : "
+				},
+				"Texte33": {
+					"type": "text",
+					"top": 525,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailEntrantNonLu : "
+				},
+				"Texte34": {
+					"type": "text",
+					"top": 552,
+					"left": 167,
+					"width": 162,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MailClassement : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 126,
+					"left": 334,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[XMails:9]UUID:1",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailIDMessage": {
+					"type": "input",
+					"top": 153,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailIDMessage:2",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MaillDe": {
+					"type": "input",
+					"top": 180,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MaillDe:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailA": {
+					"type": "input",
+					"top": 207,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailA:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailDateEnvoi": {
+					"type": "input",
+					"top": 234,
+					"left": 334,
+					"width": 77,
+					"height": 17,
+					"dataSource": "[XMails:9]MailDateEnvoi:5",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailDateHeureEnvoi": {
+					"type": "input",
+					"top": 261,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailDateHeureEnvoi:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailDateHeureReception": {
+					"type": "input",
+					"top": 288,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailDateHeureReception:7",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailObjet": {
+					"type": "input",
+					"top": 315,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailObjet:8",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailCopieA": {
+					"type": "input",
+					"top": 342,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailCopieA:9",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailNomFichier": {
+					"type": "input",
+					"top": 369,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[XMails:9]MailNomFichier:10",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailEdition": {
+					"type": "checkbox",
+					"top": 396,
+					"left": 334,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[XMails:9]MailEdition:11",
+					"text": "Vrai",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailEnvoi": {
+					"type": "checkbox",
+					"top": 423,
+					"left": 334,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[XMails:9]MailEnvoi:12",
+					"text": "Vrai",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailCorpsMessage": {
+					"type": "input",
+					"top": 450,
+					"left": 334,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[XMails:9]MailCorpsMessage:13",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailEntrantNonLu": {
+					"type": "checkbox",
+					"top": 525,
+					"left": 334,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[XMails:9]MailEntrantNonLu:14",
+					"text": "Vrai",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MailClassement": {
+					"type": "input",
+					"top": 552,
+					"left": 334,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[XMails:9]MailClassement:15",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vRecNum1": {
+					"type": "input",
+					"top": 52,
+					"left": 82,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum1.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 32,
+					"left": 19,
+					"width": 32,
+					"height": 32,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg."
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/tbIcon24_Previous.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 71,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. précéden"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/Arrow_Left.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 134,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/Arrow_Right.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 32,
+					"left": 193,
+					"width": 32,
+					"height": 32,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg."
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/tbIcon24_Next.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 404,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Supprimer enreg"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/24_bin.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 462,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 530,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/4Etats/22_save.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

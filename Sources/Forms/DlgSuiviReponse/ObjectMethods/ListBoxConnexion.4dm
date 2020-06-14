@@ -1,0 +1,5 @@
+C_LONGINT:C283($C;$L)
+LISTBOX GET CELL POSITION:C971(*;"ListBoxConnexion1";$C;$L)
+If ($L>0)
+	EDIT ITEM:C870(TbWE;$L)
+End if 

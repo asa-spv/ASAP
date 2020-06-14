@@ -1,0 +1,853 @@
+﻿{
+	"destination": "detailScreen",
+	"inheritedForm": "SaisieStandard",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 434,
+	"markerBreak": 434,
+	"markerFooter": 444,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte15": {
+					"type": "text",
+					"top": 32,
+					"left": 499,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 56,
+					"left": 499,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "UUIDPersonne : "
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 157,
+					"left": 149,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Numéro de facture :"
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 184,
+					"left": 149,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Date de la facture : "
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 134,
+					"left": 499,
+					"width": 155,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Adresse de  facturation : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 211,
+					"left": 149,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Total HT : "
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 235,
+					"left": 149,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Total TVA : "
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 264,
+					"left": 149,
+					"width": 133,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Total TTC : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 32,
+					"left": 637,
+					"width": 307,
+					"height": 21,
+					"dataSource": "[Factures:15]UUID:1",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UUIDPersonne": {
+					"type": "input",
+					"top": 56,
+					"left": 637,
+					"width": 307,
+					"height": 21,
+					"dataSource": "[Factures:15]UUIDPersonne:2",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NumFacture": {
+					"type": "input",
+					"top": 157,
+					"left": 287,
+					"width": 136,
+					"height": 21,
+					"dataSource": "[Factures:15]NumFacture:3",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateFacture": {
+					"type": "input",
+					"top": 184,
+					"left": 287,
+					"width": 81,
+					"height": 21,
+					"dataSource": "[Factures:15]DateFacture:4",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdresseFacturation": {
+					"type": "input",
+					"top": 135,
+					"left": 660,
+					"width": 329,
+					"height": 138,
+					"dataSource": "[Factures:15]AdresseFacturation:5",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalHT": {
+					"type": "input",
+					"top": 209,
+					"left": 287,
+					"width": 115,
+					"height": 21,
+					"dataSource": "[Factures:15]TotalHT:8",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalTVA": {
+					"type": "input",
+					"top": 235,
+					"left": 287,
+					"width": 115,
+					"height": 21,
+					"dataSource": "[Factures:15]TotalTVA:9",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalTTC": {
+					"type": "input",
+					"top": 264,
+					"left": 287,
+					"width": 115,
+					"height": 21,
+					"dataSource": "[Factures:15]TotalTTC:10",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NouvFacPUMTypeFacture": {
+					"type": "dropdown",
+					"top": 126,
+					"left": 1179,
+					"width": 301,
+					"height": 33,
+					"dataSource": "PUMTypeFacture",
+					"focusable": false,
+					"class": "Champ_grand",
+					"method": "ObjectMethods/NouvFacPUMTypeFacture.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NouvFacTexte": {
+					"type": "text",
+					"top": 134,
+					"left": 903,
+					"width": 265,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Type de facture :"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 367,
+					"left": 196,
+					"width": 808,
+					"height": 195,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"headerHeight": "2em",
+					"highlightSet": "$ListboxSet",
+					"table": 16,
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#B1C4DD",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne7",
+							"dataSource": "[Ventes:16]DateVente:4",
+							"dataSourceTypeHint": "date",
+							"width": 88,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Date de vente",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne8",
+							"dataSource": "[Ventes:16]Intitule:3",
+							"width": 372,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Intitulé",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne9",
+							"dataSource": "[Ventes:16]Quantité:6",
+							"dataSourceTypeHint": "number",
+							"width": 51,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Qté",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne10",
+							"dataSource": "[Ventes:16]PrixUHT:5",
+							"dataSourceTypeHint": "number",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "### ##0.00 €",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "PUHT",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne11",
+							"dataSource": "[Ventes:16]PrixTotalHT:7",
+							"dataSourceTypeHint": "number",
+							"width": 87,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "### ##0.00 €",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "PHT",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne12",
+							"dataSource": "[Ventes:16]TauxTVA:8",
+							"dataSourceTypeHint": "number",
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "##0.00 %",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "%TVA",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne13",
+							"dataSource": "Arrondi:C94([Ventes:16]PrixTotalHT:7*(1+([Ventes:16]TauxTVA:8/100));2)",
+							"dataSourceTypeHint": "number",
+							"width": 67,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textFormat": "### ##0.00 €",
+							"numberFormat": "### ##0.00 €",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "TTC",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 347,
+					"left": 196,
+					"width": 272,
+					"height": 17,
+					"text": "Détail de la facture"
+				},
+				"RegleVarBanque": {
+					"type": "input",
+					"top": 428,
+					"left": 1211,
+					"width": 245,
+					"height": 17,
+					"dataSource": "VarBanque",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RegleVarBanque.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"RegleVarNumCheque": {
+					"type": "input",
+					"top": 458,
+					"left": 1211,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarNumCheque",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte1": {
+					"type": "text",
+					"top": 428,
+					"left": 1113,
+					"width": 90,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Banque :"
+				},
+				"RegleTexte2": {
+					"type": "text",
+					"top": 458,
+					"left": 1113,
+					"width": 90,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "N° chèque :"
+				},
+				"RegleVarDateReglement": {
+					"type": "input",
+					"top": 488,
+					"left": 1211,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarDateReglement",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte3": {
+					"type": "text",
+					"top": 488,
+					"left": 1063,
+					"width": 140,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Date réglement :"
+				},
+				"RegleVarSommeRéglée": {
+					"type": "input",
+					"top": 518,
+					"left": 1211,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarSommeRéglée",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"numberFormat": "### ##0.00 €",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte4": {
+					"type": "text",
+					"top": 518,
+					"left": 1063,
+					"width": 140,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Somme réglée :"
+				},
+				"BouEntreReglement": {
+					"type": "button",
+					"top": 367,
+					"left": 1139,
+					"width": 284,
+					"height": 41,
+					"text": "Entrer un réglement",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouEntreReglement.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAjouter": {
+					"type": "pictureButton",
+					"top": 579,
+					"left": 197,
+					"width": 36,
+					"height": 35,
+					"picture": "/RESOURCES/Images/Buttons/BouAjouter.png",
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/BouAjouter.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CodeBénéficiaire": {
+					"type": "text",
+					"top": 129,
+					"left": 108,
+					"width": 174,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Code bénéficiaire :"
+				},
+				"CodeBeneficiaire1": {
+					"type": "input",
+					"top": 129,
+					"left": 287,
+					"width": 136,
+					"height": 17,
+					"dataSource": "CodeBeneficiaire",
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Laboratoire": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 284,
+					"width": 134,
+					"height": 24,
+					"text": "Laboratoire ",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"DateFacture",
+				"NouvFacPUMTypeFacture",
+				"List Box1",
+				"RegleVarBanque",
+				"RegleVarNumCheque",
+				"RegleVarDateReglement",
+				"RegleVarSommeRéglée",
+				"BouEntreReglement",
+				"Laboratoire"
+			]
+		}
+	]
+}

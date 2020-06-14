@@ -1,0 +1,666 @@
+﻿{
+	"ToutEtOuSauf": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ET",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "OU",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "SAUF",
+				"ref": 3,
+				"editable": true
+			}
+		]
+	},
+	"RubriquesPersonnes": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Nom du laboratoire",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "N° RAEMA",
+				"ref": 10,
+				"editable": false
+			},
+			{
+				"text": "Identificateur",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Association",
+				"ref": 11,
+				"editable": false
+			},
+			{
+				"text": "Ligne adresse",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Code postal",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Ville",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Pays",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Adresse mail",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Nom de contact",
+				"ref": 13,
+				"editable": false
+			},
+			{
+				"text": "Facturation spéciale",
+				"ref": 12,
+				"editable": false
+			},
+			{
+				"text": "Paye en deux fois",
+				"ref": 10,
+				"editable": true
+			}
+		]
+	},
+	"Comparateurs": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "est",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "contient",
+				"ref": 7,
+				"editable": false
+			},
+			{
+				"text": "n'est pas",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "ne contient pas",
+				"ref": 8,
+				"editable": false
+			},
+			{
+				"text": "Est plus grand que",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Est plus grand ou égal à",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Est plus petit que",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Est plus petit ou égal à",
+				"ref": 7,
+				"editable": true
+			}
+		]
+	},
+	"Associations": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ASA-CARSO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ADILVA",
+				"ref": 0,
+				"editable": false
+			},
+			{
+				"text": "ADRIA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AFSSA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AGRO ANALYSES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ALPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AOSTE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA",
+				"ref": 0,
+				"editable": false
+			},
+			{
+				"text": "ASA - AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - AGRO ANALYSES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - AOSTE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - BELGES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - BROCELIANDE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - CRUDET",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - DELPEYRAT",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - DIANA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - ETATS DAKAR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - LCAE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - LRAR M",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - MADA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - MARIE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - ONISPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - PASQUIER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - SAVEUR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - SILLIK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - TIPIAK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA-AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA-ALPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BELGES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BIO SPRINGER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BROCELIANDE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CERECO",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CERVAC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CRUDETTES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "DIANA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ETATS DES SCIENCES DAKAR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "INRH-MAROC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "LCAE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "LRAR-MAROC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "MADA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "MARIE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ONISPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "PASQUIER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "SAVEURS",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "SILLIKER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "TIPIAK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "DELPEYRAT",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "CARSO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "BAZIN",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-BAZIN",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "GELAGRI",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - GELAGRI",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-BIOMERIEUX",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - CERECO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - BIGARD",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "BIGARD",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - ANSES",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ANSES",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - COOPERL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "COOPERL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-EUROFINS",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "EUROFINS",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - LABEYRIE",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABEYRIE",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "INST PROVINCIAL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-AJINOMOTO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			}
+		]
+	},
+	"Destinataires": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Adhérents",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Partenaires",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Les deux",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"TypeAdhérents": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ASA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "RAEMA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Les deux",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Mailing": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Personnes",
+				"ref": 1,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Nom long",
+							"ref": 2,
+							"editable": true
+						},
+						{
+							"text": "Nom court",
+							"ref": 3,
+							"editable": true
+						},
+						{
+							"text": "Numéro adhérent",
+							"ref": 4,
+							"editable": true
+						},
+						{
+							"text": "Email RAEMA",
+							"ref": 5,
+							"editable": true
+						}
+					]
+				}
+			}
+		]
+	}
+}

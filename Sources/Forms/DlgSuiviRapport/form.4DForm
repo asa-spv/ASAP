@@ -1,0 +1,1169 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1600,
+	"height": 900,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1614,
+					"height": 922,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle rond1": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 459,
+					"width": 500,
+					"height": 557,
+					"fill": "#DFE4FF",
+					"borderRadius": 5
+				},
+				"Rectangle rond2": {
+					"type": "rectangle",
+					"top": 98,
+					"left": 993,
+					"width": 500,
+					"height": 554,
+					"fill": "#FFFFDF",
+					"borderRadius": 5
+				},
+				"ListBoxCouNonParticip": {
+					"type": "listbox",
+					"top": 172,
+					"left": 478,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxCouNonParticip",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "TbRapMailNonParticipation",
+							"dataSource": "TbRapMailNonParticipation",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"method": "ObjectMethods/TbRapMailNonParticipation.4dm",
+							"header": {
+								"name": "Entête6",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"ListBoxCouNonEnv": {
+					"type": "listbox",
+					"top": 171,
+					"left": 654,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxCouNonEnv",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "ZoneRapNonEnvMail",
+							"dataSource": "TbRapMailNonEnvoi",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"method": "ObjectMethods/ZoneRapNonEnvMail.4dm",
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"ListBoxCouEnv": {
+					"type": "listbox",
+					"top": 172,
+					"left": 826,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxCouEnv",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "ZoneRapEnvMail",
+							"dataSource": "TbRapMailEnvoi",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"method": "ObjectMethods/ZoneRapEnvMail.4dm",
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"ListBoxRapRetenus": {
+					"type": "listbox",
+					"top": 172,
+					"left": 1027,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxRapRetenus",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "ZoneRapLabRetenus",
+							"dataSource": "TbRapportsRetenus",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"method": "ObjectMethods/ZoneRapLabRetenus.4dm",
+							"header": {
+								"name": "Entête3",
+								"text": "Entête3",
+								"dataSource": "Entête3",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"ListBoxRapNonPris": {
+					"type": "listbox",
+					"top": 172,
+					"left": 1202,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxRapNonPris",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "ZoneRapLabNonPris",
+							"dataSource": "TbRapportsNonPris",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/ZoneRapLabNonPris.4dm",
+							"header": {
+								"name": "Entête4",
+								"text": "Entête4",
+								"dataSource": "Entête4",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"ListBoxRapPris": {
+					"type": "listbox",
+					"top": 171,
+					"left": 1365,
+					"width": 100,
+					"height": 448,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxRapPris",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "ZoneRapLabPris",
+							"dataSource": "TbRapportsPris",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/ZoneRapLabPris.4dm",
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"dataSource": "Entête5",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"MailBouPartVersDroite": {
+					"type": "button",
+					"top": 214,
+					"left": 598,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouParticipeVersDroite",
+					"text": "->",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/MailBouPartVersDroite.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mailCourVersDroite": {
+					"type": "button",
+					"top": 215,
+					"left": 774,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouCourVersDroite",
+					"text": "->",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/mailCourVersDroite.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRapObt": {
+					"type": "button",
+					"top": 212,
+					"left": 1317,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouRapObt",
+					"text": "->",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouRapObt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MailEnlevePart": {
+					"type": "button",
+					"top": 275,
+					"left": 598,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouEnleveParticipation",
+					"text": "<-",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/MailEnlevePart.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MailCourVersGauche": {
+					"type": "button",
+					"top": 275,
+					"left": 774,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouCourVersGauche",
+					"text": "<-",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/MailCourVersGauche.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRapRet": {
+					"type": "button",
+					"top": 272,
+					"left": 1147,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouRapRet",
+					"text": "<-",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouRapRet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRapNonObt": {
+					"type": "button",
+					"top": 272,
+					"left": 1317,
+					"width": 33,
+					"height": 23,
+					"dataSource": "BouRapNonObt",
+					"text": "<-",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouRapNonObt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouTestemailRap": {
+					"type": "button",
+					"top": 279,
+					"left": 27,
+					"width": 326,
+					"height": 30,
+					"dataSource": "BouTestemailRap",
+					"text": "Tester les adresses mails",
+					"class": "Titre",
+					"method": "ObjectMethods/BouTestemailRap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MailAjouteParticip": {
+					"type": "button",
+					"top": 626,
+					"left": 694,
+					"width": 28,
+					"height": 23,
+					"dataSource": "BouAjouteParticipation",
+					"text": "+",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/MailAjouteParticip.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MailBouDelRet": {
+					"type": "button",
+					"top": 626,
+					"left": 1238,
+					"width": 28,
+					"height": 23,
+					"dataSource": "BouDelRet",
+					"text": "-",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/MailBouDelRet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouTesteDispoRap": {
+					"type": "button",
+					"top": 630,
+					"left": 27,
+					"width": 322,
+					"height": 30,
+					"dataSource": "BouTesteDispoRap",
+					"text": "Incorporer les documents",
+					"class": "Titre",
+					"method": "ObjectMethods/BouTesteDispoRap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MailBouEnvoi": {
+					"type": "button",
+					"top": 657,
+					"left": 459,
+					"width": 221,
+					"height": 30,
+					"dataSource": "BouRapEnvoiMail",
+					"text": "Courriel aux labos",
+					"class": "Titre",
+					"method": "ObjectMethods/MailBouEnvoi.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImpAvancement": {
+					"type": "button",
+					"top": 657,
+					"left": 1089,
+					"width": 322,
+					"height": 30,
+					"dataSource": "BouImpAvancement",
+					"text": "Imprimer l'avancement",
+					"class": "Titre",
+					"method": "ObjectMethods/BouImpAvancement.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRetour": {
+					"type": "button",
+					"top": 26,
+					"left": 1373,
+					"width": 158,
+					"height": 39,
+					"dataSource": "BouRetour",
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Titre",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarEtaMailRap": {
+					"type": "input",
+					"top": 106,
+					"left": 27,
+					"width": 311,
+					"height": 169,
+					"dataSource": "VarEtaMailRap",
+					"class": "Champ_normal",
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 90,
+					"left": 27,
+					"width": 351,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Etat des adresses mails pour le rapport de campagne"
+				},
+				"VarValDosRap": {
+					"type": "input",
+					"top": 366,
+					"left": 28,
+					"width": 306,
+					"height": 257,
+					"dataSource": "VarValDosRap",
+					"class": "Champ_grand",
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 349,
+					"left": 28,
+					"width": 272,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Etat des rapports de campagne du RAEMA"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 106,
+					"left": 1003,
+					"width": 138,
+					"height": 20,
+					"class": "Titre",
+					"textAlign": "left",
+					"text": "RAPPORTS"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 106,
+					"left": 469,
+					"width": 121,
+					"height": 20,
+					"class": "Titre",
+					"textAlign": "left",
+					"text": "COURRIELS"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 70,
+					"left": 28,
+					"width": 323,
+					"height": 20,
+					"stroke": "#009900",
+					"class": "Titre",
+					"textAlign": "left",
+					"text": "PREALABLE ADRESSES COURRIEL"
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 328,
+					"left": 27,
+					"width": 312,
+					"height": 20,
+					"stroke": "#009900",
+					"class": "Titre",
+					"textAlign": "left",
+					"text": "PREALABLE  RAPPORTS RAEMA"
+				},
+				"VarRapNonObt": {
+					"type": "input",
+					"top": 139,
+					"left": 1198,
+					"width": 94,
+					"height": 29,
+					"dataSource": "VarRapNonObt",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarRapObt": {
+					"type": "input",
+					"top": 138,
+					"left": 1359,
+					"width": 95,
+					"height": 29,
+					"dataSource": "VarRapObt",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Cadran1": {
+					"type": "progress",
+					"top": 118,
+					"left": 670,
+					"width": 59,
+					"height": 24,
+					"dataSource": "CadMailNonEnv",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10
+				},
+				"Cadran3": {
+					"type": "progress",
+					"top": 109,
+					"left": 1207,
+					"width": 59,
+					"height": 24,
+					"dataSource": "CadRapNonEnv",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10
+				},
+				"Cadran4": {
+					"type": "progress",
+					"top": 109,
+					"left": 1370,
+					"width": 59,
+					"height": 24,
+					"dataSource": "CadRapEnv",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10
+				},
+				"VarCouNonEnv": {
+					"type": "input",
+					"top": 141,
+					"left": 654,
+					"width": 94,
+					"height": 29,
+					"dataSource": "VarCouNonEnv",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCouEnv": {
+					"type": "input",
+					"top": 141,
+					"left": 826,
+					"width": 95,
+					"height": 29,
+					"dataSource": "VarCouEnv",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarRapRetenus": {
+					"type": "input",
+					"top": 138,
+					"left": 1027,
+					"width": 94,
+					"height": 29,
+					"dataSource": "VarRapRetenus",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Thermomètre": {
+					"type": "progress",
+					"top": 118,
+					"left": 840,
+					"width": 59,
+					"height": 23,
+					"dataSource": "CadMailEnv",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10,
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"VarCouNonParticip": {
+					"type": "input",
+					"top": 141,
+					"left": 478,
+					"width": 94,
+					"height": 29,
+					"dataSource": "VarCouNonParticip",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"top": 32,
+					"left": 199,
+					"width": 85,
+					"height": 27,
+					"dataSource": "<>PUMCampagne",
+					"class": "Titre",
+					"method": "ObjectMethods/Popup Liste déroulante1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 38,
+					"left": 33,
+					"width": 161,
+					"height": 15,
+					"class": "Champ_normal",
+					"textAlign": "right",
+					"text": "Choisissez la campagne"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 169,
+					"left": 277,
+					"width": 483,
+					"height": 481,
+					"class": "Titre",
+					"text": "Laboratoires OK"
+				},
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 169,
+					"left": 771,
+					"width": 483,
+					"height": 481,
+					"class": "Titre",
+					"text": "Laboratoires à rapport retenu"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 670,
+					"left": 1117,
+					"width": 137,
+					"height": 37,
+					"dataSource": "BouQuitte",
+					"action": "firstPage",
+					"text": "Quitter",
+					"class": "Titre",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 240,
+					"left": 286,
+					"width": 231,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Texte du mail envoyé"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 260,
+					"left": 289,
+					"width": 446,
+					"height": 379,
+					"dataSource": "VarTexteCourriel",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 670,
+					"left": 348,
+					"width": 564,
+					"height": 37,
+					"dataSource": "BouRapEnvMail",
+					"text": "Envoyer le mail aux laboratoires participants",
+					"class": "Titre",
+					"method": "ObjectMethods/Bouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 206,
+					"left": 286,
+					"width": 234,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Objet du mail envoyé"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 224,
+					"left": 289,
+					"width": 462,
+					"height": 15,
+					"dataSource": "VarObjetCourriel",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 75,
+					"left": 251,
+					"width": 978,
+					"height": 42,
+					"dataSource": "VarRAEMAEnCours",
+					"stroke": "#0056FF",
+					"class": "Grand_titre",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 118,
+					"left": 254,
+					"width": 940,
+					"height": 53,
+					"dataSource": "VarRAEMAEcart",
+					"stroke": "#FF001C",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 240,
+					"left": 780,
+					"width": 231,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Texte du mail envoyé"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 260,
+					"left": 783,
+					"width": 446,
+					"height": 379,
+					"dataSource": "VarTexteCourriel2",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 206,
+					"left": 780,
+					"width": 234,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Objet du mail envoyé"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 224,
+					"left": 783,
+					"width": 462,
+					"height": 15,
+					"dataSource": "VarObjetCourriel2",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNbLaboMail": {
+					"type": "input",
+					"top": 169,
+					"left": 714,
+					"width": 42,
+					"height": 20,
+					"dataSource": "VarNbLaboMail",
+					"dataSourceTypeHint": "number",
+					"class": "Titre",
+					"textAlign": "right",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNbLaboRetenu": {
+					"type": "input",
+					"top": 169,
+					"left": 1208,
+					"width": 42,
+					"height": 20,
+					"dataSource": "VarNbLaboRetenu",
+					"dataSourceTypeHint": "number",
+					"class": "Titre",
+					"textAlign": "right",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Bouton1",
+				"Variable1",
+				"Bouton2",
+				"Variable2",
+				"Variable5",
+				"Variable6"
+			]
+		}
+	]
+}

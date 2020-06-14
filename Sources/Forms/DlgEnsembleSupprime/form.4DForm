@@ -1,0 +1,302 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 635,
+	"height": 450,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"RectRond1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 689,
+					"height": 509,
+					"stroke": "#FFFFFF",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"RectRond2": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 469,
+					"width": 152,
+					"height": 371,
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 17,
+					"left": 471,
+					"width": 144,
+					"height": 427,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": "Cet écran vous permet \rde supprimer un ou plusieurs ensembles. Pour cela sélectionnez les lignes concernées en cliquant dessus tout en maintenant la touche contrôle sous Windows et commande sous Mac et appuyer sur le bouton \"Supprimer les ensembles\".\r\rNB : cette manoeuvre ne supprime que les ensembles sans supprimer les enregistrements"
+				},
+				"ListBoxChoixEnsemble": {
+					"type": "listbox",
+					"top": 71,
+					"left": 20,
+					"width": 441,
+					"height": 320,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxChoixEnsemble",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "ZTbEnsNom",
+							"dataSource": "ZTbEnsNom",
+							"width": 143,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Entête5",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "ZTbEnsDate",
+							"dataSource": "ZTbEnsDate",
+							"dataSourceTypeHint": "date",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Entête6",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "ZTbEnsNbre",
+							"dataSource": "ZTbEnsNbre",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Entête7",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "ZTbEnsQVL",
+							"width": 152,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Entête8",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 19,
+					"width": 445,
+					"height": 59,
+					"fill": "#000000"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 46,
+					"left": 22,
+					"width": 129,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nom de l'ensemble"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 29,
+					"left": 159,
+					"width": 69,
+					"height": 34,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Date de \rcréation"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 17,
+					"left": 239,
+					"width": 53,
+					"height": 46,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Nombre \rde fiches"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 46,
+					"left": 297,
+					"width": 131,
+					"height": 17,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Auteur de l'ensemble"
+				},
+				"BouSupprime": {
+					"type": "button",
+					"top": 401,
+					"left": 22,
+					"width": 439,
+					"height": 41,
+					"class": "Bouton_grand",
+					"focusable": false,
+					"text": "  Supprimer les ensembles surlignés",
+					"icon": "/RESOURCES/Images/Buttons/4Etats/24_bin.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "bevel",
+					"method": "ObjectMethods/BouSupprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitte": {
+					"type": "button",
+					"top": 401,
+					"left": 508,
+					"width": 120,
+					"height": 41,
+					"action": "cancel",
+					"class": "Bouton_normal",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/4Etats/Close.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}
